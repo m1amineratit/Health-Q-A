@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Answer Question</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Answer Question</h2>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <strong>From:</strong> @{{ question.instagram_username }}
+                <span class="float-end text-muted">{{ question.created_at }}</span>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ question.question_text }}</p>
+            </div>
+        </div>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label"><strong>Your Answer:</strong></label>
+                {{ form.answer_text }}
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Answer</button>
+            <a href="{% url 'dashboard' %}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</body>
+
+</html>
