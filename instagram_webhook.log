@@ -3521,3 +3521,70 @@ INFO 2026-01-14 00:05:47,346 views Webhook received:
 }
 INFO 2026-01-14 00:05:47,347 views Non-message event ignored
 INFO 2026-01-14 00:05:47,348 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-14 00:08:23,820 autoreload Watching for file changes with StatReloader
+INFO 2026-01-14 00:08:27,128 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768345707453,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1414927943378664"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768345707008,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU1Nzc4MTIzNzA5Mzg2OTozMjYyMDIyMDY5MTAzNjg5MTA1NzA2NzQ3NTkwMzQ0NzA0MAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-14 00:08:27,129 views Message from 1414927943378664: Hello
+INFO 2026-01-14 00:08:28,432 views Question aaa97ceb-4d28-4c38-a230-cd366e6c43be created
+INFO 2026-01-14 00:08:28,432 views DEBUG: Attempting to send message
+INFO 2026-01-14 00:08:28,432 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-14 00:08:28,433 views DEBUG: Recipient: 1414927943378664
+INFO 2026-01-14 00:08:28,433 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+INFO 2026-01-14 00:08:29,077 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768345709401,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1414927943378664"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768345693534,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU1Nzc4MTIzNzA5Mzg2OTozMjYyMDIyMDQ0MjQ4MDI3Nzg3MjgyMDI2NTA0NTQ1ODk0NAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-14 00:08:29,078 views Message from 1414927943378664: Hello
+ERROR 2026-01-14 00:08:29,381 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'Afc43aNIMiLrxLxj-O11jUt'}}
+INFO 2026-01-14 00:08:29,385 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-14 00:08:30,507 views Question ab5d05f3-e315-479e-aec3-b409b1f8f716 created
+INFO 2026-01-14 00:08:30,507 views DEBUG: Attempting to send message
+INFO 2026-01-14 00:08:30,508 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-14 00:08:30,508 views DEBUG: Recipient: 1414927943378664
+INFO 2026-01-14 00:08:30,508 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+ERROR 2026-01-14 00:08:31,525 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AJZYgU43eunnhVyU804-Xoe'}}
+INFO 2026-01-14 00:08:31,528 log "POST /webhook/ HTTP/1.1" 200 16
