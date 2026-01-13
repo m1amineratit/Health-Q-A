@@ -1,0 +1,3523 @@
+INFO 2026-01-09 20:16:32,743 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:16:43,322 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-09 20:16:46,028 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:16:51,738 autoreload C:\Users\pc\Desktop\backend\system\api\forms.py changed, reloading.
+INFO 2026-01-09 20:16:54,253 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:17:17,191 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 20:17:19,502 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:17:25,124 autoreload C:\Users\pc\Desktop\backend\system\api\admin.py changed, reloading.
+INFO 2026-01-09 20:17:28,536 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:17:35,228 autoreload C:\Users\pc\Desktop\backend\system\api\urls.py changed, reloading.
+INFO 2026-01-09 20:17:37,293 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:19:32,852 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 20:19:33,627 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 20:19:34,459 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 20:19:34,677 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 20:19:34,909 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 20:19:35,152 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 20:19:35,331 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:19:35,332 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:19:35,384 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 20:19:37,084 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:19:37,085 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:19:42,005 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-09 20:19:43,258 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-09 20:20:07,758 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:20:07,759 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 20:30:30,164 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:30:30,165 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 20:36:55,137 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:36:55,139 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:37:37,763 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-09 20:37:41,401 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-09 20:37:55,199 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:37:55,201 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:37:59,035 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 20:38:03,503 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:41:49,039 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 20:41:50,896 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:42:01,819 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 20:42:03,194 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:43:56,870 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 20:43:59,274 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:43:59,275 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:43:59,985 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 20:44:01,938 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:44:01,939 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:44:25,015 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 20:44:28,006 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:45:17,084 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 20:45:20,215 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 20:45:32,776 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 20:45:33,949 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 20:45:34,326 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 20:45:34,823 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:45:34,824 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 20:45:36,241 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:45:36,243 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:46:05,844 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 20:46:07,450 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-09 20:46:07,960 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:46:07,961 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:47:39,609 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 20:47:41,653 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:47:41,654 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 20:48:12,268 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:48:12,269 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:48:29,191 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 20:48:31,024 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 20:48:31,252 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:48:31,255 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 20:48:32,054 log Not Found: /favicon.ico
+WARNING 2026-01-09 20:48:32,055 log "GET /favicon.ico HTTP/1.1" 404 3646
+INFO 2026-01-09 20:48:32,302 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 20:48:32,713 log Not Found: /favicon.ico
+WARNING 2026-01-09 20:48:32,714 log "GET /favicon.ico HTTP/1.1" 404 3646
+WARNING 2026-01-09 20:49:02,063 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:49:02,066 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:53:07,445 views Webhook verified successfully
+INFO 2026-01-09 20:53:07,446 log "GET /webhook/?hub.mode=subscribe&hub.challenge=334019622&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 200 9
+INFO 2026-01-09 20:53:55,009 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 20:53:56,208 log Not Found: /favicon.ico
+WARNING 2026-01-09 20:53:56,210 log "GET /favicon.ico HTTP/1.1" 404 3646
+INFO 2026-01-09 20:55:48,959 views Webhook verified successfully
+INFO 2026-01-09 20:55:48,960 log "GET /webhook/?hub.mode=subscribe&hub.challenge=464968539&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 200 9
+WARNING 2026-01-09 20:58:55,947 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:58:55,948 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 20:59:35,601 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 20:59:36,801 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 20:59:37,639 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 20:59:38,720 log Not Found: /favicon.ico
+WARNING 2026-01-09 20:59:38,721 log "GET /favicon.ico HTTP/1.1" 404 3646
+WARNING 2026-01-09 20:59:38,736 log Not Found: /serviceworker.js
+WARNING 2026-01-09 20:59:38,737 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 21:00:07,947 log Not Found: /serviceworker.js
+WARNING 2026-01-09 21:00:07,948 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 21:09:18,216 log Not Found: /serviceworker.js
+WARNING 2026-01-09 21:09:18,218 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 21:09:59,682 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767989397969,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767989397823,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY0NzkyMTg1NDg0NTA5ODc0Mzc0NjI2OTI4MjMwNAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:09:59,683 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:10:16,295 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 21:10:17,583 log Not Found: /favicon.ico
+WARNING 2026-01-09 21:10:17,584 log "GET /favicon.ico HTTP/1.1" 404 3646
+INFO 2026-01-09 21:10:18,629 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 21:10:21,072 log Not Found: /serviceworker.js
+WARNING 2026-01-09 21:10:21,073 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 21:10:21,273 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 21:10:22,089 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 21:10:22,366 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 21:10:22,914 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 21:10:23,040 log Not Found: /serviceworker.js
+WARNING 2026-01-09 21:10:23,041 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 21:10:23,846 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 21:10:24,168 log Not Found: /favicon.ico
+WARNING 2026-01-09 21:10:24,169 log "GET /favicon.ico HTTP/1.1" 404 3646
+WARNING 2026-01-09 21:10:24,678 log Not Found: /serviceworker.js
+WARNING 2026-01-09 21:10:24,679 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 21:10:54,009 log Not Found: /serviceworker.js
+WARNING 2026-01-09 21:10:54,011 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 21:12:53,966 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767989572256,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767989572234,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY1MTE1NDkyMTY3NDI5MDAxNzIzNDEzMDU2NzE2OAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:12:53,967 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:13:34,498 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767989612789,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767989612764,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY1MTkwMjcxODg2NjE1NjMxNTM0NzAzNTA5NTA0MAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:13:34,499 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:17:41,966 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767989860265,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767989860163,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY1NjQ2Mjk3NDQyMTMyMjI1MzI2MTk0MjU1NDYyNAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:17:41,967 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:19:43,681 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767989981983,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767989981962,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY1ODcxMDU0MDczNDkxMjcwMTAzMDQxMTAxMDA0OAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:19:43,682 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:22:49,943 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767990168244,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767990168194,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY2MjE0ODIyNjg1NTI1NjQ4ODg1NDc0MjM2ODI1NgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:22:49,944 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:22:54,229 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767990172561,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767990172533,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY2MjIyNDI4Mjc2MjYyNTY0OTI2MjM0NTU4NDY0MAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:22:54,230 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:22:56,427 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767990174743,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767990174722,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY2MjI2OTIzMjE4MzcxNzczMDI4NDk5MjQ2Mjg0OAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:22:56,428 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:22:59,613 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767990177956,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767990177929,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY2MjMyOTAzNjkzMzgzMzA2NjI3Mjk0MTY3MDQwMAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:22:59,614 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:24:04,140 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767990242414,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767990242377,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY2MzUxNDA4Mjc3OTE2MTQ5MTc3OTUzNzA3NjIyNAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:24:04,143 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:26:09,674 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 21:26:12,460 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 21:26:58,931 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767990417233,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767990417202,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY2NjcyMzg1MDk4MzIwNjA0NDU1NTgwNjc2OTE1MgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:26:58,935 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:27:09,610 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767990427924,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767990427890,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY2NjkzODU1NjM4MjE2ODk5Njk5MDEwNDM3MTIwMAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:27:09,611 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:29:55,271 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767990593578,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767990593545,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY2OTk5MzQ0MDE4ODk0NzQ2MjI1ODE0MDY0MzMyOAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:29:55,272 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:30:00,708 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767990599001,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767990598978,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY3MDA5MjcyODg2NjU4NzAwMDIzNDIzNjE4MjUyOAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:30:00,711 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:31:23,154 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 21:31:24,476 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 21:31:25,594 log Not Found: /serviceworker.js
+WARNING 2026-01-09 21:31:25,597 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 21:31:26,120 log Not Found: /favicon.ico
+WARNING 2026-01-09 21:31:26,121 log "GET /favicon.ico HTTP/1.1" 404 3646
+INFO 2026-01-09 21:31:44,431 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767990702736,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767990702707,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY3MjAwNzU2Mjk5MzE3ODYwMzc5ODMyNzcyMTk4NAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:31:44,432 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-09 21:31:54,418 log Not Found: /serviceworker.js
+WARNING 2026-01-09 21:31:54,419 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 21:39:49,962 log "GET / HTTP/1.1" 200 833
+INFO 2026-01-09 21:39:50,558 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 21:39:52,325 log Not Found: /serviceworker.js
+WARNING 2026-01-09 21:39:52,326 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 21:40:23,009 log Not Found: /serviceworker.js
+WARNING 2026-01-09 21:40:23,011 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 21:40:26,655 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767991224950,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767991224918,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY4MTY0MDQ0NzEyMjIxMjc4OTE3MDc4OTY3OTEwNAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:40:26,656 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:41:13,714 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767991272040,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767991272012,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY4MjUxMDkyNTYwMzAyNjQwMTUyMTU0NjgyMTYzMgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:41:13,715 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:52:46,339 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767991964620,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767991964575,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY5NTI4MzM4ODkyMzQ1NDkwMjIxNzAxODk2NjAxNgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:52:46,342 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 21:54:05,023 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767992043350,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767992043306,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzY5NjczNTQ4NTA1NDU1ODIwODAwMzE4NzY3MTA0MAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 21:54:05,024 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:01:56,926 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 22:01:59,127 log Not Found: /serviceworker.js
+WARNING 2026-01-09 22:01:59,128 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-09 22:02:29,527 log Not Found: /serviceworker.js
+WARNING 2026-01-09 22:02:29,529 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 22:06:12,967 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-09 22:06:14,841 log Not Found: /serviceworker.js
+WARNING 2026-01-09 22:06:14,842 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 22:06:32,524 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767992790865,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767992790835,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzcxMDUyOTI3ODk5NzcyNjA4MDQ2MDQ3MjE4ODkyOAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:06:32,525 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-09 22:06:45,459 log Not Found: /serviceworker.js
+WARNING 2026-01-09 22:06:45,460 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-09 22:10:24,379 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 22:10:26,273 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 22:10:30,770 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993029096,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993029084,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzcxNDkyMTM4MTUyMzI5NDE3NjAyODkyNjE0ODYwOAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:10:30,770 views Non-message event ignored
+INFO 2026-01-09 22:10:30,777 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:13:48,634 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993226972,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993226947,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzcxODU3NDA5Njk4NTg3MzU5NDcwMDk5MTAzNzQ0MAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:13:48,634 views Non-message event ignored
+INFO 2026-01-09 22:13:48,635 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:16:47,103 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993405451,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993405429,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzcyMTg2NTA0NzA2MDA4Mzc2NjIyMTM1NzQ0OTIxNgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:16:47,104 views Non-message event ignored
+INFO 2026-01-09 22:16:47,104 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:17:48,747 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993467012,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993466991,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzcyMjk5MTc4NDY0NzQwOTgzNTQyNzM3ODQ5NTQ4OAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:17:48,748 views Non-message event ignored
+INFO 2026-01-09 22:17:48,750 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:17:55,841 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 22:17:59,912 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-09 22:18:00,236 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+INFO 2026-01-09 22:18:18,241 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993496582,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993496555,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzcyMzU0NDkwMTg3NTE5MTQ2Mjc5NDczODI3MDIwOAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:18:18,241 views Non-message event ignored
+INFO 2026-01-09 22:18:18,242 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:19:07,032 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 22:19:09,903 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-09 22:19:17,094 log Internal Server Error: /webhook/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\views.py", line 30, in instagram_webhook
+    print(settings.INSTAGRAM_PAGE_ID)
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'PAGE_ID'
+ERROR 2026-01-09 22:19:17,099 log "POST /webhook/ HTTP/1.1" 500 73242
+ERROR 2026-01-09 22:19:17,910 log Internal Server Error: /webhook/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\views.py", line 30, in instagram_webhook
+    print(settings.INSTAGRAM_PAGE_ID)
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'PAGE_ID'
+ERROR 2026-01-09 22:19:17,913 log "POST /webhook/ HTTP/1.1" 500 73242
+ERROR 2026-01-09 22:19:18,604 log Internal Server Error: /webhook/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\views.py", line 30, in instagram_webhook
+    print(settings.INSTAGRAM_PAGE_ID)
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'PAGE_ID'
+ERROR 2026-01-09 22:19:18,607 log "POST /webhook/ HTTP/1.1" 500 73241
+ERROR 2026-01-09 22:19:19,053 log Internal Server Error: /webhook/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\views.py", line 30, in instagram_webhook
+    print(settings.INSTAGRAM_PAGE_ID)
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'PAGE_ID'
+ERROR 2026-01-09 22:19:19,055 log "POST /webhook/ HTTP/1.1" 500 73239
+ERROR 2026-01-09 22:19:19,527 log Internal Server Error: /webhook/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\views.py", line 30, in instagram_webhook
+    print(settings.INSTAGRAM_PAGE_ID)
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'PAGE_ID'
+ERROR 2026-01-09 22:19:19,529 log "POST /webhook/ HTTP/1.1" 500 73241
+ERROR 2026-01-09 22:19:20,435 log Internal Server Error: /webhook/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\views.py", line 30, in instagram_webhook
+    print(settings.INSTAGRAM_PAGE_ID)
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'PAGE_ID'
+ERROR 2026-01-09 22:19:20,438 log "POST /webhook/ HTTP/1.1" 500 73239
+ERROR 2026-01-09 22:19:23,031 log Internal Server Error: /webhook/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\views.py", line 30, in instagram_webhook
+    print(settings.INSTAGRAM_PAGE_ID)
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'PAGE_ID'
+ERROR 2026-01-09 22:19:23,033 log "POST /webhook/ HTTP/1.1" 500 73241
+INFO 2026-01-09 22:19:27,281 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 22:19:28,584 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 22:19:47,231 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 22:19:48,548 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 22:19:53,813 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993592162,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993592138,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzcyNTMwMTg4NDc0MDg4MDYyNzg0ODU3MTc4MTEyMAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:19:53,813 views Non-message event ignored
+INFO 2026-01-09 22:19:53,815 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:19:57,175 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993595552,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993595529,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzcyNDYyODYyMzA1NzI5MDE5MDkyODMxNjcyNzI5NgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:19:57,175 views Non-message event ignored
+INFO 2026-01-09 22:19:57,176 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:20:04,067 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993602414,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993602388,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzcyNTQ5ODE3MzcyMjIxNzEyNzkwOTc1NjIzOTg3MgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:20:04,067 views Non-message event ignored
+INFO 2026-01-09 22:20:04,068 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:20:18,112 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-09 22:20:19,374 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 22:24:05,961 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993844277,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993844254,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzcyOTk1ODYwMjk2OTM4NzQ5OTU4MzY4NjMxMTkzNgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:24:05,961 views Non-message event ignored
+INFO 2026-01-09 22:24:05,968 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:24:10,569 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993848831,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993848808,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzczMDA0NDUyNzk1ODYyMzA3MDg5NjI0MjI5NDc4NAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:24:10,570 views Non-message event ignored
+INFO 2026-01-09 22:24:10,572 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:24:20,401 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993858770,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993858744,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzczMDIyNTg5MzU5Nzc5MDkxNjIyNTAwNzYxNjAwMAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:24:20,402 views Non-message event ignored
+INFO 2026-01-09 22:24:20,404 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 22:24:30,337 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1767993868664,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1767993868641,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxMzczMDQxMDAwNDk2MTAyNzE1NjkyNTY5Mjc3MjM1MgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-09 22:24:30,337 views Non-message event ignored
+INFO 2026-01-09 22:24:30,338 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-09 23:04:16,094 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 23:04:40,617 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 23:04:50,410 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-09 23:04:51,871 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 23:07:05,400 log "GET /?hub.mode=subscribe&hub.challenge=1390239157&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 302 0
+INFO 2026-01-09 23:07:05,742 log "GET /accounts/login/?next=/%3Fhub.mode%3Dsubscribe%26hub.challenge%3D1390239157%26hub.verify_token%3DYK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 200 1826
+INFO 2026-01-09 23:07:13,413 views Instagram webhook verified
+INFO 2026-01-09 23:07:13,414 log "GET /webhook/?hub.mode=subscribe&hub.challenge=1959957104&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 200 10
+WARNING 2026-01-09 23:08:27,902 log Not Found: /serviceworker.js
+WARNING 2026-01-09 23:08:27,903 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-10 00:09:26,388 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:09:26,389 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-10 00:09:26,400 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:09:26,400 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-10 00:42:20,456 log Not Found: /login/
+WARNING 2026-01-10 00:42:20,457 log "GET /login/ HTTP/1.1" 404 3631
+WARNING 2026-01-10 00:42:21,049 log Not Found: /favicon.ico
+WARNING 2026-01-10 00:42:21,050 log "GET /favicon.ico HTTP/1.1" 404 3646
+WARNING 2026-01-10 00:42:22,571 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:42:22,572 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-10 00:42:24,091 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-10 00:42:25,765 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:42:25,766 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-10 00:42:27,235 log Method Not Allowed (GET): /accounts/logout/
+WARNING 2026-01-10 00:42:27,237 log "GET /accounts/logout/ HTTP/1.1" 405 0
+WARNING 2026-01-10 00:42:28,299 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:42:28,300 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-10 00:42:29,720 log Method Not Allowed (GET): /accounts/logout/
+WARNING 2026-01-10 00:42:29,721 log "GET /accounts/logout/ HTTP/1.1" 405 0
+WARNING 2026-01-10 00:42:30,780 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:42:30,781 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-10 00:42:31,463 log "GET / HTTP/1.1" 200 833
+WARNING 2026-01-10 00:42:33,702 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:42:33,704 log "GET /serviceworker.js HTTP/1.1" 404 3661
+WARNING 2026-01-10 00:42:34,110 log Method Not Allowed (GET): /accounts/logout/
+WARNING 2026-01-10 00:42:34,114 log "GET /accounts/logout/ HTTP/1.1" 405 0
+WARNING 2026-01-10 00:42:35,251 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:42:35,252 log "GET /serviceworker.js HTTP/1.1" 404 3661
+INFO 2026-01-10 00:42:41,176 autoreload C:\Users\pc\Desktop\backend\system\system\urls.py changed, reloading.
+INFO 2026-01-10 00:42:44,998 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 00:42:50,618 autoreload C:\Users\pc\Desktop\backend\system\system\urls.py changed, reloading.
+INFO 2026-01-10 00:42:51,886 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 00:42:55,155 log "GET /admin HTTP/1.1" 301 0
+INFO 2026-01-10 00:42:55,317 log "GET /admin/ HTTP/1.1" 200 7056
+INFO 2026-01-10 00:42:55,799 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-01-10 00:42:55,836 log "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-01-10 00:42:55,846 log "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-01-10 00:42:55,854 log "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-01-10 00:42:55,864 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-01-10 00:42:55,867 log "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-01-10 00:42:55,959 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-01-10 00:42:55,962 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-01-10 00:42:55,980 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2026-01-10 00:42:57,836 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:42:57,837 log "GET /serviceworker.js HTTP/1.1" 404 3487
+INFO 2026-01-10 00:42:58,879 log "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-01-10 00:42:58,909 log "GET /accounts/login/ HTTP/1.1" 200 1733
+WARNING 2026-01-10 00:43:00,708 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:43:00,710 log "GET /serviceworker.js HTTP/1.1" 404 3487
+WARNING 2026-01-10 00:43:36,888 log Not Found: /serviceworker.js
+WARNING 2026-01-10 00:43:36,889 log "GET /serviceworker.js HTTP/1.1" 404 3487
+INFO 2026-01-10 11:37:36,494 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 11:38:11,512 views Instagram webhook verified
+INFO 2026-01-10 11:38:11,520 log "GET /webhook/?hub.mode=subscribe&hub.challenge=729605264&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 200 9
+INFO 2026-01-10 11:38:53,973 views Webhook received:
+{
+  "entry": [
+    {
+      "id": "0",
+      "time": 1768041439,
+      "changes": [
+        {
+          "field": "messages",
+          "value": {
+            "sender": {
+              "id": "12334"
+            },
+            "recipient": {
+              "id": "23245"
+            },
+            "timestamp": "1527459824",
+            "message": {
+              "mid": "random_mid",
+              "text": "random_text"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "object": "instagram"
+}
+INFO 2026-01-10 11:38:53,975 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 11:39:21,940 views Webhook received:
+{
+  "entry": [
+    {
+      "id": "0",
+      "time": 1768041559,
+      "changes": [
+        {
+          "field": "messages",
+          "value": {
+            "sender": {
+              "id": "12334"
+            },
+            "recipient": {
+              "id": "23245"
+            },
+            "timestamp": "1527459824",
+            "message": {
+              "mid": "random_mid",
+              "text": "random_text"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "object": "instagram"
+}
+INFO 2026-01-10 11:39:21,941 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 11:39:28,527 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-10 11:39:28,561 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+WARNING 2026-01-10 11:39:28,993 log Not Found: /favicon.ico
+WARNING 2026-01-10 11:39:28,994 log "GET /favicon.ico HTTP/1.1" 404 3472
+WARNING 2026-01-10 11:39:30,843 log Not Found: /serviceworker.js
+WARNING 2026-01-10 11:39:30,844 log "GET /serviceworker.js HTTP/1.1" 404 3487
+INFO 2026-01-10 11:39:33,645 log "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+ERROR 2026-01-10 11:39:33,874 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\views.py", line 197, in dashboard
+    return render(request, "qa_system/dashboard.html", context)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\template\defaulttags.py", line 511, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\urls\resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+ERROR 2026-01-10 11:39:33,888 log "GET / HTTP/1.1" 500 124210
+WARNING 2026-01-10 11:39:35,719 log Not Found: /serviceworker.js
+WARNING 2026-01-10 11:39:35,719 log "GET /serviceworker.js HTTP/1.1" 404 3487
+INFO 2026-01-10 11:39:55,900 log "GET / HTTP/1.1" 200 817
+INFO 2026-01-10 11:39:57,540 log "GET / HTTP/1.1" 200 817
+WARNING 2026-01-10 11:39:57,613 log Not Found: /serviceworker.js
+WARNING 2026-01-10 11:39:57,614 log "GET /serviceworker.js HTTP/1.1" 404 3487
+INFO 2026-01-10 11:39:57,804 log "GET / HTTP/1.1" 200 817
+INFO 2026-01-10 11:39:58,072 log "GET / HTTP/1.1" 200 817
+INFO 2026-01-10 11:39:58,764 log "GET / HTTP/1.1" 200 817
+WARNING 2026-01-10 11:39:59,698 log Not Found: /favicon.ico
+WARNING 2026-01-10 11:39:59,698 log "GET /favicon.ico HTTP/1.1" 404 3472
+WARNING 2026-01-10 11:39:59,736 log Not Found: /serviceworker.js
+WARNING 2026-01-10 11:39:59,736 log "GET /serviceworker.js HTTP/1.1" 404 3487
+INFO 2026-01-10 11:40:17,823 log "GET / HTTP/1.1" 200 817
+INFO 2026-01-10 11:40:18,666 log "GET / HTTP/1.1" 200 817
+WARNING 2026-01-10 11:40:18,948 log Not Found: /favicon.ico
+WARNING 2026-01-10 11:40:18,949 log "GET /favicon.ico HTTP/1.1" 404 3472
+WARNING 2026-01-10 11:40:19,638 log Not Found: /serviceworker.js
+WARNING 2026-01-10 11:40:19,638 log "GET /serviceworker.js HTTP/1.1" 404 3487
+WARNING 2026-01-10 11:40:48,896 log Not Found: /serviceworker.js
+WARNING 2026-01-10 11:40:48,896 log "GET /serviceworker.js HTTP/1.1" 404 3487
+INFO 2026-01-10 12:01:23,006 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768042881538,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "timestamp": 1768042881471,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxNDYzNDUzMTU3NTE1OTMyNDk3ODQzODQwMDM3NjgzMgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:01:23,007 views Non-message event ignored
+INFO 2026-01-10 12:01:23,010 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:04:36,066 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-10 12:04:37,928 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:04:40,493 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-10 12:04:41,658 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:04:50,728 autoreload C:\Users\pc\Desktop\backend\system\api\urls.py changed, reloading.
+INFO 2026-01-10 12:04:51,950 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:04:55,636 autoreload C:\Users\pc\Desktop\backend\system\api\urls.py changed, reloading.
+INFO 2026-01-10 12:04:56,944 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:05:03,478 log "GET /privacy-policy/ HTTP/1.1" 200 602
+WARNING 2026-01-10 12:05:05,335 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:05:05,335 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:05:39,424 log "GET /privacy-policy/ HTTP/1.1" 200 602
+WARNING 2026-01-10 12:05:41,562 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:05:41,562 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 12:05:41,962 log Not Found: /favicon.ico
+WARNING 2026-01-10 12:05:41,963 log "GET /favicon.ico HTTP/1.1" 404 3733
+INFO 2026-01-10 12:05:44,889 log "GET /privacy-policy/ HTTP/1.1" 200 602
+INFO 2026-01-10 12:07:22,049 log "GET /privacy-policy HTTP/1.1" 301 0
+INFO 2026-01-10 12:07:22,552 log "GET /privacy-policy/ HTTP/1.1" 200 602
+INFO 2026-01-10 12:11:11,028 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768043469538,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768043469115,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY0NTM4NTk2NjIxMTcwNzE3NjU5NTA5MDMwOTEyMAZDZD",
+            "text": "Amine"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:11:11,028 views New message from 3108058329359177: Amine
+WARNING 2026-01-10 12:11:12,114 views Username fetch failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:11:10 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'A6HU4Hk9NCit6E3GXaRgUCY'}}
+INFO 2026-01-10 12:11:12,126 views Question 57888538-34f5-422a-8e1d-1a8fbceb1dd2 created
+ERROR 2026-01-10 12:11:12,981 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:11:11 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'Akf_xvMx7rOdoKwLvV82-Ud'}}
+INFO 2026-01-10 12:11:12,983 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:12:21,038 log "GET / HTTP/1.1" 200 1199
+WARNING 2026-01-10 12:12:22,810 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:12:22,811 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:12:23,355 log "GET / HTTP/1.1" 200 1199
+WARNING 2026-01-10 12:12:25,073 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:12:25,073 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:12:55,281 log "GET /answer/57888538-34f5-422a-8e1d-1a8fbceb1dd2/ HTTP/1.1" 200 1245
+WARNING 2026-01-10 12:12:56,998 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:12:56,999 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:13:17,359 log "GET /answer/57888538-34f5-422a-8e1d-1a8fbceb1dd2/ HTTP/1.1" 200 1245
+WARNING 2026-01-10 12:13:19,078 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:13:19,079 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:13:43,012 log "GET /answer/57888538-34f5-422a-8e1d-1a8fbceb1dd2/ HTTP/1.1" 200 1245
+WARNING 2026-01-10 12:13:44,777 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:13:44,778 log "GET /serviceworker.js HTTP/1.1" 404 3735
+ERROR 2026-01-10 12:13:51,809 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:13:50 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'ApHgZkKmDwcJHNDu-_G4XTP'}}
+INFO 2026-01-10 12:13:51,817 log "POST /answer/57888538-34f5-422a-8e1d-1a8fbceb1dd2/ HTTP/1.1" 302 0
+INFO 2026-01-10 12:13:51,835 log "GET / HTTP/1.1" 200 1261
+WARNING 2026-01-10 12:13:53,585 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:13:53,586 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 12:14:29,579 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:14:29,579 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 12:24:53,757 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:24:53,758 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:31:55,016 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-10 12:31:56,721 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:33:06,062 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768044784487,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768044784087,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY2OTY0MjkyNzE4MDI1OTAyNTE0NjY1NTgwMTM0NAZDZD",
+            "text": "Hello my names amine"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:33:06,063 views New message from 3108058329359177: Hello my names amine
+WARNING 2026-01-10 12:33:07,215 views Username fetch failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:33:05 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'Aff-4HWnor-usrIvj98k5cv'}}
+INFO 2026-01-10 12:33:07,233 views Question 8a2fcb10-5c1b-4925-9d87-00a0f576046e created
+ERROR 2026-01-10 12:33:08,298 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:33:06 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'AS6_1Bsez3u2NF9L1UOQYmu'}}
+INFO 2026-01-10 12:33:08,306 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:33:10,570 log "GET / HTTP/1.1" 200 1660
+WARNING 2026-01-10 12:33:12,578 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:33:12,579 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:33:12,858 log "GET /answer/8a2fcb10-5c1b-4925-9d87-00a0f576046e/ HTTP/1.1" 200 1260
+WARNING 2026-01-10 12:33:14,697 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:33:14,698 log "GET /serviceworker.js HTTP/1.1" 404 3735
+ERROR 2026-01-10 12:33:20,073 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:33:18 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'AkRyubmUCr9_XT4hP1nSalQ'}}
+INFO 2026-01-10 12:33:20,083 log "POST /answer/8a2fcb10-5c1b-4925-9d87-00a0f576046e/ HTTP/1.1" 302 0
+INFO 2026-01-10 12:33:20,110 log "GET / HTTP/1.1" 200 1727
+WARNING 2026-01-10 12:33:22,016 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:33:22,017 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:33:24,956 log "GET / HTTP/1.1" 200 1727
+WARNING 2026-01-10 12:33:27,021 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:33:27,023 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:33:27,372 log "GET / HTTP/1.1" 200 1727
+WARNING 2026-01-10 12:33:29,290 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:33:29,292 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 12:34:05,575 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:34:05,576 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:34:57,556 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768044896125,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768044895753,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY3MTcwMjc5MDIzNTk0NzQzMTcxMTY3NzA4Nzc0NAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:34:57,557 views New message from 3108058329359177: Hello
+WARNING 2026-01-10 12:34:58,714 views Username fetch failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:34:57 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'AH1EFUnF3YAMHyDuJh8c9fL'}}
+INFO 2026-01-10 12:34:58,726 views Question 57fa6ff7-39dd-43d5-88b3-508fa21dc2b0 created
+ERROR 2026-01-10 12:34:59,736 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:34:58 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'A7KckyFkmK6mpoBS4UKvUyz'}}
+INFO 2026-01-10 12:34:59,739 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:36:42,525 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768045001034,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768045000659,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY3MzYzNzk2MzQ0NzQwNjgwMjI0ODAyNzYwMjk0NAZDZD",
+            "text": "Hello dcotor i have a question"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:36:42,525 views New message from 3108058329359177: Hello dcotor i have a question
+WARNING 2026-01-10 12:36:43,508 views Username fetch failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:36:42 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'AnZQKnWomn0xwk6UOyoqb36'}}
+INFO 2026-01-10 12:36:43,520 views Question b5860647-b2ba-4736-97bb-00bcaf3880ad created
+ERROR 2026-01-10 12:36:44,393 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:36:43 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'A_-q8EYm82XPlR7VZfZfzfU'}}
+INFO 2026-01-10 12:36:44,395 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:37:41,693 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-10 12:37:43,274 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:37:48,774 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768045067261,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768045066827,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY3NDg1ODU0NTM5NTY2NjcyNzAxNDIwODg5NzAyNAZDZD",
+            "text": "Hello amine"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:37:48,775 views New message from 3108058329359177: Hello amine
+WARNING 2026-01-10 12:37:49,870 views Username fetch failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:37:48 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'AjPITDjkTa_fsk2_7DE7dDn'}}
+INFO 2026-01-10 12:37:49,894 views Question 19faad29-7923-42c9-8c12-b4da7abf9bde created
+ERROR 2026-01-10 12:37:51,044 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:37:49 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'A2U6XQaSzqSaYfXTxlgJnRa'}}
+INFO 2026-01-10 12:37:51,052 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:38:56,926 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768045135498,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768045135206,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY3NjExOTkyOTA1MTUwNzI0NzM1Nzc3NTMxNDk0NAZDZD",
+            "text": "Heldlsos"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:38:56,926 views New message from 3108058329359177: Heldlsos
+WARNING 2026-01-10 12:38:57,926 views Username fetch failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:38:56 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'AtuH7DShv919J0FfeNTmwll'}}
+INFO 2026-01-10 12:38:57,940 views Question dedbd83e-821e-40b0-a671-ff57e9f43d3a created
+ERROR 2026-01-10 12:38:58,762 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:38:57 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'AhizYaz1JBXfK59GkZxayeP'}}
+INFO 2026-01-10 12:38:58,764 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:39:40,003 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768045178593,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768045178279,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY3NjkxNDQ3NDQ2MTgyMDQ4NjEzMjgzMzQ1MjAzMgZDZD",
+            "text": "Hello ajaja"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:39:40,003 views New message from 3108058329359177: Hello ajaja
+WARNING 2026-01-10 12:39:41,322 views Username fetch failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:39:39 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'Ab84VL42ycKHzXTLFMtdPHg'}}
+INFO 2026-01-10 12:39:41,334 views Question 4b25bffc-fcc3-430a-9854-8b8e107e53cc created
+ERROR 2026-01-10 12:39:42,314 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:39:41 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'ADMhiz1tFbE9qqf-fZepakk'}}
+INFO 2026-01-10 12:39:42,317 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:39:48,838 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-10 12:39:49,949 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:39:51,755 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768045190227,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768045189945,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY3NzEyOTY3MzQwMzQyMTEzMDY2NjE4NDU0MDE2MAZDZD",
+            "text": "Hellooos"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:39:51,755 views New message from 3108058329359177: Hellooos
+WARNING 2026-01-10 12:39:52,852 views Username fetch failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:39:51 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'A_rbccBzQ5SqUl0G0c80pwc'}}
+INFO 2026-01-10 12:39:52,870 views Question 5e573097-e9b0-422c-8be0-a43c82fdb265 created
+ERROR 2026-01-10 12:39:53,775 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:39:52 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'A1ASTficPx0pbpR_xrOwO--'}}
+INFO 2026-01-10 12:39:53,779 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:41:02,347 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-10 12:41:04,236 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:41:11,274 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768045269836,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768045269523,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY3ODU5NzY0MDA5ODU1NDUzMjA5NjUzODMxMjcwNAZDZD",
+            "text": "Hello \ud83d\udc4b there"
+          }
+        }
+      ]
+    }
+  ]
+}
+WARNING 2026-01-10 12:41:12,900 views Username fetch failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:41:11 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'A7HIkuxm6g_IuqiGbtxS9-Y'}}
+INFO 2026-01-10 12:41:12,912 views Question cc63da36-5141-4336-aeb4-ad01227fd50a created
+ERROR 2026-01-10 12:41:13,829 views Send message failed: {'error': {'message': 'Error validating access token: Session has expired on Friday, 09-Jan-26 15:00:00 PST. The current time is Saturday, 10-Jan-26 03:41:12 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'ApV-z7tD2anjyJWXAapS8Kj'}}
+INFO 2026-01-10 12:41:13,836 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:41:22,729 log "GET / HTTP/1.1" 200 4520
+WARNING 2026-01-10 12:41:24,973 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:41:24,975 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 12:42:00,806 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:42:00,807 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:42:22,157 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-10 12:42:23,767 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:46:04,265 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:46:56,814 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768045615305,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768045614904,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY4NDk2ODc4ODM3MjY0ODU0NDIwNzc4NTQyNjk0NAZDZD",
+            "text": "Hello focotrs"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:46:56,815 views Message from 3108058329359177: Hello focotrs
+INFO 2026-01-10 12:47:00,248 views Question 67b7edf5-a39d-48a3-b840-79384507a9df created
+ERROR 2026-01-10 12:47:02,458 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AtFZmMKCQ81DAW_r3HBeS38'}}
+INFO 2026-01-10 12:47:02,479 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:50:28,979 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768045827445,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768045827032,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY4ODg4MTg1MzkxMzA2NzEzNDQ0OTc5NTIwMzA3MgZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:50:28,980 views Message from 3108058329359177: Hello
+INFO 2026-01-10 12:50:31,419 views Question 2d13107f-45c1-4806-9ff4-b35a418aebb1 created
+ERROR 2026-01-10 12:50:33,413 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'Acd9wdFET5uXQmNRQ5upbu2'}}
+INFO 2026-01-10 12:50:33,430 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 12:53:42,427 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:53:48,747 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768046027256,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768046026756,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY5MjU2NjExNzk5MzQ4NTU5MTE3NzM0OTU2MjM2OAZDZD",
+            "text": "Hello i am amine"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:53:48,748 views Message from 3108058329359177: Hello i am amine
+INFO 2026-01-10 12:53:50,682 views Question 412a8dd4-0d1d-40e6-8825-7251ea33b549 created
+ERROR 2026-01-10 12:53:52,060 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'ACUSfbz-WaHQ98yNxRpSCUI'}}
+INFO 2026-01-10 12:53:52,070 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-10 12:53:59,986 log Not Found: /serviceworker.js
+WARNING 2026-01-10 12:53:59,988 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 12:57:45,696 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 12:57:55,649 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768046273895,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768046273521,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDY5NzExODEyOTU1MTE1MTAzNTcwMzk2MzQxODYyNAZDZD",
+            "text": "Hello doctor i am amine"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 12:57:55,650 views Message from 3108058329359177: Hello doctor i am amine
+INFO 2026-01-10 12:57:58,564 views Question 3142a6ea-05cc-4620-9a6c-c94514bdb576 created
+ERROR 2026-01-10 12:58:01,809 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AsCGBFcYVMIEHuf8-KpYGw7'}}
+INFO 2026-01-10 12:58:01,831 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 13:01:02,899 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 13:01:05,586 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768046464046,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768046463697,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDcwMDYyNjI2MzM2MjgzNzIwNjYxMDU5NjU5MzY2NAZDZD",
+            "text": "Hello I am amine"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 13:01:05,587 views Message from 3108058329359177: Hello I am amine
+INFO 2026-01-10 13:01:07,123 views Question 9c388fec-f4ae-44b2-a039-59ec1f478418 created
+ERROR 2026-01-10 13:01:08,753 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AN_BMNteOzfwpzYtdMWRWEZ'}}
+INFO 2026-01-10 13:01:08,769 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 13:01:35,568 log "GET / HTTP/1.1" 200 6501
+INFO 2026-01-10 13:01:37,205 log "GET /answer/9c388fec-f4ae-44b2-a039-59ec1f478418/ HTTP/1.1" 200 1247
+WARNING 2026-01-10 13:01:37,730 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:01:37,732 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 13:01:39,021 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:01:39,022 log "GET /serviceworker.js HTTP/1.1" 404 3735
+ERROR 2026-01-10 13:01:43,562 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'A3VdUkkQQv_PdjOemuUSlTH'}}
+INFO 2026-01-10 13:01:43,608 log "POST /answer/9c388fec-f4ae-44b2-a039-59ec1f478418/ HTTP/1.1" 302 0
+INFO 2026-01-10 13:01:43,683 log "GET / HTTP/1.1" 200 6558
+WARNING 2026-01-10 13:01:45,564 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:01:45,565 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:01:45,975 log "GET / HTTP/1.1" 200 6558
+WARNING 2026-01-10 13:01:47,840 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:01:47,843 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 13:02:23,803 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:02:23,805 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:03:51,170 log "GET /answer/2d13107f-45c1-4806-9ff4-b35a418aebb1/ HTTP/1.1" 200 1236
+WARNING 2026-01-10 13:03:53,233 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:03:53,235 log "GET /serviceworker.js HTTP/1.1" 404 3735
+ERROR 2026-01-10 13:03:56,611 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'A8itoR0z06itgm3ofx4hTAd'}}
+INFO 2026-01-10 13:03:56,645 log "POST /answer/2d13107f-45c1-4806-9ff4-b35a418aebb1/ HTTP/1.1" 302 0
+INFO 2026-01-10 13:03:56,691 log "GET / HTTP/1.1" 200 6609
+WARNING 2026-01-10 13:03:58,608 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:03:58,610 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:04:22,014 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 13:04:28,253 log "GET /answer/3142a6ea-05cc-4620-9a6c-c94514bdb576/ HTTP/1.1" 200 1254
+WARNING 2026-01-10 13:04:30,154 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:04:30,156 log "GET /serviceworker.js HTTP/1.1" 404 3735
+ERROR 2026-01-10 13:04:32,647 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AR9mNbNURL7ZWDf_ZMlH36h'}}
+INFO 2026-01-10 13:04:32,705 log "POST /answer/3142a6ea-05cc-4620-9a6c-c94514bdb576/ HTTP/1.1" 302 0
+INFO 2026-01-10 13:04:32,783 log "GET / HTTP/1.1" 200 6659
+WARNING 2026-01-10 13:04:34,821 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:04:34,822 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 13:05:10,926 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:05:10,928 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:06:59,413 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 13:07:03,679 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768046822174,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768046821824,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDcwNzIzMjUyNzkxNTQ4OTg3MzAwNTk3NTE3NTE2OAZDZD",
+            "text": "Amine"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 13:07:03,680 views Message from 3108058329359177: Amine
+INFO 2026-01-10 13:07:05,616 views Question 1b3dacc7-54de-4f7c-a889-df8e685b843c created
+ERROR 2026-01-10 13:07:06,909 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AVioybimB1yI8dNTGMd5BPj'}}
+INFO 2026-01-10 13:07:06,914 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 13:12:08,788 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-10 13:12:12,248 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 13:13:06,705 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-10 13:13:10,607 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 13:13:13,671 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768047192145,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768047191829,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDcxNDA1NzkyMjU1ODQ3OTI0NDAyOTgzMDYyNzMyOAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 13:13:13,673 views Message from 3108058329359177: Hello
+INFO 2026-01-10 13:13:15,618 views Question 8c9be98c-2253-42da-b6ae-6c993931a48d created
+INFO 2026-01-10 13:13:15,619 views DEBUG: Attempting to send message
+INFO 2026-01-10 13:13:15,619 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 13:13:15,619 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 13:13:15,620 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 13:13:17,393 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'ACxabDYgysvm2U-zrw2x3sA'}}
+INFO 2026-01-10 13:13:17,409 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-10 13:17:40,125 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:17:40,127 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:18:22,669 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-10 13:18:23,042 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+INFO 2026-01-10 13:18:27,803 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+INFO 2026-01-10 13:18:37,495 log "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2026-01-10 13:18:37,961 log "GET / HTTP/1.1" 200 7440
+INFO 2026-01-10 13:18:44,406 log "GET /answer/8c9be98c-2253-42da-b6ae-6c993931a48d/ HTTP/1.1" 200 1236
+INFO 2026-01-10 13:18:48,281 log "GET /answer/8c9be98c-2253-42da-b6ae-6c993931a48d/ HTTP/1.1" 200 1236
+INFO 2026-01-10 13:18:52,548 views DEBUG: Attempting to send message
+INFO 2026-01-10 13:18:52,549 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 13:18:52,550 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 13:18:52,550 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 13:18:54,653 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AHJlJtAS3Tj5YzcP_AfOIES'}}
+INFO 2026-01-10 13:18:54,689 log "POST /answer/8c9be98c-2253-42da-b6ae-6c993931a48d/ HTTP/1.1" 302 0
+INFO 2026-01-10 13:18:55,167 log "GET / HTTP/1.1" 200 7491
+INFO 2026-01-10 13:22:03,749 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768047722107,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "25768406109462178"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768047721638,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxNDcyMzgzMTE2NjUwNTg3NzUwMzU1NzQ4NDE1MDc4NAZDZD",
+            "text": "Hello i  aam amine"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 13:22:03,750 views Message from 25768406109462178: Hello i  aam amine
+INFO 2026-01-10 13:22:03,936 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768047722537,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "25768406109462178"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768047722521,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxNDcyMzgzMTE2NjUwNTg3NzUwMzU1NzQ4NDE1MDc4NAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 13:22:03,937 views Non-message event ignored
+INFO 2026-01-10 13:22:03,938 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-10 13:22:06,084 views Username fetch failed: {'error': {'message': '(#200) App does not have Advanced Access to instagram_manage_messages permission, and recipient user does not have role on app.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ANfUaXzQMZwO8LunPgGj9WO'}}
+INFO 2026-01-10 13:22:06,123 views Question f5d42987-2d12-4a1f-bbc0-f2fca9b31ca8 created
+INFO 2026-01-10 13:22:06,124 views DEBUG: Attempting to send message
+INFO 2026-01-10 13:22:06,124 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 13:22:06,125 views DEBUG: Recipient: 25768406109462178
+INFO 2026-01-10 13:22:06,125 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 13:22:08,024 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AMmuStjB_CZermpVlk_bsE2'}}
+INFO 2026-01-10 13:22:08,029 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 13:22:13,804 log "GET / HTTP/1.1" 200 7897
+INFO 2026-01-10 13:22:17,872 log "GET / HTTP/1.1" 200 7897
+INFO 2026-01-10 13:22:19,166 log "GET /answer/f5d42987-2d12-4a1f-bbc0-f2fca9b31ca8/ HTTP/1.1" 200 1259
+INFO 2026-01-10 13:22:23,919 log "GET /answer/f5d42987-2d12-4a1f-bbc0-f2fca9b31ca8/ HTTP/1.1" 200 1259
+INFO 2026-01-10 13:22:29,514 views DEBUG: Attempting to send message
+INFO 2026-01-10 13:22:29,515 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 13:22:29,516 views DEBUG: Recipient: 25768406109462178
+INFO 2026-01-10 13:22:29,516 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 13:22:31,505 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AdsemspfIuuw6hXYiKjMLg5'}}
+INFO 2026-01-10 13:22:31,536 log "POST /answer/f5d42987-2d12-4a1f-bbc0-f2fca9b31ca8/ HTTP/1.1" 302 0
+INFO 2026-01-10 13:22:31,915 log "GET / HTTP/1.1" 200 7954
+INFO 2026-01-10 13:30:11,594 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768048210066,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768048209721,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNDczMjgzNDcxNzcxNDA2MzczNDY4Mjg0NzAxOTAwOAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 13:30:11,595 views Message from 3108058329359177: Hello
+INFO 2026-01-10 13:30:13,231 views Question 74b3ae7e-bd09-4dc3-8271-02483d6b4022 created
+INFO 2026-01-10 13:30:13,232 views DEBUG: Attempting to send message
+INFO 2026-01-10 13:30:13,233 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 13:30:13,233 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 13:30:13,234 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 13:30:14,372 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AlOV_PomxgAOu5WkwsldHOL'}}
+INFO 2026-01-10 13:30:14,375 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-10 13:35:55,679 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:35:55,680 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:38:15,275 log "GET / HTTP/1.1" 200 8360
+WARNING 2026-01-10 13:38:17,725 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:38:17,728 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:38:17,746 log "GET / HTTP/1.1" 200 8360
+INFO 2026-01-10 13:38:18,444 log "GET /answer/74b3ae7e-bd09-4dc3-8271-02483d6b4022/ HTTP/1.1" 200 1236
+WARNING 2026-01-10 13:38:20,318 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:38:20,319 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:38:22,998 views DEBUG: Attempting to send message
+INFO 2026-01-10 13:38:22,999 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 13:38:23,000 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 13:38:23,001 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 13:38:24,934 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AQE7-IfISVRMg3GUjVSg1Ig'}}
+INFO 2026-01-10 13:38:24,964 log "POST /answer/74b3ae7e-bd09-4dc3-8271-02483d6b4022/ HTTP/1.1" 302 0
+INFO 2026-01-10 13:38:25,012 log "GET / HTTP/1.1" 200 8417
+WARNING 2026-01-10 13:38:26,920 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:38:26,922 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:38:27,273 log "GET /answer/cc63da36-5141-4336-aeb4-ad01227fd50a/ HTTP/1.1" 200 1256
+WARNING 2026-01-10 13:38:29,141 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:38:29,142 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:38:32,253 views DEBUG: Attempting to send message
+INFO 2026-01-10 13:38:32,254 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 13:38:32,254 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 13:38:32,255 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 13:38:34,244 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AadyLRifs2dg0dsRLyz5NxR'}}
+INFO 2026-01-10 13:38:34,278 log "POST /answer/cc63da36-5141-4336-aeb4-ad01227fd50a/ HTTP/1.1" 302 0
+INFO 2026-01-10 13:38:34,347 log "GET / HTTP/1.1" 200 8472
+WARNING 2026-01-10 13:38:36,207 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:38:36,208 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:39:06,661 log "GET / HTTP/1.1" 200 8480
+INFO 2026-01-10 13:39:07,868 log "GET / HTTP/1.1" 200 8480
+INFO 2026-01-10 13:39:08,611 log "GET / HTTP/1.1" 200 8480
+INFO 2026-01-10 13:39:09,019 log "GET /answer/1b3dacc7-54de-4f7c-a889-df8e685b843c/ HTTP/1.1" 200 1236
+WARNING 2026-01-10 13:39:12,192 log Not Found: /serviceworker.js
+WARNING 2026-01-10 13:39:12,193 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 13:39:15,323 log "GET /answer/1b3dacc7-54de-4f7c-a889-df8e685b843c/ HTTP/1.1" 200 1236
+INFO 2026-01-10 13:39:18,793 views DEBUG: Attempting to send message
+INFO 2026-01-10 13:39:18,794 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 13:39:18,795 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 13:39:18,796 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 13:39:21,145 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'ArislgGADwpCX5rSl_DsW9Q'}}
+INFO 2026-01-10 13:39:21,175 log "POST /answer/1b3dacc7-54de-4f7c-a889-df8e685b843c/ HTTP/1.1" 302 0
+INFO 2026-01-10 13:39:21,535 log "GET / HTTP/1.1" 200 8531
+INFO 2026-01-10 13:39:24,030 log "GET /answer/5e573097-e9b0-422c-8be0-a43c82fdb265/ HTTP/1.1" 200 1248
+INFO 2026-01-10 13:39:30,173 log "GET /answer/5e573097-e9b0-422c-8be0-a43c82fdb265/ HTTP/1.1" 200 1248
+INFO 2026-01-10 13:39:33,272 views DEBUG: Attempting to send message
+INFO 2026-01-10 13:39:33,273 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 13:39:33,274 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 13:39:33,275 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 13:39:35,228 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AqcO6KSLLmvoPx6iNmkiLrb'}}
+INFO 2026-01-10 13:39:35,261 log "POST /answer/5e573097-e9b0-422c-8be0-a43c82fdb265/ HTTP/1.1" 302 0
+INFO 2026-01-10 13:39:35,627 log "GET / HTTP/1.1" 200 8126
+INFO 2026-01-10 20:43:45,562 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 20:44:00,840 log "GET / HTTP/1.1" 200 8266
+WARNING 2026-01-10 20:44:01,620 log Not Found: /favicon.ico
+WARNING 2026-01-10 20:44:01,622 log "GET /favicon.ico HTTP/1.1" 404 3720
+WARNING 2026-01-10 20:44:03,322 log Not Found: /serviceworker.js
+WARNING 2026-01-10 20:44:03,324 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 20:44:33,971 log Not Found: /serviceworker.js
+WARNING 2026-01-10 20:44:33,974 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 20:44:34,017 log Not Found: /serviceworker.js
+WARNING 2026-01-10 20:44:34,019 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 20:44:51,008 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-10 20:50:08,166 log Not Found: /serviceworker.js
+WARNING 2026-01-10 20:50:08,167 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 20:50:08,191 log Not Found: /serviceworker.js
+WARNING 2026-01-10 20:50:08,193 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 20:53:08,178 log Not Found: /serviceworker.js
+WARNING 2026-01-10 20:53:08,180 log "GET /serviceworker.js HTTP/1.1" 404 3735
+WARNING 2026-01-10 20:53:08,208 log Not Found: /serviceworker.js
+WARNING 2026-01-10 20:53:08,209 log "GET /serviceworker.js HTTP/1.1" 404 3735
+INFO 2026-01-10 20:53:13,099 autoreload C:\Users\pc\Desktop\backend\system\api\urls.py changed, reloading.
+INFO 2026-01-10 20:53:15,017 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 20:54:26,260 log "GET /api/questions HTTP/1.1" 301 0
+INFO 2026-01-10 20:54:26,289 log "GET /api/questions/ HTTP/1.1" 200 5095
+WARNING 2026-01-10 20:54:28,520 log Not Found: /serviceworker.js
+WARNING 2026-01-10 20:54:28,521 log "GET /serviceworker.js HTTP/1.1" 404 4617
+WARNING 2026-01-10 20:55:04,094 log Not Found: /serviceworker.js
+WARNING 2026-01-10 20:55:04,095 log "GET /serviceworker.js HTTP/1.1" 404 4617
+INFO 2026-01-10 20:57:56,749 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-10 20:57:58,578 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 20:58:06,165 autoreload C:\Users\pc\Desktop\backend\system\api\urls.py changed, reloading.
+INFO 2026-01-10 20:58:08,090 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 21:09:06,789 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-10 21:09:08,764 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 21:10:25,635 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 21:10:35,387 log "GET / HTTP/1.1" 200 8272
+WARNING 2026-01-10 21:10:37,601 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:10:37,602 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-10 21:11:00,078 log "GET /swagger HTTP/1.1" 301 0
+INFO 2026-01-10 21:11:00,113 log "GET /swagger/ HTTP/1.1" 200 2453
+INFO 2026-01-10 21:11:01,144 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-01-10 21:11:01,156 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-01-10 21:11:01,158 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-01-10 21:11:01,185 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-01-10 21:11:01,189 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-01-10 21:11:01,192 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-01-10 21:11:01,226 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-01-10 21:11:01,473 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2026-01-10 21:11:01,558 log "GET /swagger/?format=openapi HTTP/1.1" 200 2707
+WARNING 2026-01-10 21:11:03,451 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:11:03,453 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-10 21:11:40,012 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:11:40,013 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-10 21:31:46,033 log Unauthorized: /api/auth/login/
+INFO 2026-01-10 21:31:59,239 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "changes": [
+        {
+          "field": "messages",
+          "value": {
+            "from": "999",
+            "message": "Webhook works!"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 21:31:59,398 views Instagram webhook verified
+WARNING 2026-01-10 21:32:13,123 log Unauthorized: /api/auth/login/
+INFO 2026-01-10 21:32:20,634 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "changes": [
+        {
+          "field": "messages",
+          "value": {
+            "from": "999",
+            "message": "Webhook works!"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 21:32:20,709 views Instagram webhook verified
+INFO 2026-01-10 21:37:17,993 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 21:37:21,758 log "GET / HTTP/1.1" 200 8260
+WARNING 2026-01-10 21:37:24,242 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:37:24,245 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-10 21:37:28,551 log "GET / HTTP/1.1" 200 8260
+INFO 2026-01-10 21:37:29,803 log "GET / HTTP/1.1" 200 8260
+WARNING 2026-01-10 21:37:30,339 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:37:30,341 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-10 21:37:31,495 log "GET / HTTP/1.1" 200 8260
+WARNING 2026-01-10 21:37:31,707 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:37:31,708 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-10 21:37:32,806 log Not Found: /favicon.ico
+WARNING 2026-01-10 21:37:32,807 log "GET /favicon.ico HTTP/1.1" 404 5928
+INFO 2026-01-10 21:37:37,257 log "GET / HTTP/1.1" 200 8260
+INFO 2026-01-10 21:37:38,134 log "GET / HTTP/1.1" 200 8260
+INFO 2026-01-10 21:37:38,764 log "GET / HTTP/1.1" 200 8260
+WARNING 2026-01-10 21:37:39,113 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:37:39,117 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-10 21:37:39,796 log "GET / HTTP/1.1" 200 8260
+INFO 2026-01-10 21:37:40,507 log "GET / HTTP/1.1" 200 8260
+WARNING 2026-01-10 21:37:40,587 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:37:40,588 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-10 21:37:40,785 log "GET / HTTP/1.1" 200 8260
+INFO 2026-01-10 21:37:41,073 log "GET / HTTP/1.1" 200 8260
+INFO 2026-01-10 21:37:41,805 log "GET / HTTP/1.1" 200 8260
+WARNING 2026-01-10 21:37:42,144 log Not Found: /favicon.ico
+WARNING 2026-01-10 21:37:42,145 log "GET /favicon.ico HTTP/1.1" 404 5928
+WARNING 2026-01-10 21:37:42,885 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:37:42,887 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-10 21:37:55,967 log "GET / HTTP/1.1" 200 8258
+WARNING 2026-01-10 21:37:56,174 log Not Found: /favicon.ico
+WARNING 2026-01-10 21:37:56,176 log "GET /favicon.ico HTTP/1.1" 404 5928
+WARNING 2026-01-10 21:38:12,142 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:38:12,143 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-10 21:39:03,112 log "GET / HTTP/1.1" 200 8231
+INFO 2026-01-10 21:39:04,341 log "GET / HTTP/1.1" 200 8231
+INFO 2026-01-10 21:39:04,752 log "GET / HTTP/1.1" 200 8231
+INFO 2026-01-10 21:39:05,012 log "GET / HTTP/1.1" 200 8231
+WARNING 2026-01-10 21:39:05,157 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:39:05,158 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-10 21:39:05,842 log "GET / HTTP/1.1" 200 8231
+WARNING 2026-01-10 21:39:06,160 log Not Found: /favicon.ico
+WARNING 2026-01-10 21:39:06,162 log "GET /favicon.ico HTTP/1.1" 404 5928
+WARNING 2026-01-10 21:39:06,877 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:39:06,878 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-10 21:39:36,117 log Not Found: /serviceworker.js
+WARNING 2026-01-10 21:39:36,118 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-10 22:48:41,334 log Unauthorized: /api/auth/login/
+INFO 2026-01-10 22:48:57,403 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "changes": [
+        {
+          "field": "messages",
+          "value": {
+            "sender": {
+              "id": "999"
+            },
+            "message": {
+              "text": "Webhook works!"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:48:57,440 views Instagram webhook verified
+INFO 2026-01-10 22:49:36,511 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-10 22:49:38,545 autoreload Watching for file changes with StatReloader
+INFO 2026-01-10 22:50:56,942 views Instagram webhook verified
+INFO 2026-01-10 22:50:56,948 log "GET /webhook/?hub.mode=subscribe&hub.challenge=684878049&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 200 9
+WARNING 2026-01-10 22:50:59,396 log Unauthorized: /api/auth/login/
+INFO 2026-01-10 22:51:12,776 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "changes": [
+        {
+          "field": "messages",
+          "value": {
+            "sender": {
+              "id": "999"
+            },
+            "message": {
+              "text": "Webhook works!"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:12,789 views Instagram webhook verified
+INFO 2026-01-10 22:51:15,921 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081873888,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768081873596,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNTM1MzgyMzU5OTQ4MDAyNTY4NzA1Njg4Nzg0MDc2OAZDZD",
+            "text": "Hello world"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:15,922 views Message from 3108058329359177: Hello world
+INFO 2026-01-10 22:51:17,270 views Question 119a5844-51cb-47af-8770-635dd586b11f created
+INFO 2026-01-10 22:51:17,271 views DEBUG: Attempting to send message
+INFO 2026-01-10 22:51:17,272 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 22:51:17,272 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 22:51:17,273 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 22:51:18,336 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'As4zWAJFHM3S7zAr7qY1wNu'}}
+INFO 2026-01-10 22:51:18,340 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 22:51:30,133 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081887969,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768080872133,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNTMzNTM0OTg3MTUwOTA4NTExMzEwODc4Mzk1NTk2OAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:30,134 views Message from 3108058329359177: Hello
+INFO 2026-01-10 22:51:32,130 views Question 3c1be357-40a7-4fcb-a050-96995bc47988 created
+INFO 2026-01-10 22:51:32,131 views DEBUG: Attempting to send message
+INFO 2026-01-10 22:51:32,132 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 22:51:32,132 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 22:51:32,133 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 22:51:33,666 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'A6KWurHluiNzEcC02gXOcZN'}}
+INFO 2026-01-10 22:51:33,670 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 22:51:33,780 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081891728,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "25768406109462178"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768081891708,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxNTI3MzEzNzYxODI2NzI2NDc1MzQyNjM2MzMxODI3MgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:33,781 views Non-message event ignored
+INFO 2026-01-10 22:51:33,783 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 22:51:34,313 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081892194,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "25768406109462178"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768077522528,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxNTI3MzU2MDU1ODAyMTE1NjU3NzI3OTA4OTgzNjAzMgZDZD",
+            "text": "Barca"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:34,314 views Message from 25768406109462178: Barca
+INFO 2026-01-10 22:51:34,353 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081892144,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768080875917,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNTMzNTQxOTY3NTkwNzEyMTQxMzcxNzg5MjI2ODAzMgZDZD",
+            "text": "Again"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:34,354 views Message from 3108058329359177: Again
+WARNING 2026-01-10 22:51:36,288 views Username fetch failed: {'error': {'message': '(#200) App does not have Advanced Access to instagram_manage_messages permission, and recipient user does not have role on app.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AH8yE_CKQM6MWNh6-8cDyNN'}}
+INFO 2026-01-10 22:51:36,321 views Question 953fdaf0-3146-4963-aa60-e3e226f3db8a created
+INFO 2026-01-10 22:51:36,322 views DEBUG: Attempting to send message
+INFO 2026-01-10 22:51:36,322 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 22:51:36,323 views DEBUG: Recipient: 25768406109462178
+INFO 2026-01-10 22:51:36,324 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+INFO 2026-01-10 22:51:36,337 views Question 3187c946-84f7-4977-970e-26637055834d created
+INFO 2026-01-10 22:51:36,337 views DEBUG: Attempting to send message
+INFO 2026-01-10 22:51:36,338 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 22:51:36,338 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 22:51:36,339 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 22:51:38,052 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'ARVwds3Jeb981R_RZ3iagB5'}}
+INFO 2026-01-10 22:51:38,057 log "POST /webhook/ HTTP/1.1" 200 16
+ERROR 2026-01-10 22:51:38,065 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AtcQQzPZQrdGcoBulQfjfaY'}}
+INFO 2026-01-10 22:51:38,071 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 22:51:38,567 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081896538,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "25768406109462178"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768081896525,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxNTI3MzU2MDU1ODAyMTE1NjU3NzI3OTA4OTgzNjAzMgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:38,568 views Non-message event ignored
+INFO 2026-01-10 22:51:38,569 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 22:51:38,669 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081896553,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768081813771,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNTM1MjcyMDAyMzk3NTA0NjcwNDk2NDM1NzMyNDgwMAZDZD",
+            "text": "Hh"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:38,669 views Message from 3108058329359177: Hh
+INFO 2026-01-10 22:51:39,105 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081897081,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "25768406109462178"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768077534605,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxNTI3Mzc4MzM0NzAwNDczMzU1ODEyMzQyMDE4ODY3MgZDZD",
+            "text": "Barca"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:39,105 views Message from 25768406109462178: Barca
+INFO 2026-01-10 22:51:40,202 views Question d8783401-5360-4d69-aa82-e23583dbbc6c created
+INFO 2026-01-10 22:51:40,203 views DEBUG: Attempting to send message
+INFO 2026-01-10 22:51:40,203 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 22:51:40,204 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-10 22:51:40,204 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+WARNING 2026-01-10 22:51:40,864 views Username fetch failed: {'error': {'message': '(#200) App does not have Advanced Access to instagram_manage_messages permission, and recipient user does not have role on app.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ALzTBcnxvbtNffsLEp5Tb6g'}}
+INFO 2026-01-10 22:51:40,898 views Question 6328baed-d946-410c-8312-43b9b7df054c created
+INFO 2026-01-10 22:51:40,898 views DEBUG: Attempting to send message
+INFO 2026-01-10 22:51:40,899 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 22:51:40,899 views DEBUG: Recipient: 25768406109462178
+INFO 2026-01-10 22:51:40,900 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 22:51:41,961 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AbcgloMZ4o3GVB7fzd8N_ki'}}
+INFO 2026-01-10 22:51:41,965 log "POST /webhook/ HTTP/1.1" 200 16
+ERROR 2026-01-10 22:51:42,503 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'Alclia2rvDJoW-SBhhi5TRZ'}}
+INFO 2026-01-10 22:51:42,511 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 22:51:43,000 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081900977,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "25768406109462178"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768081900950,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxNTI3Mzc4MzM0NzAwNDczMzU1ODEyMzQyMDE4ODY3MgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:43,001 views Non-message event ignored
+INFO 2026-01-10 22:51:43,002 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 22:51:43,528 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081901483,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "25768406109462178"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768081632671,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxNTM0OTM3OTMyMDEzNTkzMDkxOTIxMDg4Mjk1NzMxMgZDZD",
+            "text": "Again"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:43,529 views Message from 25768406109462178: Again
+WARNING 2026-01-10 22:51:45,267 views Username fetch failed: {'error': {'message': '(#200) App does not have Advanced Access to instagram_manage_messages permission, and recipient user does not have role on app.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AKuh-Ym-MbYzy7Xfq5wP9k_'}}
+INFO 2026-01-10 22:51:45,289 views Question 1e6faddf-d6fb-45d7-bf65-6d5e3913dfc7 created
+INFO 2026-01-10 22:51:45,290 views DEBUG: Attempting to send message
+INFO 2026-01-10 22:51:45,291 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-10 22:51:45,291 views DEBUG: Recipient: 25768406109462178
+INFO 2026-01-10 22:51:45,292 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-10 22:51:46,854 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'Af-kaBMmvZG0G7oQWVy6Qmm'}}
+INFO 2026-01-10 22:51:46,857 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-10 22:51:47,327 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768081905305,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "25768406109462178"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768081905291,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjA0NzE4OTAwODU3NDUxNzozMjYxNTM0OTM3OTMyMDEzNTkzMDkxOTIxMDg4Mjk1NzMxMgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-10 22:51:47,329 views Non-message event ignored
+INFO 2026-01-10 22:51:47,332 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-10 23:00:27,231 log Not Found: /serviceworker.js
+WARNING 2026-01-10 23:00:27,232 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-10 23:11:24,035 log Not Found: /serviceworker.js
+WARNING 2026-01-10 23:11:24,036 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-10 23:11:24,046 log Not Found: /serviceworker.js
+WARNING 2026-01-10 23:11:24,047 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 14:57:14,338 autoreload Watching for file changes with StatReloader
+INFO 2026-01-11 14:58:12,503 log "GET / HTTP/1.1" 200 10980
+WARNING 2026-01-11 14:58:13,366 log Not Found: /favicon.ico
+WARNING 2026-01-11 14:58:13,369 log "GET /favicon.ico HTTP/1.1" 404 5928
+WARNING 2026-01-11 14:58:14,915 log Not Found: /serviceworker.js
+WARNING 2026-01-11 14:58:14,916 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 14:58:51,136 log Not Found: /serviceworker.js
+WARNING 2026-01-11 14:58:51,138 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 14:58:59,435 log Not Found: /questions
+WARNING 2026-01-11 14:58:59,436 log "GET /questions HTTP/1.1" 404 5922
+WARNING 2026-01-11 14:59:01,144 log Not Found: /questions
+WARNING 2026-01-11 14:59:01,145 log "GET /questions HTTP/1.1" 404 5922
+INFO 2026-01-11 14:59:05,308 log "GET /api/questions HTTP/1.1" 301 0
+WARNING 2026-01-11 14:59:05,324 log Forbidden: /api/questions/
+WARNING 2026-01-11 14:59:05,325 log "GET /api/questions/ HTTP/1.1" 403 58
+INFO 2026-01-11 14:59:24,575 log "GET /api/questions HTTP/1.1" 301 0
+INFO 2026-01-11 14:59:27,947 log "GET /api/questions/ HTTP/1.1" 200 6433
+INFO 2026-01-11 15:03:31,160 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-11 15:05:38,006 log Not Found: /serviceworker.js
+WARNING 2026-01-11 15:05:38,008 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 15:07:05,980 views Instagram webhook verified
+INFO 2026-01-11 15:07:05,982 log "GET /webhook/?hub.mode=subscribe&hub.challenge=1327649411&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 200 10
+INFO 2026-01-11 15:07:23,859 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768140442015,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768140441670,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNjQzNDIxMzg3MjA3NTI5NzQ1OTExNTcyMDE3OTcxMgZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 15:07:23,860 views Message from 3108058329359177: Hello
+WARNING 2026-01-11 15:07:24,861 views Username fetch failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AX9zXPXIX9aSU1_Xg4Gd7hh'}}
+INFO 2026-01-11 15:07:24,886 views Question 6e3a556a-0b07-43b3-abf8-a4e8265034f9 created
+INFO 2026-01-11 15:07:24,887 views DEBUG: Attempting to send message
+INFO 2026-01-11 15:07:24,887 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-11 15:07:24,888 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-11 15:07:24,888 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-11 15:07:26,026 views Send message failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'A_E7haGiBqVTAecNTXqa-ct'}}
+INFO 2026-01-11 15:07:26,029 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-11 15:07:30,356 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768140448374,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768139988176,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNjQyNTg0ODM3NjEwOTUzMzUwNjkxNDQyMzQwNjU5MgZDZD",
+            "text": "Hello \ud83d\udc4b"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 15:07:30,370 views Message from 3108058329359177: Hello ?
+WARNING 2026-01-11 15:07:31,221 views Username fetch failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AIKPBDQcjivMpm9dcAVZpiZ'}}
+INFO 2026-01-11 15:07:31,265 views Question ff25a6cc-e836-47c6-9ffa-c118873d9197 created
+INFO 2026-01-11 15:07:31,266 views DEBUG: Attempting to send message
+INFO 2026-01-11 15:07:31,267 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-11 15:07:31,268 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-11 15:07:31,269 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-11 15:07:32,477 views Send message failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AX1bVtxxXBtIdl-a7-nbZHH'}}
+INFO 2026-01-11 15:07:32,479 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-11 15:07:33,096 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768140451250,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768140212332,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNjQyOTk4MzMyNTY5MTYwNTA1NDAzMTI4OTkwOTI0OAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 15:07:33,097 views Message from 3108058329359177: Hello
+WARNING 2026-01-11 15:07:33,918 views Username fetch failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'APeO4ohyPURwg8ZIBNSazAR'}}
+INFO 2026-01-11 15:07:33,948 views Question 75a09287-3aff-4463-973d-633ebf3641c1 created
+INFO 2026-01-11 15:07:33,949 views DEBUG: Attempting to send message
+INFO 2026-01-11 15:07:33,949 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-11 15:07:33,949 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-11 15:07:33,950 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-11 15:07:35,242 views Send message failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AHzfRmh5j0PT2mkYRkhgGyG'}}
+INFO 2026-01-11 15:07:35,244 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-11 15:07:35,827 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768140454022,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768140215928,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNjQzMDA0OTY2MzMzNzY4NzM1MDE4MzIzNDM3MTU4NAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 15:07:35,828 views Message from 3108058329359177: Hello
+WARNING 2026-01-11 15:07:36,670 views Username fetch failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'A2etrXZ6Q4EffuvZ5-gyOxN'}}
+INFO 2026-01-11 15:07:36,695 views Question ba27d13f-6b7b-4fad-b931-18ca35601ee6 created
+INFO 2026-01-11 15:07:36,695 views DEBUG: Attempting to send message
+INFO 2026-01-11 15:07:36,695 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-11 15:07:36,696 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-11 15:07:36,696 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-11 15:07:37,736 views Send message failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'At88-yYmpuXq7XvRHY0OFIB'}}
+INFO 2026-01-11 15:07:37,740 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-11 15:07:49,057 autoreload Watching for file changes with StatReloader
+INFO 2026-01-11 15:07:54,430 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768140472611,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768140472274,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNjQzNDc3ODQxNjM3ODUwMzIxODgyMzA1MjY1NjY0MAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 15:07:54,431 views Message from 3108058329359177: Hello
+WARNING 2026-01-11 15:07:55,298 views Username fetch failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AuZ0pAY2pG6DrXnGRi7-H_W'}}
+INFO 2026-01-11 15:07:55,326 views Question 78d70910-99b6-4012-afef-6dad3dd5ebce created
+INFO 2026-01-11 15:07:55,326 views DEBUG: Attempting to send message
+INFO 2026-01-11 15:07:55,327 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-11 15:07:55,327 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-11 15:07:55,327 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-11 15:07:56,542 views Send message failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'A1Zh_SyMn9K3f3F3cx_MxXw'}}
+INFO 2026-01-11 15:07:56,548 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-11 15:08:38,140 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768140516271,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768140516001,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNjQzNTU4NTAyODIyODM5MDE4NDcxMTE0MjUwNjQ5NgZDZD",
+            "text": "Dd"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 15:08:38,141 views Message from 3108058329359177: Dd
+WARNING 2026-01-11 15:08:38,887 views Username fetch failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'ASl_XTCT6ckkzuD5WcohWg3'}}
+INFO 2026-01-11 15:08:38,925 views Question b30f90ac-f31c-4507-ae27-28945db9f62a created
+INFO 2026-01-11 15:08:38,926 views DEBUG: Attempting to send message
+INFO 2026-01-11 15:08:38,927 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-11 15:08:38,928 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-11 15:08:38,929 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-11 15:08:40,062 views Send message failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'APw_iDjiceDpgbUfmMpvioT'}}
+INFO 2026-01-11 15:08:40,066 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-11 15:09:21,655 log Not Found: /api/questions/1
+WARNING 2026-01-11 15:09:21,656 log "GET /api/questions/1 HTTP/1.1" 404 5940
+WARNING 2026-01-11 15:09:24,830 log Not Found: /api/questions/1/
+WARNING 2026-01-11 15:09:24,831 log "GET /api/questions/1/ HTTP/1.1" 404 5943
+WARNING 2026-01-11 15:09:28,419 log Not Found: /api/question/1/
+WARNING 2026-01-11 15:09:28,420 log "GET /api/question/1/ HTTP/1.1" 404 5940
+WARNING 2026-01-11 15:09:37,667 log Not Found: /api/question/
+WARNING 2026-01-11 15:09:37,668 log "GET /api/question/ HTTP/1.1" 404 5934
+INFO 2026-01-11 15:09:41,598 log "GET /api/questions HTTP/1.1" 301 0
+INFO 2026-01-11 15:09:44,861 log "GET /api/questions/ HTTP/1.1" 200 7863
+INFO 2026-01-11 15:09:55,360 log "GET /api/questions/b30f90ac-f31c-4507-ae27-28945db9f62a HTTP/1.1" 301 0
+INFO 2026-01-11 15:09:58,462 log "GET /api/questions/b30f90ac-f31c-4507-ae27-28945db9f62a/ HTTP/1.1" 200 253
+INFO 2026-01-11 15:10:11,022 log "GET /api/questions/b30f90ac-f31c-4507-ae27-28945db9f62a/answer HTTP/1.1" 301 0
+WARNING 2026-01-11 15:10:14,094 log Method Not Allowed: /api/questions/b30f90ac-f31c-4507-ae27-28945db9f62a/answer/
+WARNING 2026-01-11 15:10:14,095 log "GET /api/questions/b30f90ac-f31c-4507-ae27-28945db9f62a/answer/ HTTP/1.1" 405 40
+INFO 2026-01-11 15:10:30,935 log "GET /api/questions/b30f90ac-f31c-4507-ae27-28945db9f62a/ HTTP/1.1" 200 253
+INFO 2026-01-11 15:12:06,970 log "GET / HTTP/1.1" 200 13350
+WARNING 2026-01-11 15:12:09,294 log Not Found: /serviceworker.js
+WARNING 2026-01-11 15:12:09,296 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 15:12:45,698 log Not Found: /serviceworker.js
+WARNING 2026-01-11 15:12:45,699 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 15:15:51,710 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768140949931,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768140949610,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNjQ0MzU4MzcxMDkwOTYwOTM1MTM2MzA2OTczOTAwOAZDZD",
+            "text": "Gello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 15:15:51,712 views Message from 3108058329359177: Gello
+WARNING 2026-01-11 15:15:52,573 views Username fetch failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AsQSc9Io2NApV4a1cA-8XQC'}}
+INFO 2026-01-11 15:15:52,608 views Question c6a719bb-5ed3-4538-8476-2d4145b933ef created
+INFO 2026-01-11 15:15:52,609 views DEBUG: Attempting to send message
+INFO 2026-01-11 15:15:52,610 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-11 15:15:52,611 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-11 15:15:52,611 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-11 15:15:53,727 views Send message failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'A0yvyzMzmwsvjX8Cw00-24t'}}
+INFO 2026-01-11 15:15:53,733 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-11 15:20:33,751 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768141231967,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768141231581,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNjQ0ODc4NTE2MTE5NTQ2NDk2MDk3ODA1MTkyMzk2OAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 15:20:33,752 views Message from 3108058329359177: Hello
+WARNING 2026-01-11 15:20:34,547 views Username fetch failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'APk0C1S_Nsv6eYxTPEHWWky'}}
+INFO 2026-01-11 15:20:34,583 views Question 7df11a49-762f-4f89-be26-c15ba730393b created
+INFO 2026-01-11 15:20:34,584 views DEBUG: Attempting to send message
+INFO 2026-01-11 15:20:34,584 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-11 15:20:34,585 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-11 15:20:34,585 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-11 15:20:35,671 views Send message failed: {'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AoukfvcipLBhgnG0n5yBUA8'}}
+INFO 2026-01-11 15:20:35,675 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-11 15:21:01,601 autoreload Watching for file changes with StatReloader
+INFO 2026-01-11 15:21:27,870 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768141286061,
+      "id": "17841474626204259",
+      "messaging": [
+        {
+          "sender": {
+            "id": "3108058329359177"
+          },
+          "recipient": {
+            "id": "17841474626204259"
+          },
+          "timestamp": 1768141285748,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDc0NjI2MjA0MjU5OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ0MTU4ODEzMjA0NjUxNDozMjYxNjQ0OTc4NDM1NDQzNDA0Mzc5NjExODI1NjQ4NDM1MgZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 15:21:27,871 views Message from 3108058329359177: Hello
+INFO 2026-01-11 15:21:29,930 views Question d1fa6df4-8320-44e6-855a-8b980584e61f created
+INFO 2026-01-11 15:21:29,930 views DEBUG: Attempting to send message
+INFO 2026-01-11 15:21:29,931 views DEBUG: Page ID: 17841474626204259
+INFO 2026-01-11 15:21:29,931 views DEBUG: Recipient: 3108058329359177
+INFO 2026-01-11 15:21:29,932 views DEBUG: URL: https://graph.facebook.com/v24.0/17841474626204259/messages
+ERROR 2026-01-11 15:21:31,237 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AO3yxtWMZQaGfsjBQ0G365o'}}
+INFO 2026-01-11 15:21:31,247 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-11 15:26:45,399 log Not Found: /serviceworker.js
+WARNING 2026-01-11 15:26:45,400 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 15:53:02,325 log "GET /webhook?hub.mode=subscribe&hub.challenge=1443476650&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 301 0
+INFO 2026-01-11 15:53:02,679 views Instagram webhook verified
+INFO 2026-01-11 15:53:02,681 log "GET /webhook/?hub.mode=subscribe&hub.challenge=1443476650&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 200 10
+WARNING 2026-01-11 16:14:08,224 log Not Found: /serviceworker.js
+WARNING 2026-01-11 16:14:08,225 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 17:07:45,759 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:07:45,760 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 17:19:13,504 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:19:13,505 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 17:20:38,776 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-11 17:24:24,548 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:24:24,552 log "POST /webhook HTTP/1.1" 500 70871
+ERROR 2026-01-11 17:24:25,143 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:24:25,145 log "POST /webhook HTTP/1.1" 500 70872
+ERROR 2026-01-11 17:24:25,665 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:24:25,667 log "POST /webhook HTTP/1.1" 500 70871
+ERROR 2026-01-11 17:24:26,224 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:24:26,226 log "POST /webhook HTTP/1.1" 500 70872
+ERROR 2026-01-11 17:24:26,769 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:24:26,771 log "POST /webhook HTTP/1.1" 500 70872
+ERROR 2026-01-11 17:24:27,702 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:24:27,704 log "POST /webhook HTTP/1.1" 500 70871
+ERROR 2026-01-11 17:24:29,328 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:24:29,330 log "POST /webhook HTTP/1.1" 500 70871
+ERROR 2026-01-11 17:24:34,849 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:24:34,851 log "POST /webhook HTTP/1.1" 500 70872
+ERROR 2026-01-11 17:25:52,123 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:25:52,125 log "POST /webhook HTTP/1.1" 500 70872
+ERROR 2026-01-11 17:25:59,830 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:25:59,832 log "POST /webhook HTTP/1.1" 500 70872
+ERROR 2026-01-11 17:26:42,947 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:26:42,950 log "POST /webhook HTTP/1.1" 500 70871
+ERROR 2026-01-11 17:27:23,583 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:27:23,585 log "POST /webhook HTTP/1.1" 500 70872
+ERROR 2026-01-11 17:27:26,063 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:27:26,067 log "POST /webhook HTTP/1.1" 500 70871
+ERROR 2026-01-11 17:28:42,474 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:28:42,477 log "POST /webhook HTTP/1.1" 500 70871
+ERROR 2026-01-11 17:29:05,190 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:29:05,193 log "POST /webhook HTTP/1.1" 500 70871
+ERROR 2026-01-11 17:29:15,255 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:29:15,257 log "POST /webhook HTTP/1.1" 500 70872
+INFO 2026-01-11 17:29:24,775 log "GET / HTTP/1.1" 200 14623
+WARNING 2026-01-11 17:29:27,025 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:29:27,025 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 17:29:31,185 log Not Found: /logout
+WARNING 2026-01-11 17:29:31,186 log "GET /logout HTTP/1.1" 404 5913
+WARNING 2026-01-11 17:29:32,910 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:29:32,910 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 17:29:33,798 log "GET / HTTP/1.1" 200 14623
+WARNING 2026-01-11 17:29:35,837 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:29:35,838 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 17:29:40,820 log "GET /admin HTTP/1.1" 301 0
+INFO 2026-01-11 17:29:40,957 log "GET /admin/ HTTP/1.1" 200 7056
+INFO 2026-01-11 17:29:41,341 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-01-11 17:29:41,341 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-01-11 17:29:41,358 log "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-01-11 17:29:41,361 log "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-01-11 17:29:41,371 log "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-01-11 17:29:41,382 log "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-01-11 17:29:41,421 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-01-11 17:29:41,421 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-01-11 17:29:41,423 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-01-11 17:29:42,692 log "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-01-11 17:29:42,708 log "GET /accounts/login/ HTTP/1.1" 200 1733
+WARNING 2026-01-11 17:29:43,071 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:29:43,072 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 17:29:44,445 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:29:44,446 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 17:29:47,921 log "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-01-11 17:29:47,942 log "GET / HTTP/1.1" 200 14623
+WARNING 2026-01-11 17:29:49,624 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:29:49,625 log "GET /serviceworker.js HTTP/1.1" 404 5943
+ERROR 2026-01-11 17:30:01,065 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:30:01,068 log "POST /webhook HTTP/1.1" 500 70872
+INFO 2026-01-11 17:31:05,567 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-11 17:32:11,203 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:32:11,208 log "POST /webhook HTTP/1.1" 500 70871
+ERROR 2026-01-11 17:32:20,699 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:32:20,702 log "POST /webhook HTTP/1.1" 500 70871
+ERROR 2026-01-11 17:33:17,962 log Internal Server Error: /webhook
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 15af3e23ee0f.ngrok-free.app/webhook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-11 17:33:17,967 log "POST /webhook HTTP/1.1" 500 70871
+INFO 2026-01-11 17:33:40,106 views Instagram webhook verified
+INFO 2026-01-11 17:33:40,107 log "GET /webhook/?hub.mode=subscribe&hub.challenge=817405039&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 200 9
+INFO 2026-01-11 17:34:09,456 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768149247973,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1414927943378664"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768148661952,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU1Nzc4MTIzNzA5Mzg2OTozMjYxNjU4NTg1MTMxNzY4NDgyMjkwMDgyOTE5NzQzNDg4MAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 17:34:09,457 views Message from 1414927943378664: Hello
+WARNING 2026-01-11 17:34:10,528 views Username fetch failed: {'error': {'message': '(#200) App does not have Advanced Access to instagram_manage_messages permission, and recipient user does not have role on app.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ABPfvLEbQsyWzFigR7Le4DL'}}
+INFO 2026-01-11 17:34:10,541 views Question 8d2f7ae9-d23d-437a-bb5e-2ec28695a3a8 created
+INFO 2026-01-11 17:34:10,541 views DEBUG: Attempting to send message
+INFO 2026-01-11 17:34:10,542 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-11 17:34:10,542 views DEBUG: Recipient: 1414927943378664
+INFO 2026-01-11 17:34:10,542 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+ERROR 2026-01-11 17:34:13,138 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'A-abvI0BNHKy3rTAJTzAE6S'}}
+INFO 2026-01-11 17:34:13,140 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-11 17:36:06,115 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:36:06,116 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 17:38:36,126 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:38:36,126 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 17:39:53,895 log "GET / HTTP/1.1" 200 15018
+INFO 2026-01-11 17:39:54,768 log "GET / HTTP/1.1" 200 15018
+INFO 2026-01-11 17:39:55,324 log "GET / HTTP/1.1" 200 15018
+WARNING 2026-01-11 17:39:57,170 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:39:57,171 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 17:40:32,829 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:40:32,830 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 17:58:37,762 log "GET /answer/8d2f7ae9-d23d-437a-bb5e-2ec28695a3a8/ HTTP/1.1" 200 1244
+WARNING 2026-01-11 17:58:39,618 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:58:39,618 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 17:58:41,065 views DEBUG: Attempting to send message
+INFO 2026-01-11 17:58:41,066 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-11 17:58:41,066 views DEBUG: Recipient: 1414927943378664
+INFO 2026-01-11 17:58:41,066 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+ERROR 2026-01-11 17:58:42,101 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AtlUpF6F6IgX-mpAbCBGjAu'}}
+INFO 2026-01-11 17:58:42,112 log "POST /answer/8d2f7ae9-d23d-437a-bb5e-2ec28695a3a8/ HTTP/1.1" 302 0
+INFO 2026-01-11 17:58:42,140 log "GET / HTTP/1.1" 200 14591
+WARNING 2026-01-11 17:58:43,935 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:58:43,936 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 17:59:19,699 log Not Found: /serviceworker.js
+WARNING 2026-01-11 17:59:19,700 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:00:36,067 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768150834062,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1414927943378664"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768150833606,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU1Nzc4MTIzNzA5Mzg2OTozMjYxNjYyNTkxMTI2MTI0NzIyMjE4MzQ3MzY1ODcyNDM1MgZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 18:00:36,068 views Message from 1414927943378664: Hello
+INFO 2026-01-11 18:00:37,199 views Question ab676f60-3fd2-47ff-b393-89d094ec4429 created
+INFO 2026-01-11 18:00:37,199 views DEBUG: Attempting to send message
+INFO 2026-01-11 18:00:37,199 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-11 18:00:37,199 views DEBUG: Recipient: 1414927943378664
+INFO 2026-01-11 18:00:37,200 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+ERROR 2026-01-11 18:00:38,170 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AAuvEOhI9WLh5AbWbbJkcrL'}}
+INFO 2026-01-11 18:00:38,172 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-11 18:06:55,988 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:06:55,990 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:10:36,669 log "GET /admin HTTP/1.1" 301 0
+INFO 2026-01-11 18:10:36,790 log "GET /admin/ HTTP/1.1" 200 7056
+INFO 2026-01-11 18:10:37,443 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-01-11 18:10:37,454 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-01-11 18:10:37,457 log "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-01-11 18:10:37,503 log "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-01-11 18:10:37,504 log "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-01-11 18:10:37,527 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-01-11 18:10:37,571 log "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-01-11 18:10:37,611 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-01-11 18:10:37,612 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+WARNING 2026-01-11 18:10:39,366 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:10:39,367 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:10:40,666 log "GET /admin/api/question/ HTTP/1.1" 200 34977
+INFO 2026-01-11 18:10:40,827 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-01-11 18:10:40,843 log "GET /static/admin/css/changelists.css HTTP/1.1" 200 7501
+INFO 2026-01-11 18:10:40,852 log "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-01-11 18:10:40,860 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-01-11 18:10:40,896 log "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-01-11 18:10:40,899 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-01-11 18:10:40,925 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-11 18:10:40,927 log "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-01-11 18:10:40,940 log "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-01-11 18:10:40,948 log "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 645
+INFO 2026-01-11 18:10:40,967 log "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-01-11 18:10:41,016 log "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-01-11 18:10:41,146 log "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-01-11 18:10:41,215 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-01-11 18:10:41,215 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+INFO 2026-01-11 18:10:41,219 log "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+WARNING 2026-01-11 18:10:42,924 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:10:42,925 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:10:48,399 log "POST /admin/api/question/ HTTP/1.1" 200 16712
+INFO 2026-01-11 18:10:48,600 log "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+WARNING 2026-01-11 18:10:50,464 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:10:50,465 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:10:50,529 log "POST /admin/api/question/ HTTP/1.1" 302 0
+INFO 2026-01-11 18:10:50,568 log "GET /admin/api/question/ HTTP/1.1" 200 10872
+INFO 2026-01-11 18:10:50,671 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-11 18:10:50,723 log "GET /static/admin/img/icon-yes-dark.svg HTTP/1.1" 200 558
+WARNING 2026-01-11 18:10:52,340 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:10:52,341 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:10:52,931 log "GET / HTTP/1.1" 200 817
+WARNING 2026-01-11 18:10:54,669 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:10:54,670 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:11:00,007 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768151457975,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1414927943378664"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768151457584,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU1Nzc4MTIzNzA5Mzg2OTozMjYxNjYzNzQyMTYyMDc2OTM2ODI3MDI3ODM3ODkxMzc5MgZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-11 18:11:00,008 views Message from 1414927943378664: Hello
+INFO 2026-01-11 18:11:00,998 views Question f33a161d-1c24-4803-8ed8-02e716da7707 created
+INFO 2026-01-11 18:11:00,998 views DEBUG: Attempting to send message
+INFO 2026-01-11 18:11:00,999 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-11 18:11:00,999 views DEBUG: Recipient: 1414927943378664
+INFO 2026-01-11 18:11:00,999 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+ERROR 2026-01-11 18:11:02,064 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AJFFExx0ciwSw-zdV9TAzxT'}}
+INFO 2026-01-11 18:11:02,066 log "POST /webhook/ HTTP/1.1" 200 16
+WARNING 2026-01-11 18:11:25,290 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:11:25,291 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:11:39,949 log "GET / HTTP/1.1" 200 1191
+WARNING 2026-01-11 18:11:41,682 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:11:41,682 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:11:42,627 log "GET /answer/f33a161d-1c24-4803-8ed8-02e716da7707/ HTTP/1.1" 200 1235
+WARNING 2026-01-11 18:11:44,379 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:11:44,380 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:12:03,069 views DEBUG: Attempting to send message
+INFO 2026-01-11 18:12:03,069 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-11 18:12:03,069 views DEBUG: Recipient: 1414927943378664
+INFO 2026-01-11 18:12:03,069 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+ERROR 2026-01-11 18:12:04,077 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AZN-_JCJyy7ANSdYh0hMaMT'}}
+INFO 2026-01-11 18:12:04,087 log "POST /answer/f33a161d-1c24-4803-8ed8-02e716da7707/ HTTP/1.1" 302 0
+INFO 2026-01-11 18:12:04,110 log "GET / HTTP/1.1" 200 1273
+WARNING 2026-01-11 18:12:05,871 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:12:05,872 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 18:14:32,640 log "GET / HTTP/1.1" 200 1273
+WARNING 2026-01-11 18:14:34,644 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:14:34,645 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 18:15:10,298 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:15:10,299 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 18:30:20,581 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:30:20,583 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 18:30:20,649 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:30:20,651 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 18:30:49,336 log Not Found: /serviceworker.js
+WARNING 2026-01-11 18:30:49,337 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 18:35:26,404 log Not Found: /robots.txt
+WARNING 2026-01-11 18:35:26,406 log "GET /robots.txt HTTP/1.1" 404 5938
+INFO 2026-01-11 18:35:26,903 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-11 18:35:27,109 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+INFO 2026-01-11 18:35:32,030 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+INFO 2026-01-11 18:35:32,112 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-11 18:35:32,497 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+INFO 2026-01-11 18:35:32,552 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+INFO 2026-01-11 18:35:32,908 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-11 18:35:33,310 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+INFO 2026-01-11 18:35:54,630 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+WARNING 2026-01-11 20:08:42,984 log Not Found: /serviceworker.js
+WARNING 2026-01-11 20:08:42,985 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-11 20:08:42,998 log Not Found: /serviceworker.js
+WARNING 2026-01-11 20:08:42,999 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-11 23:07:19,477 log "GET / HTTP/1.1" 200 1284
+WARNING 2026-01-11 23:07:20,120 log Not Found: /favicon.ico
+WARNING 2026-01-11 23:07:20,121 log "GET /favicon.ico HTTP/1.1" 404 5928
+WARNING 2026-01-11 23:07:21,668 log Not Found: /serviceworker.js
+WARNING 2026-01-11 23:07:21,669 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-12 17:35:04,494 autoreload Watching for file changes with StatReloader
+INFO 2026-01-12 17:35:39,586 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-12 17:35:39,683 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+WARNING 2026-01-12 17:35:40,264 log Not Found: /favicon.ico
+WARNING 2026-01-12 17:35:40,265 log "GET /favicon.ico HTTP/1.1" 404 5928
+WARNING 2026-01-12 17:35:42,054 log Not Found: /serviceworker.js
+WARNING 2026-01-12 17:35:42,057 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-12 17:36:19,571 log Not Found: /serviceworker.js
+WARNING 2026-01-12 17:36:19,573 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-12 18:05:39,522 log Not Found: /serviceworker.js
+WARNING 2026-01-12 18:05:39,525 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-12 18:07:39,553 log Not Found: /serviceworker.js
+WARNING 2026-01-12 18:07:39,554 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-12 18:25:25,602 log Not Found: /serviceworker.js
+WARNING 2026-01-12 18:25:25,602 log "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-12 18:56:35,677 log Not Found: /serviceworker.js
+WARNING 2026-01-12 18:56:35,678 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-14 00:00:33,188 autoreload Watching for file changes with StatReloader
+INFO 2026-01-14 00:00:35,417 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-14 00:00:35,496 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+WARNING 2026-01-14 00:00:37,615 log Not Found: /serviceworker.js
+WARNING 2026-01-14 00:00:37,616 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-14 00:00:54,369 log "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2026-01-14 00:00:54,419 log "GET / HTTP/1.1" 200 1280
+WARNING 2026-01-14 00:00:56,168 log Not Found: /serviceworker.js
+WARNING 2026-01-14 00:00:56,169 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-14 00:01:00,624 log "GET /swagger HTTP/1.1" 301 0
+INFO 2026-01-14 00:01:00,669 log "GET /swagger/ HTTP/1.1" 200 2453
+INFO 2026-01-14 00:01:01,169 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-01-14 00:01:01,209 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-01-14 00:01:01,218 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-01-14 00:01:01,229 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-01-14 00:01:01,259 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-01-14 00:01:01,282 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-01-14 00:01:01,402 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-01-14 00:01:01,521 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2026-01-14 00:01:01,649 log "GET /swagger/?format=openapi HTTP/1.1" 200 2707
+WARNING 2026-01-14 00:01:03,578 log Not Found: /serviceworker.js
+WARNING 2026-01-14 00:01:03,581 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-14 00:03:46,969 autoreload Watching for file changes with StatReloader
+INFO 2026-01-14 00:03:54,180 log "GET / HTTP/1.1" 302 0
+WARNING 2026-01-14 00:03:56,977 log Not Found: /favicon.ico
+WARNING 2026-01-14 00:03:56,977 log "GET /favicon.ico HTTP/1.1" 404 5941
+INFO 2026-01-14 00:03:58,000 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-14 00:03:58,310 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+INFO 2026-01-14 00:04:02,237 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+INFO 2026-01-14 00:04:11,277 log "GET / HTTP/1.1" 200 1280
+WARNING 2026-01-14 00:04:13,294 log Not Found: /serviceworker.js
+WARNING 2026-01-14 00:04:13,295 log "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-14 00:05:31,472 views Instagram webhook verified
+INFO 2026-01-14 00:05:31,473 log "GET /webhook/?hub.mode=subscribe&hub.challenge=734485627&hub.verify_token=YK8hD7fMZtR1f2lV0n7Y9A HTTP/1.1" 200 9
+INFO 2026-01-14 00:05:32,873 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768345533197,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1414927943378664"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768345506710,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU1Nzc4MTIzNzA5Mzg2OTozMjYyMDIxNjk5NjE4MjU3MTc1OTM4MjI0MjE4NTQ0NTM3NgZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-14 00:05:32,874 views Message from 1414927943378664: Hello
+INFO 2026-01-14 00:05:34,660 views Question 98c703fe-0a22-4c1d-abd3-5db44d447a86 created
+INFO 2026-01-14 00:05:34,660 views DEBUG: Attempting to send message
+INFO 2026-01-14 00:05:34,661 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-14 00:05:34,661 views DEBUG: Recipient: 1414927943378664
+INFO 2026-01-14 00:05:34,661 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+ERROR 2026-01-14 00:05:35,997 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AWdHXw-q9pIhaqrcj-EKjMh'}}
+INFO 2026-01-14 00:05:36,003 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-14 00:05:44,592 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768345544889,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1414927943378664"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768345544427,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU1Nzc4MTIzNzA5Mzg2OTozMjYyMDIxNzY5MTk0MjM2NTU5MDcxNzE3NDMzMDE2MzIwMAZDZD",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-14 00:05:44,592 views Message from 1414927943378664: Hello
+INFO 2026-01-14 00:05:44,989 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768345545324,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1224974102918285"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768345501122,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjI0OTE5ODI4ODQyNzU3ODozMjYyMDIxNjg5MzEwODk5MTE3MDgwMDU0MDI4OTMzNTI5NgZDZD",
+            "text": "test this feature"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-14 00:05:44,990 views Message from 1224974102918285: test this feature
+INFO 2026-01-14 00:05:45,898 views Question b38ab139-9547-4ece-9f84-44d4f3c1fa18 created
+INFO 2026-01-14 00:05:45,899 views DEBUG: Attempting to send message
+INFO 2026-01-14 00:05:45,899 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-14 00:05:45,899 views DEBUG: Recipient: 1414927943378664
+INFO 2026-01-14 00:05:45,899 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+WARNING 2026-01-14 00:05:46,080 views Username fetch failed: {'error': {'message': '(#200) App does not have Advanced Access to instagram_manage_messages permission, and recipient user does not have role on app.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AE4et3nuIAzkMfY1XtOv72A'}}
+INFO 2026-01-14 00:05:46,092 views Question 895a07e1-36ee-4483-a5af-90191bcf3fe3 created
+INFO 2026-01-14 00:05:46,092 views DEBUG: Attempting to send message
+INFO 2026-01-14 00:05:46,093 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-14 00:05:46,093 views DEBUG: Recipient: 1224974102918285
+INFO 2026-01-14 00:05:46,093 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+ERROR 2026-01-14 00:05:46,846 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'Ajrp10nS7-q77kGzvS2hFrw'}}
+INFO 2026-01-14 00:05:46,848 log "POST /webhook/ HTTP/1.1" 200 16
+ERROR 2026-01-14 00:05:46,998 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'ABmDgqLhX1yv39lrE1yv2QF'}}
+INFO 2026-01-14 00:05:46,999 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-14 00:05:47,346 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768345547682,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1224974102918285"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768345547658,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjI0OTE5ODI4ODQyNzU3ODozMjYyMDIxNjg5MzEwODk5MTE3MDgwMDU0MDI4OTMzNTI5NgZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-14 00:05:47,347 views Non-message event ignored
+INFO 2026-01-14 00:05:47,348 log "POST /webhook/ HTTP/1.1" 200 16

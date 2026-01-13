@@ -98,8 +98,11 @@ def process_instagram_message(event):
     Handle a single Instagram DM event
     """
     try:
+        print(f"DEBUG: Processing event: {event}") # TEST DEBUG
+        
         # Ignore edits, read receipts, reactions, etc.
         if "message" not in event:
+            print("DEBUG: 'message' key missing") # TEST DEBUG
             logger.info("Non-message event ignored")
             return
 
