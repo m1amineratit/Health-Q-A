@@ -3,7 +3,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 from django.shortcuts import get_object_or_404
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login
 from django.utils import timezone
 from django.urls import reverse
 from drf_yasg.utils import swagger_auto_schema
@@ -11,6 +11,7 @@ from drf_yasg import openapi
 from .models import Question
 from .views import send_instagram_message
 import logging
+from rest_framework_simplejwt.tokens import RefreshToken
 
 logger = logging.getLogger(__name__)
 
@@ -56,10 +57,12 @@ def login_api(request):
     
     user = authenticate(request, username=username, password=password)
     
+    refresh = RefreshToken.for_user(user)
     if user is not None:
         login(request, user)
         return Response({
-            "status": "success",
+            "access" : str(refresh.access_token),
+            "refresh" : str(refresh),
             "user": {
                 "id": user.id,
                 "username": user.username,
@@ -74,15 +77,7 @@ def login_api(request):
     method='post',
     responses={200: "Logged Out"}
 )
-@api_view(['POST'])
-@permission_classes([IsAuthenticated])
-def logout_api(request):
-    """
-    Logout User
-    Clears the session.
-    """
-    logout(request)
-    return Response({"status": "logged_out"})
+
 
 
 @swagger_auto_schema(
@@ -124,7 +119,7 @@ def get_questions_api(request):
     """
     status_filter = request.query_params.get("status")
     
-    questions = Question.objects.all().order_by("-created_at")
+    questions = Question.objects.filter(doctor=request.user).order_by("-created_at")
     
     if status_filter in ["pending", "answered"]:
         questions = questions.filter(status=status_filter)
@@ -155,7 +150,7 @@ def get_question_detail_api(request, question_id):
     """
     Get Question Detail
     """
-    q = get_object_or_404(Question, id=question_id)
+    q = get_object_or_404(Question, id=question_id, doctor=request.user)
     
     data = {
         "id": str(q.id),
@@ -192,7 +187,12 @@ def submit_answer_api(request, question_id):
     if not answer_text:
         return Response({"error": "Answer text is required"}, status=status.HTTP_400_BAD_REQUEST)
         
-    question = get_object_or_404(Question, id=question_id)
+    question = get_object_or_404(Question, id=question_id, doctor=request.user)
+    
+    if question.status == "answered":
+        return Response({
+            "error": "Question already answered"
+        }, status=400)
     
     # Update Question
     question.answer_text = answer_text

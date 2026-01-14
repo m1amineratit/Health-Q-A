@@ -3588,3 +3588,96 @@ INFO 2026-01-14 00:08:30,508 views DEBUG: Recipient: 1414927943378664
 INFO 2026-01-14 00:08:30,508 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
 ERROR 2026-01-14 00:08:31,525 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'AJZYgU43eunnhVyU804-Xoe'}}
 INFO 2026-01-14 00:08:31,528 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-14 00:11:20,576 autoreload Watching for file changes with StatReloader
+INFO 2026-01-14 00:11:27,039 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768345887375,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1224974102918285"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768345871020,
+          "message": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjI0OTE5ODI4ODQyNzU3ODozMjYyMDIyMzcxNjUxNTg0OTkxMjI3Njc3MDI4MTc1MDUyOAZDZD",
+            "text": "hello"
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-14 00:11:27,039 views Message from 1224974102918285: hello
+WARNING 2026-01-14 00:11:28,630 views Username fetch failed: {'error': {'message': '(#200) App does not have Advanced Access to instagram_manage_messages permission, and recipient user does not have role on app.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AliaI3MmVAcvppIeTcrGvE2'}}
+INFO 2026-01-14 00:11:28,645 views Question 4595c60b-9bb0-491e-b1c3-0ed352faf2db created
+INFO 2026-01-14 00:11:28,645 views DEBUG: Attempting to send message
+INFO 2026-01-14 00:11:28,646 views DEBUG: Page ID: 17841457596247328
+INFO 2026-01-14 00:11:28,646 views DEBUG: Recipient: 1224974102918285
+INFO 2026-01-14 00:11:28,647 views DEBUG: URL: https://graph.facebook.com/v24.0/17841457596247328/messages
+ERROR 2026-01-14 00:11:29,681 views Send message failed: {'error': {'message': '(#3) Application does not have the capability to make this API call.', 'type': 'OAuthException', 'code': 3, 'fbtrace_id': 'A6f3CJiiT96JMv8poMnAPmE'}}
+INFO 2026-01-14 00:11:29,688 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-14 00:11:30,015 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "time": 1768345890369,
+      "id": "17841457596247328",
+      "messaging": [
+        {
+          "sender": {
+            "id": "1224974102918285"
+          },
+          "recipient": {
+            "id": "17841457596247328"
+          },
+          "timestamp": 1768345890351,
+          "message_edit": {
+            "mid": "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDU3NTk2MjQ3MzI4OjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI3NjI0OTE5ODI4ODQyNzU3ODozMjYyMDIyMzcxNjUxNTg0OTkxMjI3Njc3MDI4MTc1MDUyOAZDZD",
+            "num_edit": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-14 00:11:30,016 views Non-message event ignored
+INFO 2026-01-14 00:11:30,016 log "POST /webhook/ HTTP/1.1" 200 16
+INFO 2026-01-14 14:32:25,436 autoreload Watching for file changes with StatReloader
+INFO 2026-01-14 14:32:32,252 basehttp "GET / HTTP/1.1" 302 0
+INFO 2026-01-14 14:32:32,368 basehttp "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+WARNING 2026-01-14 14:32:34,897 log Not Found: /serviceworker.js
+WARNING 2026-01-14 14:32:34,899 basehttp "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-14 14:32:37,299 basehttp "GET /swagger HTTP/1.1" 301 0
+INFO 2026-01-14 14:32:37,383 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2026-01-14 14:32:38,581 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-01-14 14:32:38,585 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-01-14 14:32:38,626 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-01-14 14:32:38,734 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-01-14 14:32:38,782 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-01-14 14:32:38,827 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-01-14 14:32:38,946 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-01-14 14:32:39,031 basehttp "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2026-01-14 14:32:39,103 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 2707
+WARNING 2026-01-14 14:32:40,937 log Not Found: /serviceworker.js
+WARNING 2026-01-14 14:32:40,940 basehttp "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-14 14:32:40,981 log Not Found: /serviceworker.js
+WARNING 2026-01-14 14:32:40,983 basehttp "GET /serviceworker.js HTTP/1.1" 404 5943
+WARNING 2026-01-14 14:32:49,030 log Forbidden: /api/questions/
+WARNING 2026-01-14 14:32:49,031 basehttp "GET /api/questions/ HTTP/1.1" 403 58
+INFO 2026-01-14 14:33:44,504 basehttp "GET /accounts/login/?next=/swagger/ HTTP/1.1" 200 1742
+WARNING 2026-01-14 14:33:46,719 log Not Found: /serviceworker.js
+WARNING 2026-01-14 14:33:46,721 basehttp "GET /serviceworker.js HTTP/1.1" 404 5943
+INFO 2026-01-14 14:43:00,122 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-14 14:43:03,034 autoreload Watching for file changes with StatReloader
+INFO 2026-01-14 14:43:15,466 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-14 14:43:17,971 autoreload Watching for file changes with StatReloader
+INFO 2026-01-14 14:43:36,918 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-14 14:43:41,003 autoreload Watching for file changes with StatReloader
