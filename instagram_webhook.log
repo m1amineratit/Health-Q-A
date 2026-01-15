@@ -3681,3 +3681,24 @@ INFO 2026-01-14 14:43:15,466 autoreload C:\Users\pc\Desktop\backend\system\api\m
 INFO 2026-01-14 14:43:17,971 autoreload Watching for file changes with StatReloader
 INFO 2026-01-14 14:43:36,918 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
 INFO 2026-01-14 14:43:41,003 autoreload Watching for file changes with StatReloader
+INFO 2026-01-15 19:13:14,654 autoreload Watching for file changes with StatReloader
+INFO 2026-01-15 19:14:10,489 autoreload Watching for file changes with StatReloader
+INFO 2026-01-15 19:14:20,452 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-15 19:14:20,515 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+WARNING 2026-01-15 19:14:20,935 log Not Found: /favicon.ico
+WARNING 2026-01-15 19:14:20,935 log "GET /favicon.ico HTTP/1.1" 404 5923
+WARNING 2026-01-15 19:14:22,460 log Not Found: /serviceworker.js
+WARNING 2026-01-15 19:14:22,461 log "GET /serviceworker.js HTTP/1.1" 404 5938
+INFO 2026-01-15 19:14:26,305 log "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2026-01-15 19:14:26,832 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-01-15 19:14:26,846 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-01-15 19:14:26,855 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-01-15 19:14:26,874 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-01-15 19:14:26,920 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-01-15 19:14:26,926 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-01-15 19:14:27,027 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-01-15 19:14:27,065 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2026-01-15 19:14:27,108 log "GET /swagger/?format=openapi HTTP/1.1" 200 3351
+WARNING 2026-01-15 19:14:28,838 log Not Found: /serviceworker.js
+WARNING 2026-01-15 19:14:28,838 log "GET /serviceworker.js HTTP/1.1" 404 5938
+INFO 2026-01-15 19:14:56,534 log "POST /register/ HTTP/1.1" 201 596

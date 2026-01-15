@@ -12,10 +12,56 @@ from .models import Question
 from .views import send_instagram_message
 import logging
 from rest_framework_simplejwt.tokens import RefreshToken
+from .serializers import RegisterSerializer
+from django.contrib.auth.models import User
 
 logger = logging.getLogger(__name__)
 
 # --- SCHEMAS FOR SWAGGER ---
+
+
+# -------------------------
+# REGISTER API
+# -------------------------
+@swagger_auto_schema(
+    method="post",
+    request_body=RegisterSerializer,
+    responses={
+        201: "User Registered Successfully",
+        400: "Invalid Data"
+    }
+)
+@api_view(["POST"])
+@permission_classes([AllowAny])
+def register_api(request):
+    serializer = RegisterSerializer(data=request.data)
+    
+    if serializer.is_valid():
+        data = serializer.validated_data
+        user = User.objects.create_user(
+            username=data["username"],
+            email=data["email"],
+            first_name=data["first_name"],
+            last_name=data.get("last_name", ""),
+            password=data["password"]
+        )
+
+        # Generate JWT Tokens immediately
+        refresh = RefreshToken.for_user(user)
+
+        return Response({
+            "status": "success",
+            "access": str(refresh.access_token),
+            "refresh": str(refresh),
+            "user": {
+                "id": user.id,
+                "username": user.username,
+                "full_name": user.get_full_name(),
+                "email": user.email
+            }
+        }, status=status.HTTP_201_CREATED)
+
+    return Response({"errors": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
 
 login_schema = openapi.Schema(
     type=openapi.TYPE_OBJECT,
@@ -73,10 +119,6 @@ def login_api(request):
         return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
 
 
-@swagger_auto_schema(
-    method='post',
-    responses={200: "Logged Out"}
-)
 
 
 
