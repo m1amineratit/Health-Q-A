@@ -4,6 +4,7 @@ from django.test import TestCase, Client
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils import timezone
+from rest_framework_simplejwt.tokens import RefreshToken
 from .models import Question
 
 class QuestionModelTest(TestCase):
@@ -25,6 +26,11 @@ class AuthApiTest(TestCase):
         self.login_url = reverse('api_login')
         self.me_url = reverse('api_me')
 
+    def get_jwt_token(self, user):
+        """Helper method to get JWT access token for a user"""
+        refresh = RefreshToken.for_user(user)
+        return str(refresh.access_token)
+
     def test_login_success(self):
         response = self.client.post(
             self.login_url,
@@ -32,7 +38,10 @@ class AuthApiTest(TestCase):
             content_type="application/json"
         )
         self.assertEqual(response.status_code, 200)
-        self.assertTrue(response.json()['status'], 'success')
+        data = response.json()
+        self.assertIn('access', data)
+        self.assertIn('refresh', data)
+        self.assertIn('user', data)
 
     def test_login_failure(self):
         response = self.client.post(
@@ -43,28 +52,40 @@ class AuthApiTest(TestCase):
         self.assertEqual(response.status_code, 401)
 
     def test_get_me_authorized(self):
-        self.client.login(username='doc', password='password123')
-        response = self.client.get(self.me_url)
+        token = self.get_jwt_token(self.user)
+        response = self.client.get(
+            self.me_url,
+            HTTP_AUTHORIZATION=f'Bearer {token}'
+        )
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json()['username'], 'doc')
+
+    def test_get_me_unauthorized(self):
+        """Test that accessing /me without token returns 401"""
+        response = self.client.get(self.me_url)
+        self.assertEqual(response.status_code, 401)
 
 class QuestionApiTest(TestCase):
     def setUp(self):
         self.client = Client()
         self.user = User.objects.create_user(username='doc', password='password123')
-        self.client.login(username='doc', password='password123')
+        self.token = str(RefreshToken.for_user(self.user).access_token)
         
         self.question = Question.objects.create(
             instagram_user_id="111",
             instagram_username="patient_zero",
-            question_text="Am I sick?"
+            question_text="Am I sick?",
+            doctor=self.user
         )
         
         self.list_url = reverse('api_get_questions')
         self.answer_url = reverse('api_submit_answer', args=[self.question.id])
 
     def test_get_questions(self):
-        response = self.client.get(self.list_url)
+        response = self.client.get(
+            self.list_url,
+            HTTP_AUTHORIZATION=f'Bearer {self.token}'
+        )
         self.assertEqual(response.status_code, 200)
         data = response.json()
         self.assertEqual(data['count'], 1)
@@ -79,7 +100,8 @@ class QuestionApiTest(TestCase):
         response = self.client.post(
             self.answer_url,
             json.dumps(payload),
-            content_type="application/json"
+            content_type="application/json",
+            HTTP_AUTHORIZATION=f'Bearer {self.token}'
         )
         
         self.assertEqual(response.status_code, 200)

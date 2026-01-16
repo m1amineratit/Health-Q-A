@@ -3,7 +3,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 from django.shortcuts import get_object_or_404
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate
 from django.utils import timezone
 from django.urls import reverse
 from drf_yasg.utils import swagger_auto_schema
@@ -96,19 +96,18 @@ answer_schema = openapi.Schema(
 def login_api(request):
     """
     Login User
-    Authenticates the user and sets the session cookie.
+    Authenticates the user and returns JWT tokens.
     """
     username = request.data.get("username")
     password = request.data.get("password")
     
     user = authenticate(request, username=username, password=password)
     
-    refresh = RefreshToken.for_user(user)
     if user is not None:
-        login(request, user)
+        refresh = RefreshToken.for_user(user)
         return Response({
-            "access" : str(refresh.access_token),
-            "refresh" : str(refresh),
+            "access": str(refresh.access_token),
+            "refresh": str(refresh),
             "user": {
                 "id": user.id,
                 "username": user.username,
@@ -117,8 +116,6 @@ def login_api(request):
         })
     else:
         return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
-
-
 
 
 

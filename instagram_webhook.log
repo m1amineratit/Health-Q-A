@@ -3702,3 +3702,586 @@ INFO 2026-01-15 19:14:27,108 log "GET /swagger/?format=openapi HTTP/1.1" 200 335
 WARNING 2026-01-15 19:14:28,838 log Not Found: /serviceworker.js
 WARNING 2026-01-15 19:14:28,838 log "GET /serviceworker.js HTTP/1.1" 404 5938
 INFO 2026-01-15 19:14:56,534 log "POST /register/ HTTP/1.1" 201 596
+INFO 2026-01-15 22:12:01,341 autoreload Watching for file changes with StatReloader
+INFO 2026-01-15 22:12:07,299 log "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2026-01-15 22:12:07,947 log "GET /swagger/?format=openapi HTTP/1.1" 200 3351
+WARNING 2026-01-15 22:12:09,925 log Not Found: /serviceworker.js
+WARNING 2026-01-15 22:12:09,926 log "GET /serviceworker.js HTTP/1.1" 404 5938
+WARNING 2026-01-15 22:12:18,318 log Unauthorized: /api/questions/
+WARNING 2026-01-15 22:12:18,319 log "GET /api/questions/ HTTP/1.1" 401 58
+INFO 2026-01-15 22:12:26,621 log "GET /accounts/login/?next=/swagger/ HTTP/1.1" 200 1742
+WARNING 2026-01-15 22:12:28,614 log Not Found: /serviceworker.js
+WARNING 2026-01-15 22:12:28,617 log "GET /serviceworker.js HTTP/1.1" 404 5938
+INFO 2026-01-15 22:12:33,490 log "POST /accounts/login/?next=/swagger/ HTTP/1.1" 302 0
+INFO 2026-01-15 22:12:33,519 log "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2026-01-15 22:12:33,950 log "GET /swagger/?format=openapi HTTP/1.1" 200 3351
+WARNING 2026-01-15 22:12:35,841 log Not Found: /serviceworker.js
+WARNING 2026-01-15 22:12:35,842 log "GET /serviceworker.js HTTP/1.1" 404 5938
+WARNING 2026-01-15 22:12:44,263 log Unauthorized: /api/questions/
+WARNING 2026-01-15 22:12:44,266 log "GET /api/questions/ HTTP/1.1" 401 58
+INFO 2026-01-15 22:12:47,673 log "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2026-01-15 22:12:48,173 log "GET /swagger/?format=openapi HTTP/1.1" 200 3351
+WARNING 2026-01-15 22:12:50,200 log Not Found: /serviceworker.js
+WARNING 2026-01-15 22:12:50,201 log "GET /serviceworker.js HTTP/1.1" 404 5938
+INFO 2026-01-15 22:12:54,754 log "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2026-01-15 22:12:55,141 log "GET /swagger/?format=openapi HTTP/1.1" 200 3351
+WARNING 2026-01-15 22:12:57,084 log Not Found: /serviceworker.js
+WARNING 2026-01-15 22:12:57,087 log "GET /serviceworker.js HTTP/1.1" 404 5938
+WARNING 2026-01-15 22:13:11,742 log Unauthorized: /api/questions/
+WARNING 2026-01-15 22:13:11,744 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-15 22:13:42,787 log Not Found: /serviceworker.js
+WARNING 2026-01-15 22:13:42,788 log "GET /serviceworker.js HTTP/1.1" 404 5938
+WARNING 2026-01-15 22:18:44,397 log Not Found: /serviceworker.js
+WARNING 2026-01-15 22:18:44,398 log "GET /serviceworker.js HTTP/1.1" 404 5938
+WARNING 2026-01-15 22:42:23,965 log Not Found: /serviceworker.js
+WARNING 2026-01-15 22:42:23,968 log "GET /serviceworker.js HTTP/1.1" 404 5938
+WARNING 2026-01-15 22:44:54,010 log Not Found: /serviceworker.js
+WARNING 2026-01-15 22:44:54,013 log "GET /serviceworker.js HTTP/1.1" 404 5938
+INFO 2026-01-16 22:13:18,503 autoreload Watching for file changes with StatReloader
+INFO 2026-01-16 22:13:21,096 log "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2026-01-16 22:13:21,243 log "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2026-01-16 22:13:21,262 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2026-01-16 22:13:21,264 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2026-01-16 22:13:21,265 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2026-01-16 22:13:21,272 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2026-01-16 22:13:21,277 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2026-01-16 22:13:21,273 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2026-01-16 22:13:21,921 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2026-01-16 22:13:22,064 log "GET /swagger/?format=openapi HTTP/1.1" 200 3351
+WARNING 2026-01-16 22:13:24,122 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:13:24,125 log "GET /serviceworker.js HTTP/1.1" 404 5938
+WARNING 2026-01-16 22:14:01,037 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:14:01,039 log "GET /serviceworker.js HTTP/1.1" 404 5938
+INFO 2026-01-16 22:29:02,003 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-16 22:29:06,125 autoreload Watching for file changes with StatReloader
+INFO 2026-01-16 22:29:15,353 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-16 22:29:18,345 autoreload Watching for file changes with StatReloader
+INFO 2026-01-16 22:29:35,970 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-16 22:29:41,201 autoreload Watching for file changes with StatReloader
+INFO 2026-01-16 22:29:52,155 autoreload C:\Users\pc\Desktop\backend\system\api\urls.py changed, reloading.
+INFO 2026-01-16 22:29:56,482 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-16 22:31:47,232 log Unauthorized: /api/auth/me/
+WARNING 2026-01-16 22:31:49,292 log Unauthorized: /api/auth/login/
+INFO 2026-01-16 22:31:55,192 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "changes": [
+        {
+          "field": "messages",
+          "value": {
+            "sender": {
+              "id": "999"
+            },
+            "message": {
+              "text": "Webhook works!"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-16 22:31:55,255 views Instagram webhook verified
+INFO 2026-01-16 22:32:32,046 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-01-16 22:32:33,062 log "GET /swagger/?format=openapi HTTP/1.1" 200 4149
+WARNING 2026-01-16 22:32:34,936 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:32:34,938 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:32:34,972 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:32:34,974 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:32:44,712 log Unauthorized: /api/auth/me/
+WARNING 2026-01-16 22:32:44,713 log "GET /api/auth/me/ HTTP/1.1" 401 58
+INFO 2026-01-16 22:33:09,084 log "POST /api/auth/login/ HTTP/1.1" 200 539
+WARNING 2026-01-16 22:33:40,116 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:33:40,118 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:33:42,411 log Unauthorized: /api/auth/me/
+WARNING 2026-01-16 22:33:42,414 log "GET /api/auth/me/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:33:47,565 log Unauthorized: /api/auth/me/
+WARNING 2026-01-16 22:33:47,566 log "GET /api/auth/me/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:34:01,402 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:34:01,405 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:34:32,490 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:34:32,494 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:34:32,560 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:34:32,562 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:34:45,983 log Not Found: /api/questions/1/
+WARNING 2026-01-16 22:34:45,985 log "GET /api/questions/1/ HTTP/1.1" 404 6216
+INFO 2026-01-16 22:35:16,202 log "POST /api/auth/login/ HTTP/1.1" 200 539
+WARNING 2026-01-16 22:35:47,238 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:35:47,240 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:35:47,264 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:47,284 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:35:47,285 log "GET /api/questions/?status=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NjAyOTE2LCJpYXQiOjE3Njg1OTkzMTYsImp0aSI6IjZjYzNjMjUwY2ZjNDQzNzZhZTM4YTA3MGEyNzgzOGExIiwidXNlcl9pZCI6IjEifQ.VOuXLqCfZxO2JlHzQ1LPOt9iM4Pr5vHOHLmm_Kpop-0 HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:47,287 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:35:51,544 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:51,547 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:52,868 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:52,870 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:53,605 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:53,607 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:54,296 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:54,303 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:54,475 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:54,477 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:54,709 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:54,712 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:54,821 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:54,822 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:55,017 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:55,020 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:55,236 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:55,237 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:55,415 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:55,416 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:55,698 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:55,700 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:35:58,410 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:35:58,412 log "GET /api/questions/?status=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NjAyOTE2LCJpYXQiOjE3Njg1OTkzMTYsImp0aSI6IjZjYzNjMjUwY2ZjNDQzNzZhZTM4YTA3MGEyNzgzOGExIiwidXNlcl9pZCI6IjEifQ.VOuXLqCfZxO2JlHzQ1LPOt9iM4Pr5vHOHLmm_Kpop-0 HTTP/1.1" 401 58
+WARNING 2026-01-16 22:36:03,806 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:36:03,810 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:36:34,854 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:36:34,855 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:36:55,133 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:36:55,148 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:36:56,571 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:36:56,572 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:37:21,758 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:37:21,760 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:37:22,976 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:37:22,978 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:37:23,718 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:37:23,720 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:37:31,153 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:37:31,155 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:38:21,009 log Unauthorized: /api/auth/login/
+WARNING 2026-01-16 22:38:21,010 log "POST /api/auth/login/ HTTP/1.1" 401 31
+WARNING 2026-01-16 22:38:22,296 log Unauthorized: /api/auth/login/
+WARNING 2026-01-16 22:38:22,299 log "POST /api/auth/login/ HTTP/1.1" 401 31
+WARNING 2026-01-16 22:38:28,694 log Unauthorized: /api/auth/login/
+WARNING 2026-01-16 22:38:28,697 log "POST /api/auth/login/ HTTP/1.1" 401 31
+INFO 2026-01-16 22:39:14,928 log "POST /api/auth/login/ HTTP/1.1" 200 539
+WARNING 2026-01-16 22:39:47,931 log Not Found: /api/questions.
+WARNING 2026-01-16 22:39:47,932 log "GET /api/questions. HTTP/1.1" 404 6210
+WARNING 2026-01-16 22:39:53,210 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:39:53,212 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:39:55,869 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:39:55,871 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:39:56,635 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:39:56,638 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:40:02,685 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:40:02,694 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:40:03,300 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:40:03,301 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:40:03,636 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:40:03,637 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:40:03,869 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:40:03,872 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:40:09,603 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:40:09,604 log "GET /api/questions/ HTTP/1.1" 401 58
+INFO 2026-01-16 22:41:51,149 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-16 22:41:55,515 log Unauthorized: /api/auth/me/
+WARNING 2026-01-16 22:41:55,516 log "GET /api/auth/me/ HTTP/1.1" 401 58
+INFO 2026-01-16 22:47:26,995 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-01-16 22:47:27,864 log "GET /swagger/?format=openapi HTTP/1.1" 200 4149
+WARNING 2026-01-16 22:47:29,839 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:47:29,841 log "GET /serviceworker.js HTTP/1.1" 404 6216
+INFO 2026-01-16 22:47:49,789 log "POST /api/auth/login/ HTTP/1.1" 200 539
+WARNING 2026-01-16 22:48:20,863 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:48:20,865 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:48:34,901 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:48:34,903 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:48:52,211 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:48:52,212 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:49:05,942 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:49:05,944 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:49:05,991 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:49:05,992 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:49:23,176 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:49:23,177 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:49:24,205 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:49:24,206 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:49:55,253 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:49:55,255 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:51:41,179 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:51:41,181 log "GET /api/questions/ HTTP/1.1" 401 58
+INFO 2026-01-16 22:51:52,598 log "POST /api/auth/login/ HTTP/1.1" 200 539
+WARNING 2026-01-16 22:52:13,363 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:52:13,365 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:52:15,206 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:52:15,209 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:52:16,047 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:52:16,049 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:52:16,202 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:52:16,203 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:52:16,426 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:52:16,428 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:52:16,655 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:52:16,658 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:52:16,941 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:52:16,942 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:52:17,158 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:52:17,159 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:52:48,202 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:52:48,203 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 22:52:48,227 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:52:48,229 log "GET /serviceworker.js HTTP/1.1" 404 6216
+INFO 2026-01-16 22:53:19,496 log "GET /api/auth/me/ HTTP/1.1" 200 69
+ERROR 2026-01-16 22:53:33,460 log Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: api_question.doctor_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\json_api.py", line 167, in get_questions_api
+    for q in questions:
+             ^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: api_question.doctor_id
+ERROR 2026-01-16 22:53:33,495 log "GET /api/questions/ HTTP/1.1" 500 167828
+WARNING 2026-01-16 22:53:54,295 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:53:54,296 log "GET /api/questions/ HTTP/1.1" 401 5107
+INFO 2026-01-16 22:53:54,943 log "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2026-01-16 22:53:54,947 log "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2026-01-16 22:53:54,967 log "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2026-01-16 22:53:54,977 log "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2026-01-16 22:53:55,009 log "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-01-16 22:53:55,031 log "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-01-16 22:53:55,048 log "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2026-01-16 22:53:55,049 log "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-01-16 22:53:55,054 log "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-01-16 22:53:55,058 log "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-01-16 22:53:55,065 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-01-16 22:53:55,070 log "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2026-01-16 22:53:55,075 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-01-16 22:53:55,166 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2026-01-16 22:53:55,226 log "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2026-01-16 22:53:55,227 log "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-01-16 22:53:55,229 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-01-16 22:53:55,232 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-01-16 22:53:55,235 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+WARNING 2026-01-16 22:53:55,338 log Not Found: /favicon.ico
+WARNING 2026-01-16 22:53:55,339 log "GET /favicon.ico HTTP/1.1" 404 6201
+ERROR 2026-01-16 22:54:01,393 log Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: api_question.doctor_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\json_api.py", line 167, in get_questions_api
+    for q in questions:
+             ^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: api_question.doctor_id
+ERROR 2026-01-16 22:54:01,412 log "GET /api/questions/ HTTP/1.1" 500 167828
+INFO 2026-01-16 22:54:42,281 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-16 22:54:45,117 autoreload Watching for file changes with StatReloader
+INFO 2026-01-16 22:54:54,962 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-01-16 22:54:55,821 log "GET /swagger/?format=openapi HTTP/1.1" 200 4148
+WARNING 2026-01-16 22:54:57,716 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:54:57,717 log "GET /serviceworker.js HTTP/1.1" 404 6216
+INFO 2026-01-16 22:55:20,571 log "POST /api/auth/login/ HTTP/1.1" 200 539
+WARNING 2026-01-16 22:55:39,059 log Unauthorized: /api/questions/
+WARNING 2026-01-16 22:55:39,060 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-16 22:56:10,113 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:56:10,116 log "GET /serviceworker.js HTTP/1.1" 404 6216
+ERROR 2026-01-16 22:57:44,074 log Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: api_question.doctor_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\json_api.py", line 167, in get_questions_api
+    for q in questions:
+             ^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: api_question.doctor_id
+ERROR 2026-01-16 22:57:44,107 log "GET /api/questions/ HTTP/1.1" 500 23633
+ERROR 2026-01-16 22:57:51,441 log Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: api_question.doctor_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\api\json_api.py", line 167, in get_questions_api
+    for q in questions:
+             ^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: api_question.doctor_id
+ERROR 2026-01-16 22:57:51,460 log "GET /api/questions/ HTTP/1.1" 500 23633
+WARNING 2026-01-16 22:58:22,529 log Not Found: /serviceworker.js
+WARNING 2026-01-16 22:58:22,532 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-16 23:01:17,696 log Unauthorized: /api/auth/me/
+WARNING 2026-01-16 23:01:19,615 log Unauthorized: /api/auth/login/
+INFO 2026-01-16 23:01:23,976 views Webhook received:
+{
+  "object": "instagram",
+  "entry": [
+    {
+      "changes": [
+        {
+          "field": "messages",
+          "value": {
+            "sender": {
+              "id": "999"
+            },
+            "message": {
+              "text": "Webhook works!"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+INFO 2026-01-16 23:01:23,992 views Instagram webhook verified
+INFO 2026-01-16 23:01:57,779 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-16 23:02:01,029 autoreload Watching for file changes with StatReloader
