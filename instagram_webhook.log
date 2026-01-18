@@ -4299,3 +4299,10 @@ WARNING 2026-01-16 23:05:30,693 log Not Found: /serviceworker.js
 WARNING 2026-01-16 23:05:30,699 log "GET /serviceworker.js HTTP/1.1" 404 6216
 WARNING 2026-01-17 11:58:57,742 log Not Found: /serviceworker.js
 WARNING 2026-01-17 11:58:57,743 log "GET /serviceworker.js HTTP/1.1" 404 6216
+INFO 2026-01-18 18:18:56,255 autoreload Watching for file changes with StatReloader
+INFO 2026-01-18 18:19:11,003 log "GET / HTTP/1.1" 302 0
+INFO 2026-01-18 18:19:11,100 log "GET /accounts/login/?next=/ HTTP/1.1" 200 1734
+WARNING 2026-01-18 18:19:12,060 log Not Found: /favicon.ico
+WARNING 2026-01-18 18:19:12,063 log "GET /favicon.ico HTTP/1.1" 404 6201
+WARNING 2026-01-18 18:19:13,568 log Not Found: /serviceworker.js
+WARNING 2026-01-18 18:19:13,569 log "GET /serviceworker.js HTTP/1.1" 404 6216
