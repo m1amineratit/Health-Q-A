@@ -36,11 +36,13 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '057639d5bf0d.ngrok-free.app',
     '.ngrok-free.app',  # Allow any ngrok subdomain
+    'health-q-a-production.up.railway.app',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://057639d5bf0d.ngrok-free.app',
     'https://*.ngrok-free.app',
+    'https://health-q-a-production.up.railway.app',
 ]
 
 # DRF SIMPLE JWT
