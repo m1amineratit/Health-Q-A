@@ -4797,3 +4797,36 @@ INFO 2026-01-19 21:45:33,024 autoreload Watching for file changes with StatReloa
 INFO 2026-01-19 21:45:59,687 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
 INFO 2026-01-19 21:46:01,008 autoreload Watching for file changes with StatReloader
 INFO 2026-01-19 21:55:33,193 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 21:55:33,998 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 21:57:36,180 log "GET /admin/api/question/ HTTP/1.1" 200 18056
+INFO 2026-01-19 21:57:38,202 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-01-19 21:57:39,896 log Not Found: /serviceworker.js
+WARNING 2026-01-19 21:57:39,897 log "GET /serviceworker.js HTTP/1.1" 404 6212
+INFO 2026-01-19 21:57:44,969 log "GET /admin/api/question/3bfea02e-12d6-4887-91fc-28b269a29fcb/change/ HTTP/1.1" 200 20256
+INFO 2026-01-19 21:57:45,214 log "GET /static/admin/js/calendar.js HTTP/1.1" 200 9159
+INFO 2026-01-19 21:57:45,219 log "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19698
+INFO 2026-01-19 21:57:45,248 log "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 689
+INFO 2026-01-19 21:57:48,121 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-19 21:57:48,214 log "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1112
+INFO 2026-01-19 21:57:48,214 log "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 805
+WARNING 2026-01-19 21:57:49,753 log Not Found: /serviceworker.js
+WARNING 2026-01-19 21:57:49,753 log "GET /serviceworker.js HTTP/1.1" 404 6212
+INFO 2026-01-19 21:58:00,735 log "GET /admin/api/question/ HTTP/1.1" 200 18056
+WARNING 2026-01-19 21:58:02,446 log Not Found: /serviceworker.js
+WARNING 2026-01-19 21:58:02,446 log "GET /serviceworker.js HTTP/1.1" 404 6212
+INFO 2026-01-19 21:58:05,989 log "GET /admin/api/question/557c1356-1a2d-4bb1-85de-e16704798537/change/ HTTP/1.1" 200 20252
+INFO 2026-01-19 21:58:08,897 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-01-19 21:58:10,496 log Not Found: /serviceworker.js
+WARNING 2026-01-19 21:58:10,497 log "GET /serviceworker.js HTTP/1.1" 404 6212
+INFO 2026-01-19 21:58:15,736 log "GET /admin/api/question/ HTTP/1.1" 200 18056
+WARNING 2026-01-19 21:58:17,469 log Not Found: /serviceworker.js
+WARNING 2026-01-19 21:58:17,470 log "GET /serviceworker.js HTTP/1.1" 404 6212
+INFO 2026-01-19 21:58:48,225 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 21:58:48,971 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-19 21:58:54,129 log Not Found: /serviceworker.js
+WARNING 2026-01-19 21:58:54,129 log "GET /serviceworker.js HTTP/1.1" 404 6212
+INFO 2026-01-19 21:58:55,780 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 21:58:56,534 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 21:58:58,442 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 21:58:59,215 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 21:59:04,662 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.

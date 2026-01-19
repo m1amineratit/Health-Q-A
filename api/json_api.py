@@ -149,24 +149,18 @@ def get_current_user_api(request):
 # --- QUESTION ENDPOINTS ---
 
 def classify_question(question_text):
-    speciality_choices = {
-        'eyes': 'Ophthalmologist',
-        'heart': 'Cardiologist',
-        'generaliste': 'General Practitioner',
-        'dentist': 'Dentist',
-        'pediatrics': 'Pediatrician',
-        'neurology': 'Neurologist',
-    }
+    specialities = Doctor.objects.values_list('speciality', flat=True).distinct()
+    speciality_list = list(specialities)
+
+    if not speciality_list:
+        return "generaliste"
     
     url = "https://openrouter.io/api/v1/chat/completions"
     
     headers = {
         "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
-    }
-    
-    # Create a clear mapping for the model
-    speciality_mapping = "\n".join([f"- {key}: {value}" for key, value in speciality_choices.items()])
+}
     
     payload = {
         "model": "mistralai/mistral-small-3.2-24b-instruct",
@@ -174,11 +168,10 @@ def classify_question(question_text):
             {
                 "role": "system",
                 "content": (
-                    "You are a medical question classifier. "
-                    "Classify the medical question into ONE of these specialities:\n"
-                    f"{speciality_mapping}\n\n"
-                    "Return ONLY the speciality key (eyes, heart, generaliste, dentist, pediatrics, or neurology). "
-                    "Nothing else. No explanation."
+                    "You are a classifier. "
+                    "Classify the question into one of these categories only: "
+                    f"{speciality_list}. "
+                    "Return only the category name."
                 )
             },
             {
@@ -195,21 +188,16 @@ def classify_question(question_text):
         
         if "choices" in data:
             result = data["choices"][0]["message"]["content"].strip().lower()
-            
-            # Validate the result is in our choices
-            if result in speciality_choices:
-                logger.info(f"Question classified as: {result}")
-                return result
-            else:
-                logger.warning(f"Invalid classification result: {result}, using default")
-                return 'generaliste'
+            if result not in speciality_list:
+                return speciality_list[0] if speciality_list else 'generaliste'
+            return result
         else:
             logger.error(f"OpenRouter API error: {data}")
-            return 'generaliste'
+            return speciality_list[0] if speciality_list else 'generaliste'
             
     except Exception as e:
         logger.error(f"Error calling OpenRouter API: {e}")
-        return 'generaliste'
+        return speciality_list[0] if speciality_list else 'generaliste'
 
 
 @swagger_auto_schema(
