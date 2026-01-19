@@ -98,6 +98,7 @@ def process_instagram_message(event):
     Handle a single Instagram DM event
     """
     from .json_api import classify_question
+    from .models import Doctor
     
     try:
         print(f"DEBUG: Processing event: {event}")
@@ -129,17 +130,25 @@ def process_instagram_message(event):
         # Classify the question based on available doctor specialities
         category = classify_question(message_text)
 
-        # Save message as question with category
+        # Find a doctor with this speciality to assign the question
+        try:
+            doctor = Doctor.objects.filter(speciality=category).first()
+            doctor_user = doctor.user if doctor else None
+        except:
+            doctor_user = None
+
+        # Save message as question with category and doctor
         question = Question.objects.create(
             instagram_user_id=sender_id,
             instagram_username=username,
             question_text=message_text,
             category=category,
+            doctor=doctor_user,  # Assign doctor with matching speciality
             created_at=timezone.now(),
             status="pending",
         )
 
-        logger.info(f"Question {question.id} created in category: {category}")
+        logger.info(f"Question {question.id} created in category: {category}, assigned to doctor: {doctor_user}")
 
         # Auto reply
         send_instagram_message(
