@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Question
+from .models import Question, Doctor
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
@@ -7,3 +7,5 @@ class QuestionAdmin(admin.ModelAdmin):
     list_filter = ['status', 'answered_by', 'created_at']
     search_fields = ['instagram_username', 'question_text', 'answer_text']
     readonly_fields = ['id', 'created_at']
+
+admin.site.register(Doctor)

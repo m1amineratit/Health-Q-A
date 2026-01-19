@@ -4674,3 +4674,13 @@ INFO 2026-01-19 20:28:43,663 autoreload C:\Users\pc\Desktop\backend\system\api\j
 INFO 2026-01-19 20:28:45,417 autoreload Watching for file changes with StatReloader
 INFO 2026-01-19 20:33:09,094 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
 INFO 2026-01-19 20:33:11,203 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-19 20:37:47,040 log Not Found: /serviceworker.js
+WARNING 2026-01-19 20:37:47,043 log "GET /serviceworker.js HTTP/1.1" 404 6212
+INFO 2026-01-19 20:58:53,539 autoreload C:\Users\pc\Desktop\backend\system\api\admin.py changed, reloading.
+INFO 2026-01-19 20:58:55,750 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:58:59,660 autoreload C:\Users\pc\Desktop\backend\system\api\admin.py changed, reloading.
+INFO 2026-01-19 20:59:01,550 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:59:03,232 autoreload C:\Users\pc\Desktop\backend\system\api\admin.py changed, reloading.
+INFO 2026-01-19 20:59:05,343 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:59:06,986 autoreload C:\Users\pc\Desktop\backend\system\api\admin.py changed, reloading.
+INFO 2026-01-19 20:59:09,163 autoreload Watching for file changes with StatReloader
