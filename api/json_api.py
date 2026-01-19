@@ -14,6 +14,7 @@ import logging
 from rest_framework_simplejwt.tokens import RefreshToken
 from .serializers import RegisterSerializer
 from django.contrib.auth.models import User
+from openai import OpenAI
 
 logger = logging.getLogger(__name__)
 
@@ -146,6 +147,38 @@ def get_current_user_api(request):
 
 # --- QUESTION ENDPOINTS ---
 
+client = OpenAI(api_key="API_KEY")
+
+def classify_question(question_text):
+    specialities = Doctor.objects.values_list('speciality', flat=True).distinct()
+    speciality_list = list(specialities)
+
+    if not speciality_list:
+        return "generaliste"
+    
+    response = client.chat.completions.create(
+        model = "gpt-4o-mini",
+        messages = [
+            {
+                "role" : "system",
+                "content": (
+                    "You are a classifier. "
+                    "Classify the question into one of these categories only: "
+                    f"{speciality_list}."
+                    "Return only the category name."
+                )
+            },
+            {
+                "role" : "user",
+                "content" : question_text
+            }
+        ],
+        temperature=0
+    )
+    result = response.choices[0].message.content.strip().lower()
+    if result not in speciality_list:
+        return speciality_list[0] if speciality_list else 'generaliste'
+
 @swagger_auto_schema(
     method='get',
     manual_parameters=[
@@ -162,7 +195,16 @@ def get_questions_api(request):
     """
     status_filter = request.query_params.get("status")
     
-    questions = Question.objects.all().order_by("-created_at")
+    try:
+        doctor = request.user.doctor_profile
+        doctor_speciality = doctor.speciality
+    except:
+        return Response({
+            'error' : "User is not a doctor"
+        },
+        status=status.HTTP_403_FORBIDDEN)
+    
+    questions = Question.objects.filter(category=doctor_speciality).order_by("-created_at")
     
     if status_filter in ["pending", "answered"]:
         questions = questions.filter(status=status_filter)
@@ -173,6 +215,7 @@ def get_questions_api(request):
             "id": str(q.id),
             "instagram_username": q.instagram_username,
             "question_text": q.question_text,
+            "category": q.category,
             "status": q.status,
             "created_at": q.created_at.isoformat(),
             "answered_at": q.answered_at.isoformat() if q.answered_at else None,

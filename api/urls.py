@@ -10,10 +10,10 @@ urlpatterns = [
     path("privacy-policy/", views.privacy_policy),
 
     # JSON API Views
-    path('api/auth/login/', json_api.login_api, name='api_login'),
-    path('api/auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('api/auth/me/', json_api.get_current_user_api, name='api_me'),
-    path("register/", json_api.register_api, name="register_api"),
+    path('api/auth/login', json_api.login_api, name='api_login'),
+    path('api/auth/token/refresh', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/auth/me', json_api.get_current_user_api, name='api_me'),
+    path("register", json_api.register_api, name="register_api"),
     
     path('api/questions/', json_api.get_questions_api, name='api_get_questions'),
     path('api/questions/<uuid:question_id>/', json_api.get_question_detail_api, name='api_get_question_detail'),

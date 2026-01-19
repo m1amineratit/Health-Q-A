@@ -4508,3 +4508,169 @@ INFO 2026-01-19 19:02:18,252 autoreload C:\Users\pc\Desktop\backend\system\api\j
 INFO 2026-01-19 19:02:19,119 autoreload Watching for file changes with StatReloader
 INFO 2026-01-19 19:02:32,419 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
 INFO 2026-01-19 19:02:33,971 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:27:12,209 log "GET /swagger HTTP/1.1" 301 0
+INFO 2026-01-19 19:27:12,261 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-01-19 19:27:12,774 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-01-19 19:27:12,776 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-01-19 19:27:12,812 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-01-19 19:27:12,813 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-01-19 19:27:12,831 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-01-19 19:27:12,846 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-01-19 19:27:12,940 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-01-19 19:27:12,992 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2026-01-19 19:27:13,058 log "GET /swagger/?format=openapi HTTP/1.1" 200 4299
+WARNING 2026-01-19 19:27:15,060 log Not Found: /serviceworker.js
+WARNING 2026-01-19 19:27:15,061 log "GET /serviceworker.js HTTP/1.1" 404 6216
+WARNING 2026-01-19 19:27:21,613 log Unauthorized: /api/auth/login/
+WARNING 2026-01-19 19:27:21,614 log "POST /api/auth/login/ HTTP/1.1" 401 31
+WARNING 2026-01-19 19:27:52,671 log Not Found: /serviceworker.js
+WARNING 2026-01-19 19:27:52,672 log "GET /serviceworker.js HTTP/1.1" 404 6216
+INFO 2026-01-19 19:29:24,804 log "POST /api/auth/login/ HTTP/1.1" 200 544
+WARNING 2026-01-19 19:29:55,827 log Not Found: /serviceworker.js
+WARNING 2026-01-19 19:29:55,828 log "GET /serviceworker.js HTTP/1.1" 404 6216
+INFO 2026-01-19 19:37:51,488 autoreload C:\Users\pc\Desktop\backend\system\api\urls.py changed, reloading.
+INFO 2026-01-19 19:37:53,538 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:37:56,407 autoreload C:\Users\pc\Desktop\backend\system\api\urls.py changed, reloading.
+INFO 2026-01-19 19:37:57,220 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:45:11,734 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:45:13,680 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:45:20,391 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:45:22,355 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:45:27,225 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:45:28,928 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:45:32,729 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:45:34,839 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:45:52,065 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:45:53,891 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:56:50,639 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:56:53,443 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:57:09,135 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:57:11,189 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:57:20,119 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:57:22,341 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:57:31,477 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:57:33,327 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:57:44,402 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:57:46,463 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:57:57,750 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:57:59,565 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:58:08,880 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:58:10,389 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:58:17,959 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:58:19,530 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:58:26,031 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:58:27,574 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:58:34,188 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:58:36,673 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:58:44,297 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:58:46,000 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:58:57,482 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:58:59,982 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:59:15,781 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:59:17,882 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:59:21,673 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:59:23,621 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:59:34,447 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:59:36,419 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:00:04,788 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:00:07,235 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:00:15,716 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:00:18,219 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:00:25,748 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:00:27,634 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:00:36,219 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:00:38,165 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:00:41,948 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:00:44,834 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:00:48,263 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:00:50,025 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:00:57,831 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:00:59,640 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:01:12,054 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:01:14,096 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:02:16,090 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:02:18,092 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:02:42,458 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:02:47,005 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:12:23,186 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 20:12:25,344 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:12:29,053 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 20:12:30,993 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:12:39,053 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 20:12:41,108 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:13:04,247 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:13:06,563 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:13:17,044 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:13:19,046 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:13:26,066 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:13:28,146 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:13:38,291 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:13:40,549 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:14:48,584 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:14:50,504 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:14:59,923 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:15:01,954 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:15:10,354 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:15:12,133 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:15:15,667 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:15:17,047 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:15:19,438 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:15:21,109 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:15:38,924 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:15:40,900 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:15:49,619 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:15:51,445 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:16:09,932 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:16:11,667 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:16:13,865 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:16:15,540 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:16:19,174 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:16:21,403 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:16:28,555 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:16:30,194 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:16:38,035 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:16:39,820 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:16:47,403 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:16:49,095 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:16:52,484 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:16:54,072 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:17:01,133 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:17:02,913 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:17:06,153 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:17:07,642 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:17:30,229 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-19 20:17:33,187 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:18:16,652 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:18:18,737 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:18:23,521 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:18:25,052 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:18:30,018 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:18:31,887 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:19:17,797 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:19:19,417 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:19:21,770 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:19:23,539 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:19:25,856 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:19:27,750 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:19:31,231 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:19:32,958 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:19:35,504 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:19:37,287 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:19:41,936 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:19:43,683 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:19:51,684 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:19:53,347 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:19:58,022 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:19:59,719 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:20:06,569 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:20:08,510 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:20:21,475 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:20:23,699 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:28:02,439 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:28:04,402 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:28:34,602 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:28:36,105 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:28:43,663 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:28:45,417 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 20:33:09,094 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 20:33:11,203 autoreload Watching for file changes with StatReloader

@@ -29,6 +29,7 @@ class Question(models.Model):
         ('archived', 'Archived'),
     ]
     doctor = models.ForeignKey(User, on_delete=models.CASCADE, related_name='questions', null=True, blank=True)
+    category = models.CharField(max_length=150, blank=True, null=True)
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     instagram_username = models.CharField(max_length=100)
     instagram_user_id = models.CharField(max_length=100, blank=True)

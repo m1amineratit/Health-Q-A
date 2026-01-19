@@ -97,12 +97,13 @@ def process_instagram_message(event):
     """
     Handle a single Instagram DM event
     """
+    from .json_api import classify_question
+    
     try:
-        print(f"DEBUG: Processing event: {event}") # TEST DEBUG
+        print(f"DEBUG: Processing event: {event}")
         
-        # Ignore edits, read receipts, reactions, etc.
         if "message" not in event:
-            print("DEBUG: 'message' key missing") # TEST DEBUG
+            print("DEBUG: 'message' key missing")
             logger.info("Non-message event ignored")
             return
 
@@ -125,16 +126,20 @@ def process_instagram_message(event):
         # Get username
         username = get_instagram_username(sender_id) or f"user_{sender_id}"
 
-        # Save message as question
+        # Classify the question based on available doctor specialities
+        category = classify_question(message_text)
+
+        # Save message as question with category
         question = Question.objects.create(
             instagram_user_id=sender_id,
             instagram_username=username,
             question_text=message_text,
+            category=category,
             created_at=timezone.now(),
             status="pending",
         )
 
-        logger.info("Question %s created", question.id)
+        logger.info(f"Question {question.id} created in category: {category}")
 
         # Auto reply
         send_instagram_message(
