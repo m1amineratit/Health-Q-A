@@ -8,7 +8,7 @@ from django.utils import timezone
 from django.urls import reverse
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
-from .models import Question
+from .models import Question, Doctor
 from .views import send_instagram_message
 import logging
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -43,9 +43,10 @@ def register_api(request):
             email=data["email"],
             first_name=data["first_name"],
             last_name=data.get("last_name", ""),
-            password=data["password"]
+            password=data["password"],
         )
 
+        Doctor.objects.create(user=user, speciality=data["speciality"])
         # Generate JWT Tokens immediately
         refresh = RefreshToken.for_user(user)
 
@@ -57,7 +58,8 @@ def register_api(request):
                 "id": user.id,
                 "username": user.username,
                 "full_name": user.get_full_name(),
-                "email": user.email
+                "email": user.email,
+                "speciality": data["speciality"]
             }
         }, status=status.HTTP_201_CREATED)
 
@@ -118,7 +120,6 @@ def login_api(request):
         return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
 
 
-
 @swagger_auto_schema(
     method='get',
     responses={200: "User Profile"}
@@ -131,12 +132,15 @@ def get_current_user_api(request):
     Returns details of the currently logged-in user.
     """
     user = request.user
+    speciality = user.doctor.speciality if hasattr(user, 'doctor_profile') else None
+
     return Response({
         "id": user.id,
         "username": user.username,
         "full_name": user.get_full_name(),
         "email": user.email,
-        "is_staff": user.is_staff
+        "is_staff": user.is_staff,
+        "speciality": speciality,
     })
 
 
@@ -158,7 +162,7 @@ def get_questions_api(request):
     """
     status_filter = request.query_params.get("status")
     
-    questions = Question.objects.filter(doctor=request.user).order_by("-created_at")
+    questions = Question.objects.all().order_by("-created_at")
     
     if status_filter in ["pending", "answered"]:
         questions = questions.filter(status=status_filter)

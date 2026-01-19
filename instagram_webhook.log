@@ -4306,3 +4306,205 @@ WARNING 2026-01-18 18:19:12,060 log Not Found: /favicon.ico
 WARNING 2026-01-18 18:19:12,063 log "GET /favicon.ico HTTP/1.1" 404 6201
 WARNING 2026-01-18 18:19:13,568 log Not Found: /serviceworker.js
 WARNING 2026-01-18 18:19:13,569 log "GET /serviceworker.js HTTP/1.1" 404 6216
+INFO 2026-01-19 18:14:50,745 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-19 18:15:52,085 log Unauthorized: /api/auth/login/
+WARNING 2026-01-19 18:15:52,085 log "POST /api/auth/login/ HTTP/1.1" 401 31
+WARNING 2026-01-19 18:15:56,481 log Unauthorized: /api/auth/login/
+WARNING 2026-01-19 18:15:56,481 log "POST /api/auth/login/ HTTP/1.1" 401 31
+WARNING 2026-01-19 18:16:02,497 log Not Found: /api/auth/register
+WARNING 2026-01-19 18:16:02,497 log "POST /api/auth/register HTTP/1.1" 404 6220
+WARNING 2026-01-19 18:16:24,930 log Not Found: /api/register
+WARNING 2026-01-19 18:16:24,930 log "POST /api/register HTTP/1.1" 404 6205
+WARNING 2026-01-19 18:16:27,600 log Not Found: /api/register/
+WARNING 2026-01-19 18:16:27,600 log "POST /api/register/ HTTP/1.1" 404 6208
+ERROR 2026-01-19 18:16:36,373 log Internal Server Error: /register
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-01-19 18:16:36,375 log "POST /register HTTP/1.1" 500 72402
+WARNING 2026-01-19 18:16:42,503 log Bad Request: /register/
+WARNING 2026-01-19 18:16:42,503 log "POST /register/ HTTP/1.1" 400 89
+INFO 2026-01-19 18:17:12,079 log "POST /register/ HTTP/1.1" 201 589
+WARNING 2026-01-19 18:17:45,253 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:17:45,254 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:17:47,151 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:17:47,151 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:17:47,936 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:17:47,937 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:17:48,407 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:17:48,409 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:17:48,578 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:17:48,578 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:17:48,752 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:17:48,753 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:17:48,926 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:17:48,927 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:17:49,099 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:17:49,099 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:17:49,281 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:17:49,281 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:17:49,471 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:17:49,471 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:18:02,381 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:18:02,381 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:18:03,136 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:18:03,137 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:18:03,313 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:18:03,314 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:18:03,551 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:18:03,552 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:18:03,720 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:18:03,721 log "GET /api/questions/ HTTP/1.1" 401 58
+WARNING 2026-01-19 18:18:03,843 log Unauthorized: /api/questions/
+WARNING 2026-01-19 18:18:03,844 log "GET /api/questions/ HTTP/1.1" 401 58
+INFO 2026-01-19 18:19:29,803 log "GET /api/questions/ HTTP/1.1" 200 26
+INFO 2026-01-19 18:19:35,470 log "GET /api/questions/ HTTP/1.1" 200 26
+INFO 2026-01-19 18:19:55,215 log "GET /api/questions/ HTTP/1.1" 200 26
+INFO 2026-01-19 18:20:56,585 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:20:57,369 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:21:32,242 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:21:33,095 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:29:48,906 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:29:50,370 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:30:48,825 autoreload C:\Users\pc\Desktop\backend\system\api\serializers.py changed, reloading.
+INFO 2026-01-19 18:30:49,594 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:31:42,942 autoreload C:\Users\pc\Desktop\backend\system\api\serializers.py changed, reloading.
+INFO 2026-01-19 18:31:43,658 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:31:45,631 autoreload C:\Users\pc\Desktop\backend\system\api\serializers.py changed, reloading.
+INFO 2026-01-19 18:31:46,337 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:31:51,526 autoreload C:\Users\pc\Desktop\backend\system\api\serializers.py changed, reloading.
+INFO 2026-01-19 18:31:52,301 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:32:26,376 autoreload C:\Users\pc\Desktop\backend\system\api\serializers.py changed, reloading.
+INFO 2026-01-19 18:32:27,157 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:32:52,357 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:32:53,322 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:32:55,367 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:32:56,087 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:33:11,987 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:33:12,751 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:33:16,612 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:33:17,441 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:41:27,677 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:41:29,439 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:41:32,194 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:41:33,514 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:41:35,479 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:41:37,833 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:41:42,539 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:41:43,381 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:41:45,061 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:41:47,267 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:41:48,867 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:41:50,165 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:41:52,350 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:41:53,222 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:41:56,633 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:41:57,430 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:47:40,758 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:47:41,664 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:47:51,781 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:47:52,773 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:47:54,752 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:47:55,616 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:48:00,049 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:48:00,887 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:48:02,870 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:48:03,654 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:48:10,269 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:48:11,133 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:48:13,115 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:48:13,871 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:48:20,376 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:48:21,164 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:48:24,477 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:48:25,227 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:48:29,510 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:48:30,353 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:48:35,826 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:48:36,670 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:48:59,680 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:49:00,459 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:49:07,132 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:49:07,954 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:49:09,902 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:49:10,638 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:49:13,888 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:49:14,670 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:49:19,024 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:49:20,079 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:49:21,988 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:49:22,821 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:49:30,638 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:49:31,387 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:49:33,259 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:49:34,029 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:49:38,379 autoreload C:\Users\pc\Desktop\backend\system\api\models.py changed, reloading.
+INFO 2026-01-19 18:49:40,087 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:50:17,990 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:50:18,746 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:50:25,355 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:50:26,130 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:50:32,877 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:50:33,803 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:50:35,497 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:50:36,406 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:50:40,062 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:50:40,855 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:50:48,617 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:50:49,398 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:50:52,203 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:50:52,931 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:51:21,365 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:51:22,335 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:51:41,092 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:51:42,000 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:51:45,064 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:51:45,988 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:52:28,530 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:52:29,319 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:52:31,044 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:52:31,804 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:52:34,566 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:52:35,408 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:52:38,711 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:52:39,473 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:52:42,762 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:52:43,561 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:52:46,634 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:52:47,692 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:52:49,406 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:52:50,191 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:52:53,652 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:52:54,498 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:52:56,370 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:52:57,226 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:52:59,096 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:52:59,930 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:53:06,498 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:53:07,380 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:53:10,446 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:53:12,105 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:53:15,416 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:53:16,303 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:53:19,103 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:53:19,909 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:53:23,826 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:53:24,826 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 18:53:26,592 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 18:53:27,325 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:02:09,589 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:02:10,373 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:02:18,252 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:02:19,119 autoreload Watching for file changes with StatReloader
+INFO 2026-01-19 19:02:32,419 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-01-19 19:02:33,971 autoreload Watching for file changes with StatReloader
