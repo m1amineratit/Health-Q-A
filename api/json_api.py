@@ -1,3 +1,4 @@
+from django.conf import settings
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
@@ -14,7 +15,7 @@ import logging
 from rest_framework_simplejwt.tokens import RefreshToken
 from .serializers import RegisterSerializer
 from django.contrib.auth.models import User
-from openai import OpenAI
+import requests
 
 logger = logging.getLogger(__name__)
 
@@ -147,8 +148,6 @@ def get_current_user_api(request):
 
 # --- QUESTION ENDPOINTS ---
 
-client = OpenAI(api_key="API_KEY")
-
 def classify_question(question_text):
     specialities = Doctor.objects.values_list('speciality', flat=True).distinct()
     speciality_list = list(specialities)
@@ -156,28 +155,50 @@ def classify_question(question_text):
     if not speciality_list:
         return "generaliste"
     
-    response = client.chat.completions.create(
-        model = "gpt-4o-mini",
-        messages = [
+    url = "https://openrouter.io/api/v1/chat/completions"
+    
+    headers = {
+        "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
+        "Content-Type": "application/json",
+}
+    
+    payload = {
+        "model": "openai/gpt-4o-mini:free",
+        "messages": [
             {
-                "role" : "system",
+                "role": "system",
                 "content": (
                     "You are a classifier. "
                     "Classify the question into one of these categories only: "
-                    f"{speciality_list}."
+                    f"{speciality_list}. "
                     "Return only the category name."
                 )
             },
             {
-                "role" : "user",
-                "content" : question_text
+                "role": "user",
+                "content": question_text
             }
         ],
-        temperature=0
-    )
-    result = response.choices[0].message.content.strip().lower()
-    if result not in speciality_list:
+        "temperature": 0
+    }
+    
+    try:
+        response = requests.post(url, json=payload, headers=headers)
+        data = response.json()
+        
+        if "choices" in data:
+            result = data["choices"][0]["message"]["content"].strip().lower()
+            if result not in speciality_list:
+                return speciality_list[0] if speciality_list else 'generaliste'
+            return result
+        else:
+            logger.error(f"OpenRouter API error: {data}")
+            return speciality_list[0] if speciality_list else 'generaliste'
+            
+    except Exception as e:
+        logger.error(f"Error calling OpenRouter API: {e}")
         return speciality_list[0] if speciality_list else 'generaliste'
+
 
 @swagger_auto_schema(
     method='get',
