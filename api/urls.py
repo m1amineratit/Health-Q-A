@@ -15,6 +15,19 @@ urlpatterns = [
     path('api/auth/me', json_api.get_current_user_api, name='api_me'),
     path("register", json_api.register_api, name="register_api"),
     
+    # Password Reset
+    path('api/auth/password-reset/', json_api.password_reset_request_api, name='api_password_reset_request'),
+    path('api/auth/password-reset-confirm/', json_api.password_reset_confirm_api, name='api_password_reset_confirm'),
+    
+    # Doctor Profile
+    path('api/doctor/profile/', json_api.get_doctor_profile_api, name='api_get_doctor_profile'),
+    path('api/doctor/update/', json_api.update_doctor_api, name='api_update_doctor'),
+    
+    # Establishment Profile
+    path('api/establishment/create/', json_api.create_establishment_api, name='api_create_establishment'),
+    path('api/establishment/profile/', json_api.get_establishment_profile_api, name='api_get_establishment_profile'),
+    path('api/establishment/update/', json_api.update_establishment_api, name='api_update_establishment'),
+    
     path('api/questions/', json_api.get_questions_api, name='api_get_questions'),
     path('api/questions/<uuid:question_id>/', json_api.get_question_detail_api, name='api_get_question_detail'),
     path('api/questions/<uuid:question_id>/answer/', json_api.submit_answer_api, name='api_submit_answer'),
