@@ -126,20 +126,37 @@ def register_api(request):
     User is created without a password and account is inactive until admin approval.
     User will receive an email once their account is accepted with a link to set their password.
     """
-    serializer = RegisterSerializer(data=request.data)
+    # Extract full_name from request and split into first and last name
+    full_name = request.data.get("full_name", "").strip()
+    
+    if not full_name:
+        return Response({
+            "errors": {"full_name": "Full name is required"}
+        }, status=status.HTTP_400_BAD_REQUEST)
+    
+    # Split full_name into first and last name
+    name_parts = full_name.split(' ', 1)
+    first_name = name_parts[0]
+    last_name = name_parts[1] if len(name_parts) > 1 else ""
+    
+    # Prepare data for serializer (without full_name)
+    data = request.data.copy()
+    data['first_name'] = first_name
+    data['last_name'] = last_name
+    
+    # Remove full_name from data as it's not a User field
+    if 'full_name' in data:
+        data.pop('full_name')
+    
+    serializer = RegisterSerializer(data=data)
     
     if serializer.is_valid():
-        data = serializer.validated_data
-        
-        # Extract first and last name from full_name
-        name_parts = data["full_name"].strip().split(' ', 1)
-        first_name = name_parts[0]
-        last_name = name_parts[1] if len(name_parts) > 1 else ""
+        validated_data = serializer.validated_data
         
         # Create user without password (account inactive)
         user = User.objects.create_user(
-            username=data["email"],  # Use email as username
-            email=data["email"],
+            username=validated_data["email"],  # Use email as username
+            email=validated_data["email"],
             first_name=first_name,
             last_name=last_name,
             password=None  # No password yet
@@ -150,8 +167,8 @@ def register_api(request):
         # Create doctor profile
         doctor = Doctor.objects.create(
             user=user,
-            speciality=data["speciality"],
-            number_of_phone=data["phone_number"]
+            speciality=validated_data["speciality"],
+            number_of_phone=validated_data["phone_number"]
         )
 
         return Response({
@@ -161,7 +178,7 @@ def register_api(request):
                 "id": user.id,
                 "email": user.email,
                 "full_name": user.get_full_name(),
-                "speciality": data["speciality"],
+                "speciality": validated_data["speciality"],
                 "is_active": user.is_active,
                 "is_accepted": doctor.is_accepted
             }
