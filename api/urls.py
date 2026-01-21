@@ -21,6 +21,7 @@ urlpatterns = [
     
     # Doctor Profile
     path('api/doctor/profile/', json_api.get_doctor_profile_api, name='api_get_doctor_profile'),
+    path('api/doctor/statistics/', json_api.get_doctor_statistics_api, name='api_doctor_statistics'),
     path('api/doctor/update/', json_api.update_doctor_api, name='api_update_doctor'),
     
     # Establishment Profile
@@ -31,4 +32,5 @@ urlpatterns = [
     path('api/questions/', json_api.get_questions_api, name='api_get_questions'),
     path('api/questions/<uuid:question_id>/', json_api.get_question_detail_api, name='api_get_question_detail'),
     path('api/questions/<uuid:question_id>/answer/', json_api.submit_answer_api, name='api_submit_answer'),
+    path('api/feed/answered-questions/', json_api.answered_questions_feed_api, name='api_answered_questions_feed'),
 ]

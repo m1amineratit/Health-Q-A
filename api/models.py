@@ -69,10 +69,11 @@ class Question(models.Model):
     question_text = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
-    answered_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    answered_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='answered_questions')
     answered_at = models.DateTimeField(null=True, blank=True)
     answer_text = models.TextField(blank=True)
     answer_sent = models.BooleanField(default=False)
+    views_count = models.IntegerField(default=0, help_text="Number of views for this answer page")
     
     class Meta:
         ordering = ['-created_at']

@@ -306,6 +306,10 @@ def public_answer(request, question_id):
         id=question_id,
         status="answered"
     )
+    
+    # Increment views count
+    question.views_count += 1
+    question.save(update_fields=['views_count'])
 
     return render(
         request,

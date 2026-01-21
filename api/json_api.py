@@ -18,6 +18,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.core.mail import send_mail
+from django.db import models
 import requests
 
 logger = logging.getLogger(__name__)
@@ -330,6 +331,68 @@ def get_doctor_profile_api(request):
             "created_at": doctor.created_at.isoformat(),
         }
     }, status=status.HTTP_200_OK)
+
+
+@swagger_auto_schema(
+    method='get',
+    responses={200: "Doctor Statistics"}
+)
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_doctor_statistics_api(request):
+    """
+    Get Doctor Statistics
+    Returns statistics about answered questions and total views for the logged-in doctor.
+    """
+    try:
+        doctor = request.user.doctor_profile
+    except:
+        return Response({
+            'error': "User is not a doctor"
+        }, status=status.HTTP_403_FORBIDDEN)
+    
+    # Get questions answered by this doctor
+    answered_questions = Question.objects.filter(
+        answered_by=request.user,
+        status="answered"
+    )
+    
+    # Calculate statistics
+    total_answered = answered_questions.count()
+    total_views = answered_questions.aggregate(
+        total_views=models.Sum('views_count')
+    )['total_views'] or 0
+    
+    average_views = total_views / total_answered if total_answered > 0 else 0
+    
+    # Get breakdown by category
+    category_stats = []
+    categories = answered_questions.values_list('category', flat=True).distinct()
+    
+    for category in categories:
+        category_questions = answered_questions.filter(category=category)
+        category_total = category_questions.count()
+        category_views = category_questions.aggregate(
+            total_views=models.Sum('views_count')
+        )['total_views'] or 0
+        
+        category_stats.append({
+            "category": category,
+            "questions_answered": category_total,
+            "total_views": category_views,
+            "average_views": category_views / category_total if category_total > 0 else 0,
+        })
+    
+    return Response({
+        "status": "success",
+        "statistics": {
+            "total_questions_answered": total_answered,
+            "total_views": total_views,
+            "average_views_per_question": round(average_views, 2),
+            "category_breakdown": category_stats,
+        }
+    }, status=status.HTTP_200_OK)
+
 
 
 @swagger_auto_schema(
@@ -701,6 +764,7 @@ def get_questions_api(request):
     """
     Get List of Questions
     Returns a list of questions, optionally filtered by status.
+    Generaliste doctors see all categories except dentist.
     """
     status_filter = request.query_params.get("status")
     
@@ -713,7 +777,12 @@ def get_questions_api(request):
         },
         status=status.HTTP_403_FORBIDDEN)
     
-    questions = Question.objects.filter(category=doctor_speciality).order_by("-created_at")
+    # Generaliste doctors see all categories except dentist
+    if doctor_speciality == 'generaliste':
+        questions = Question.objects.exclude(category='dentist').order_by("-created_at")
+    else:
+        # Other specialists see only their own category
+        questions = Question.objects.filter(category=doctor_speciality).order_by("-created_at")
     
     if status_filter in ["pending", "answered"]:
         questions = questions.filter(status=status_filter)
@@ -818,3 +887,90 @@ def submit_answer_api(request, question_id):
         "message": "Answer saved and sent to Instagram",
         "instagram_sent": success
     })
+
+
+@swagger_auto_schema(
+    method='get',
+    manual_parameters=[
+        openapi.Parameter('page', openapi.IN_QUERY, description="Page number for pagination", type=openapi.TYPE_INTEGER),
+        openapi.Parameter('limit', openapi.IN_QUERY, description="Number of items per page", type=openapi.TYPE_INTEGER),
+    ],
+    responses={200: "List of Answered Questions"}
+)
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def answered_questions_feed_api(request):
+    """
+    Get Answered Questions Feed
+    Returns a paginated feed of all answered questions with doctor information.
+    Only returns questions that have been answered and sent.
+    """
+    page = request.query_params.get("page", 1)
+    limit = request.query_params.get("limit", 10)
+    
+    try:
+        page = int(page)
+        limit = int(limit)
+    except (ValueError, TypeError):
+        page = 1
+        limit = 10
+    
+    # Ensure reasonable limits
+    if limit > 100:
+        limit = 100
+    if page < 1:
+        page = 1
+    
+    # Get all answered questions with answers that have been sent
+    answered_questions = Question.objects.filter(
+        status="answered",
+        answer_sent=True
+    ).select_related('answered_by', 'answered_by__doctor_profile').order_by("-answered_at")
+    
+    # Calculate pagination
+    total_count = answered_questions.count()
+    start = (page - 1) * limit
+    end = start + limit
+    
+    questions_page = answered_questions[start:end]
+    
+    data = []
+    for q in questions_page:
+        doctor_info = None
+        if q.answered_by and hasattr(q.answered_by, 'doctor_profile'):
+            doctor = q.answered_by.doctor_profile
+            doctor_info = {
+                "id": doctor.id,
+                "name": q.answered_by.get_full_name(),
+                "speciality": doctor.speciality,
+                "speciality_display": doctor.get_speciality_display(),
+                "phone": doctor.number_of_phone,
+                "img": doctor.img.url if doctor.img else None,
+            }
+        
+        data.append({
+            "id": str(q.id),
+            "question_text": q.question_text,
+            "instagram_username": q.instagram_username,
+            "category": q.category,
+            "answer_text": q.answer_text,
+            "answered_at": q.answered_at.isoformat(),
+            "created_at": q.created_at.isoformat(),
+            "views_count": q.views_count,
+            "doctor": doctor_info,
+        })
+    
+    # Calculate pagination info
+    total_pages = (total_count + limit - 1) // limit  # Ceiling division
+    
+    return Response({
+        "status": "success",
+        "count": len(data),
+        "total_count": total_count,
+        "page": page,
+        "limit": limit,
+        "total_pages": total_pages,
+        "has_next": page < total_pages,
+        "has_previous": page > 1,
+        "questions": data
+    }, status=status.HTTP_200_OK)
