@@ -13,6 +13,10 @@ urlpatterns = [
     path('api/auth/password-reset', json_api.password_reset_request_api, name='api_password_reset_request'),
     path('api/auth/password-reset-confirm', json_api.password_reset_confirm_api, name='api_password_reset_confirm'),
     
+    # User Acceptance & Password Setup
+    path('api/auth/accept-user', json_api.accept_user_api, name='api_accept_user'),
+    path('api/auth/set-password', json_api.set_password_api, name='api_set_password'),
+    
     # Doctor Profile
     path('api/doctor/profile', json_api.get_doctor_profile_api, name='api_get_doctor_profile'),
     path('api/doctor/statistics', json_api.get_doctor_statistics_api, name='api_doctor_statistics'),

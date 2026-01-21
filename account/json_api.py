@@ -8,7 +8,7 @@ from django.contrib.auth import authenticate
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from .models import Doctor, Establishment
-from .serializers import RegisterSerializer
+from .serializers import RegisterSerializer, SetPasswordSerializer, AcceptUserSerializer
 from django.contrib.auth.models import User
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
@@ -25,13 +25,11 @@ register_schema = openapi.Schema(
     type=openapi.TYPE_OBJECT,
     properties={
         'speciality': openapi.Schema(type=openapi.TYPE_STRING, description='Medical speciality'),
-        'username': openapi.Schema(type=openapi.TYPE_STRING, description='Username'),
+        'full_name': openapi.Schema(type=openapi.TYPE_STRING, description='Full name'),
         'email': openapi.Schema(type=openapi.TYPE_STRING, description='Email address'),
-        'password': openapi.Schema(type=openapi.TYPE_STRING, description='Password'),
-        'first_name': openapi.Schema(type=openapi.TYPE_STRING, description='First name'),
-        'last_name': openapi.Schema(type=openapi.TYPE_STRING, description='Last name'),
+        'phone_number': openapi.Schema(type=openapi.TYPE_STRING, description='Phone number'),
     },
-    required=['speciality', 'username', 'email', 'password', 'first_name']
+    required=['speciality', 'full_name', 'email', 'phone_number']
 )
 
 login_schema = openapi.Schema(
@@ -109,43 +107,63 @@ establishment_update_schema = openapi.Schema(
 # -------------------------
 # REGISTER API
 # -------------------------
+# -------------------------
+# REGISTER API
+# -------------------------
 @swagger_auto_schema(
     method="post",
     request_body=RegisterSerializer,
     responses={
-        201: "User Registered Successfully",
+        201: "User Registered Successfully - Pending Admin Approval",
         400: "Invalid Data"
     }
 )
 @api_view(["POST"])
 @permission_classes([AllowAny])
 def register_api(request):
+    """
+    Register a new doctor account.
+    User is created without a password and account is inactive until admin approval.
+    User will receive an email once their account is accepted with a link to set their password.
+    """
     serializer = RegisterSerializer(data=request.data)
     
     if serializer.is_valid():
         data = serializer.validated_data
+        
+        # Extract first and last name from full_name
+        name_parts = data["full_name"].strip().split(' ', 1)
+        first_name = name_parts[0]
+        last_name = name_parts[1] if len(name_parts) > 1 else ""
+        
+        # Create user without password (account inactive)
         user = User.objects.create_user(
-            username=data["username"],
+            username=data["email"],  # Use email as username
             email=data["email"],
-            first_name=data["first_name"],
-            last_name=data.get("last_name", ""),
-            password=data["password"],
+            first_name=first_name,
+            last_name=last_name,
+            password=None  # No password yet
         )
+        user.is_active = False  # Deactivate until admin approval
+        user.save()
 
-        Doctor.objects.create(user=user, speciality=data["speciality"])
-        # Generate JWT Tokens immediately
-        refresh = RefreshToken.for_user(user)
+        # Create doctor profile
+        doctor = Doctor.objects.create(
+            user=user,
+            speciality=data["speciality"],
+            number_of_phone=data["phone_number"]
+        )
 
         return Response({
             "status": "success",
-            "access": str(refresh.access_token),
-            "refresh": str(refresh),
+            "message": "Registration successful! Please wait for admin approval. You'll receive an email with instructions to set your password.",
             "user": {
                 "id": user.id,
-                "username": user.username,
-                "full_name": user.get_full_name(),
                 "email": user.email,
-                "speciality": data["speciality"]
+                "full_name": user.get_full_name(),
+                "speciality": data["speciality"],
+                "is_active": user.is_active,
+                "is_accepted": doctor.is_accepted
             }
         }, status=status.HTTP_201_CREATED)
 
@@ -693,5 +711,254 @@ def update_establishment_api(request):
             "quartier": establishment.quartier,
             "adresse_electronique": establishment.adresse_electronique,
             "telephone_fixe": establishment.telephone_fixe,
+        }
+    }, status=status.HTTP_200_OK)
+
+# -------------------------
+# ACCEPT USER & SET PASSWORD ENDPOINTS
+# -------------------------
+
+accept_user_schema = openapi.Schema(
+    type=openapi.TYPE_OBJECT,
+    properties={
+        'user_id': openapi.Schema(type=openapi.TYPE_INTEGER, description='User ID'),
+        'action': openapi.Schema(type=openapi.TYPE_STRING, description='accept or reject'),
+    },
+    required=['user_id', 'action']
+)
+
+@swagger_auto_schema(
+    method='post',
+    request_body=accept_user_schema,
+    responses={
+        200: "User accepted/rejected successfully",
+        400: "Invalid data",
+        403: "Permission denied - admin only",
+        404: "User not found"
+    }
+)
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def accept_user_api(request):
+    """
+    Accept or Reject User Registration (Admin Only)
+    Admin endpoint to approve or reject pending doctor registrations.
+    When accepted, an email is sent with a link for the user to set their password.
+    """
+    # Check if user is staff/admin
+    if not request.user.is_staff:
+        return Response({
+            "error": "Permission denied. Only administrators can accept users."
+        }, status=status.HTTP_403_FORBIDDEN)
+    
+    serializer = AcceptUserSerializer(data=request.data)
+    
+    if serializer.is_valid():
+        data = serializer.validated_data
+        user_id = data['user_id']
+        action = data['action']
+        
+        try:
+            user = User.objects.get(id=user_id)
+            doctor = user.doctor_profile
+        except User.DoesNotExist:
+            return Response({
+                "error": "User not found"
+            }, status=status.HTTP_404_NOT_FOUND)
+        except Doctor.DoesNotExist:
+            return Response({
+                "error": "Doctor profile not found for this user"
+            }, status=status.HTTP_404_NOT_FOUND)
+        
+        if action == 'accept':
+            # Mark user as accepted
+            doctor.is_accepted = True
+            from django.utils import timezone
+            doctor.accepted_at = timezone.now()
+            doctor.save()
+            
+            # Generate password reset token for user to set password
+            token_generator = PasswordResetTokenGenerator()
+            token = token_generator.make_token(user)
+            uid = urlsafe_base64_encode(str(user.id).encode())
+            
+            # Create password setup link
+            frontend_url = getattr(settings, 'FRONTEND_URL', 'http://localhost:3000')
+            password_setup_link = f"{frontend_url}/set-password/{uid}/{token}/"
+            
+            # Send acceptance email
+            subject = "Your Account Has Been Approved!"
+            message = f"""
+            Hello {user.get_full_name() or user.username},
+            
+            Great news! Your doctor account has been approved by our administration team.
+            
+            To complete your registration and set your password, please click the link below:
+            
+            {password_setup_link}
+            
+            This link expires in 24 hours.
+            
+            Once you've set your password, you'll be able to log in and access your account.
+            
+            If you have any questions, please contact our support team.
+            
+            Best regards,
+            Medical System Team
+            """
+            
+            try:
+                send_mail(
+                    subject,
+                    message,
+                    settings.DEFAULT_FROM_EMAIL,
+                    [user.email],
+                    fail_silently=False,
+                )
+                
+                return Response({
+                    "status": "success",
+                    "message": f"User {user.get_full_name()} has been accepted. Acceptance email sent.",
+                    "user": {
+                        "id": user.id,
+                        "email": user.email,
+                        "full_name": user.get_full_name(),
+                        "is_accepted": doctor.is_accepted,
+                        "is_active": user.is_active
+                    }
+                }, status=status.HTTP_200_OK)
+            
+            except Exception as e:
+                logger.error(f"Error sending acceptance email: {e}")
+                return Response({
+                    "status": "partial",
+                    "message": "User accepted but failed to send email",
+                    "error": str(e)
+                }, status=status.HTTP_200_OK)
+        
+        elif action == 'reject':
+            # Delete the user and doctor profile
+            user.delete()
+            
+            # Optionally send rejection email before deleting
+            # (You might want to send the rejection email before deletion)
+            
+            return Response({
+                "status": "success",
+                "message": f"User registration has been rejected and account deleted.",
+            }, status=status.HTTP_200_OK)
+    
+    return Response({"errors": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
+
+
+set_password_schema = openapi.Schema(
+    type=openapi.TYPE_OBJECT,
+    properties={
+        'password': openapi.Schema(type=openapi.TYPE_STRING, description='New password'),
+        'password_confirm': openapi.Schema(type=openapi.TYPE_STRING, description='Password confirmation'),
+    },
+    required=['password', 'password_confirm']
+)
+
+@swagger_auto_schema(
+    method='post',
+    request_body=set_password_schema,
+    responses={
+        200: "Password set successfully",
+        400: "Invalid data or token expired",
+        404: "User not found"
+    }
+)
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def set_password_api(request):
+    """
+    Set Password for Accepted User
+    Allows accepted users to set their password using the token sent in acceptance email.
+    Requires: uid (base64 encoded user ID), token, password, and password_confirm
+    """
+    uid = request.data.get("uid")
+    token = request.data.get("token")
+    
+    serializer = SetPasswordSerializer(data=request.data)
+    
+    if not all([uid, token]):
+        return Response({
+            "error": "Missing required fields: uid, token"
+        }, status=status.HTTP_400_BAD_REQUEST)
+    
+    if not serializer.is_valid():
+        return Response({
+            "errors": serializer.errors
+        }, status=status.HTTP_400_BAD_REQUEST)
+    
+    try:
+        # Decode user ID
+        user_id = urlsafe_base64_decode(uid).decode()
+        user = User.objects.get(id=user_id)
+    except (User.DoesNotExist, ValueError, TypeError):
+        return Response({
+            "error": "Invalid user ID or token"
+        }, status=status.HTTP_404_NOT_FOUND)
+    
+    # Verify token
+    token_generator = PasswordResetTokenGenerator()
+    if not token_generator.check_token(user, token):
+        return Response({
+            "error": "Invalid or expired token"
+        }, status=status.HTTP_400_BAD_REQUEST)
+    
+    # Check if user is accepted
+    try:
+        doctor = user.doctor_profile
+        if not doctor.is_accepted:
+            return Response({
+                "error": "Your account has not been accepted yet"
+            }, status=status.HTTP_400_BAD_REQUEST)
+    except Doctor.DoesNotExist:
+        return Response({
+            "error": "Doctor profile not found"
+        }, status=status.HTTP_404_NOT_FOUND)
+    
+    # Set password
+    data = serializer.validated_data
+    user.set_password(data['password'])
+    user.is_active = True  # Activate user after password is set
+    user.save()
+    
+    # Send confirmation email
+    subject = "Password Set Successfully"
+    message = f"""
+    Hello {user.get_full_name() or user.username},
+    
+    Your password has been set successfully! You can now log in to your account.
+    
+    Login URL: {getattr(settings, 'FRONTEND_URL', 'http://localhost:3000')}/login
+    
+    If you did not set this password, please contact our support team immediately.
+    
+    Best regards,
+    Medical System Team
+    """
+    
+    try:
+        send_mail(
+            subject,
+            message,
+            settings.DEFAULT_FROM_EMAIL,
+            [user.email],
+            fail_silently=False,
+        )
+    except Exception as e:
+        logger.error(f"Error sending password confirmation email: {e}")
+    
+    return Response({
+        "status": "success",
+        "message": "Password set successfully! You can now log in.",
+        "user": {
+            "id": user.id,
+            "email": user.email,
+            "full_name": user.get_full_name(),
+            "is_active": user.is_active
         }
     }, status=status.HTTP_200_OK)

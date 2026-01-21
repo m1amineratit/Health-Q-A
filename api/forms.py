@@ -1,9 +1,9 @@
 from django import forms
-from .models import Question
+from .models import Answer
 
 class AnswerForm(forms.ModelForm):
     class Meta:
-        model = Question
+        model = Answer
         fields = ['answer_text']
         widgets = {
             'answer_text': forms.Textarea(attrs={

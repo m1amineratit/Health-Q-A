@@ -18,11 +18,7 @@ class Question(models.Model):
     question_text = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
-    answered_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='answered_questions')
-    answered_at = models.DateTimeField(null=True, blank=True)
-    answer_text = models.TextField(blank=True)
-    answer_sent = models.BooleanField(default=False)
-    views_count = models.IntegerField(default=0, help_text="Number of views for this answer page")
+    views_count = models.IntegerField(default=0, help_text="Number of views for this question")
     
     class Meta:
         ordering = ['-created_at']
@@ -30,3 +26,18 @@ class Question(models.Model):
     def __str__(self):
         return f"Q from @{self.instagram_username} - {self.created_at.strftime('%Y-%m-%d')}"
 
+
+class Answer(models.Model):
+    question = models.OneToOneField(Question, on_delete=models.CASCADE, related_name='answer', help_text="One answer per question")
+    answered_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='answers')
+    answer_text = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    answer_sent = models.BooleanField(default=False, help_text="Whether the answer has been sent to the user")
+    views_count = models.IntegerField(default=0, help_text="Number of views for this answer")
+    
+    class Meta:
+        ordering = ['-created_at']
+    
+    def __str__(self):
+        return f"Answer to: {self.question.question_text[:50]}... by {self.answered_by.username if self.answered_by else 'Unknown'}"

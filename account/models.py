@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class Doctor(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='doctor_profile')
-    img = models.ImageField(upload_to='doctors_images/')
+    img = models.ImageField(upload_to='doctors_images/', blank=True, null=True)
     speciality = models.CharField(
         choices=[
             ('eyes', 'Ophthalmologist'),
@@ -17,10 +17,12 @@ class Doctor(models.Model):
         ],
         max_length=100
     )
-    number_of_phone = models.CharField(max_length=20)
-    instagram_account = models.CharField(max_length=100)
-    inpe = models.CharField(max_length=10)
-    ville = models.CharField(max_length=100)
+    number_of_phone = models.CharField(max_length=20, blank=True, null=True)
+    instagram_account = models.CharField(max_length=100, blank=True, null=True)
+    inpe = models.CharField(max_length=10, blank=True, null=True)
+    ville = models.CharField(max_length=100, blank=True, null=True)
+    is_accepted = models.BooleanField(default=False, help_text="Whether the doctor has been accepted by admin")
+    accepted_at = models.DateTimeField(null=True, blank=True, help_text="Timestamp when doctor was accepted")
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

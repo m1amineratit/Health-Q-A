@@ -8,7 +8,7 @@ from django.utils import timezone
 from django.urls import reverse
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
-from .models import Question
+from .models import Question, Answer
 from account.models import Doctor
 from .views import send_instagram_message
 import logging
@@ -122,6 +122,15 @@ def get_questions_api(request):
         
     data = []
     for q in questions:
+        answer_data = None
+        if hasattr(q, 'answer') and q.answer:
+            answer_data = {
+                "answer_text": q.answer.answer_text,
+                "answered_by": q.answer.answered_by.username if q.answer.answered_by else None,
+                "created_at": q.answer.created_at.isoformat(),
+                "answer_sent": q.answer.answer_sent,
+            }
+        
         data.append({
             "id": str(q.id),
             "instagram_username": q.instagram_username,
@@ -129,9 +138,8 @@ def get_questions_api(request):
             "category": q.category,
             "status": q.status,
             "created_at": q.created_at.isoformat(),
-            "answered_at": q.answered_at.isoformat() if q.answered_at else None,
-            "answer_text": q.answer_text,
-            "answer_sent": q.answer_sent,
+            "answer": answer_data,
+            "views_count": q.views_count,
         })
         
     return Response({"count": len(data), "questions": data})
@@ -149,16 +157,27 @@ def get_question_detail_api(request, question_id):
     """
     q = get_object_or_404(Question, id=question_id, doctor=request.user)
     
+    answer_data = None
+    if hasattr(q, 'answer') and q.answer:
+        answer_data = {
+            "id": q.answer.id,
+            "answer_text": q.answer.answer_text,
+            "answered_by": q.answer.answered_by.username if q.answer.answered_by else None,
+            "answered_by_full_name": q.answer.answered_by.get_full_name() if q.answer.answered_by else None,
+            "created_at": q.answer.created_at.isoformat(),
+            "updated_at": q.answer.updated_at.isoformat(),
+            "answer_sent": q.answer.answer_sent,
+            "views_count": q.answer.views_count,
+        }
+    
     data = {
         "id": str(q.id),
         "instagram_username": q.instagram_username,
         "question_text": q.question_text,
         "status": q.status,
         "created_at": q.created_at.isoformat(),
-        "answered_at": q.answered_at.isoformat() if q.answered_at else None,
-        "answer_text": q.answer_text,
-        "answer_sent": q.answer_sent,
-        "answered_by": q.answered_by.username if q.answered_by else None
+        "answer": answer_data,
+        "views_count": q.views_count,
     }
     
     return Response(data)
@@ -186,15 +205,20 @@ def submit_answer_api(request, question_id):
         
     question = get_object_or_404(Question, id=question_id, doctor=request.user)
     
-    if question.status == "answered":
+    # Check if answer already exists
+    if hasattr(question, 'answer') and question.answer:
         return Response({
-            "error": "Question already answered"
+            "error": "Question already has an answer"
         }, status=400)
     
-    # Update Question
-    question.answer_text = answer_text
-    question.answered_by = request.user
-    question.answered_at = timezone.now()
+    # Create new Answer
+    answer = Answer.objects.create(
+        question=question,
+        answer_text=answer_text,
+        answered_by=request.user
+    )
+    
+    # Update Question status
     question.status = "answered"
     question.save()
     
@@ -205,15 +229,15 @@ def submit_answer_api(request, question_id):
     
     message = (
         f"👨‍⚕️ Answer from Dr. {request.user.get_full_name() or request.user.username}:\n\n"
-        f"{question.answer_text}\n\n"
+        f"{answer.answer_text}\n\n"
         f"View full details here: {answer_url}"
     )
     
     # Send DM
     success = send_instagram_message(question.instagram_user_id, message)
     
-    question.answer_sent = success
-    question.save()
+    answer.answer_sent = success
+    answer.save()
     
     return Response({
         "status": "success",
@@ -254,11 +278,11 @@ def answered_questions_feed_api(request):
     if page < 1:
         page = 1
     
-    # Get all answered questions with answers that have been sent
+    # Get all answered questions that have answers sent
     answered_questions = Question.objects.filter(
         status="answered",
-        answer_sent=True
-    ).select_related('answered_by', 'answered_by__doctor_profile').order_by("-answered_at")
+        answer__answer_sent=True
+    ).select_related('answer', 'answer__answered_by', 'answer__answered_by__doctor_profile').order_by("-answer__created_at")
     
     # Calculate pagination
     total_count = answered_questions.count()
@@ -270,11 +294,11 @@ def answered_questions_feed_api(request):
     data = []
     for q in questions_page:
         doctor_info = None
-        if q.answered_by and hasattr(q.answered_by, 'doctor_profile'):
-            doctor = q.answered_by.doctor_profile
+        if hasattr(q, 'answer') and q.answer and q.answer.answered_by and hasattr(q.answer.answered_by, 'doctor_profile'):
+            doctor = q.answer.answered_by.doctor_profile
             doctor_info = {
                 "id": doctor.id,
-                "name": q.answered_by.get_full_name(),
+                "name": q.answer.answered_by.get_full_name(),
                 "speciality": doctor.speciality,
                 "speciality_display": doctor.get_speciality_display(),
                 "phone": doctor.number_of_phone,
@@ -286,8 +310,8 @@ def answered_questions_feed_api(request):
             "question_text": q.question_text,
             "instagram_username": q.instagram_username,
             "category": q.category,
-            "answer_text": q.answer_text,
-            "answered_at": q.answered_at.isoformat(),
+            "answer_text": q.answer.answer_text if (hasattr(q, 'answer') and q.answer) else None,
+            "answered_at": q.answer.created_at.isoformat() if (hasattr(q, 'answer') and q.answer) else None,
             "created_at": q.created_at.isoformat(),
             "views_count": q.views_count,
             "doctor": doctor_info,
