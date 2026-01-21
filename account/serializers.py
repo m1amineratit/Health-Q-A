@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework.validators import UniqueValidator
 from rest_framework import serializers
+from .models import Doctor
 
 # Registration Serializer - Used when creating a new account (without password)
 class RegisterSerializer(serializers.Serializer):
@@ -15,12 +16,11 @@ class RegisterSerializer(serializers.Serializer):
         ]
     )
     full_name = serializers.CharField(
-        max_length=150,
-        validators=[UniqueValidator(queryset=User.objects.all())]
+        max_length=150
     )
     phone_number = serializers.CharField(
         required=True,
-        validators=[UniqueValidator(queryset=User.objects.all())]
+        validators=[UniqueValidator(queryset=Doctor.objects.all(), lookup_field='number_of_phone')]
     )
     email = serializers.EmailField(
         validators=[UniqueValidator(queryset=User.objects.all())]
