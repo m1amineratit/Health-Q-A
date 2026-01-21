@@ -20,7 +20,7 @@ class RegisterSerializer(serializers.Serializer):
     )
     phone_number = serializers.CharField(
         required=True,
-        validators=[UniqueValidator(queryset=Doctor.objects.all(), field_name='phone_number')]
+        validators=[UniqueValidator(queryset=Doctor.objects.all())]
     )
     email = serializers.EmailField(
         validators=[UniqueValidator(queryset=User.objects.all())]
