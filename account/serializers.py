@@ -19,12 +19,21 @@ class RegisterSerializer(serializers.Serializer):
         max_length=150
     )
     phone_number = serializers.CharField(
-        required=True,
-        validators=[UniqueValidator(queryset=Doctor.objects.all())]
+        required=True
     )
     email = serializers.EmailField(
         validators=[UniqueValidator(queryset=User.objects.all())]
     )
+    
+    def validate_email(self, value):
+        if User.objects.filter(email=value).exists():
+            raise serializers.ValidationError("This email is already registered.")
+        return value
+    
+    def validate_phone_number(self, value):
+        if Doctor.objects.filter(number_of_phone=value).exists():
+            raise serializers.ValidationError("This phone number is already registered.")
+        return value
 
 
 # Set Password Serializer - Used when accepted user sets their password
