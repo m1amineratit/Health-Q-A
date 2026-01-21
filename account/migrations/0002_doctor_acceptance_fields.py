@@ -14,6 +14,7 @@ class Migration(migrations.Migration):
             model_name='doctor',
             name='is_accepted',
             field=models.BooleanField(default=False, help_text='Whether the doctor has been accepted by admin'),
+            preserve_default=False,
         ),
         migrations.AddField(
             model_name='doctor',
