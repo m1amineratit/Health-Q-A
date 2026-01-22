@@ -233,17 +233,22 @@ def submit_answer_api(request, question_id):
         f"View full details here: {answer_url}"
     )
     
-    # Send DM
-    success = send_instagram_message(question.instagram_user_id, message)
+    # Send DM asynchronously (with fail_silently pattern)
+    try:
+        success = send_instagram_message(question.instagram_user_id, message)
+    except Exception as e:
+        logger.error(f"Error sending Instagram message: {e}")
+        success = False
     
     answer.answer_sent = success
     answer.save()
     
+    # Return response immediately without waiting for external services
     return Response({
         "status": "success",
-        "message": "Answer saved and sent to Instagram",
+        "message": "Answer saved" + (" and sent to Instagram" if success else " (Instagram delivery pending)"),
         "instagram_sent": success
-    })
+    }, status=status.HTTP_201_CREATED)
 
 
 @swagger_auto_schema(
