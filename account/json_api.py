@@ -804,7 +804,7 @@ def accept_user_api(request):
                 frontend_url = getattr(settings, 'FRONTEND_URL', 'http://localhost:3000')
                 password_setup_link = f"{frontend_url}/set-password/{uid}/{token}/"
                 
-                # Send acceptance email in background
+                # Send acceptance email
                 subject = "Your Account Has Been Approved!"
                 message = f"""Hello {user.get_full_name() or user.username},
 
@@ -823,23 +823,17 @@ If you have any questions, please contact our support team.
 Best regards,
 Medical System Team"""
                 
-                # Send email asynchronously without blocking
-                import threading
-                def send_email_async():
-                    try:
-                        result = send_mail(
-                            subject,
-                            message,
-                            settings.DEFAULT_FROM_EMAIL,
-                            [user.email],
-                            fail_silently=False,
-                        )
-                        logger.info(f"Email sent successfully to {user.email}: result={result}")
-                    except Exception as e:
-                        logger.error(f"Error sending acceptance email to {user.email}: {e}", exc_info=True)
-                
-                email_thread = threading.Thread(target=send_email_async, daemon=True)
-                email_thread.start()
+                try:
+                    sent = send_mail(
+                        subject,
+                        message,
+                        settings.DEFAULT_FROM_EMAIL,
+                        [user.email],
+                        fail_silently=False,
+                    )
+                    logger.info(f"✅ Email sent to {user.email}, sent count: {sent}")
+                except Exception as e:
+                    logger.error(f"❌ Email failed: {str(e)}", exc_info=True)
                 
                 # Return success immediately
                 return Response({
