@@ -804,7 +804,7 @@ def accept_user_api(request):
                 frontend_url = getattr(settings, 'FRONTEND_URL', 'http://localhost:3000')
                 password_setup_link = f"{frontend_url}/set-password/{uid}/{token}/"
                 
-                # Send acceptance email
+                # Send acceptance email in background thread (non-blocking)
                 subject = "Your Account Has Been Approved!"
                 message = f"""Hello {user.get_full_name() or user.username},
 
@@ -823,17 +823,23 @@ If you have any questions, please contact our support team.
 Best regards,
 Medical System Team"""
                 
-                try:
-                    sent = send_mail(
-                        subject,
-                        message,
-                        settings.DEFAULT_FROM_EMAIL,
-                        [user.email],
-                        fail_silently=False,
-                    )
-                    logger.info(f"✅ Email sent to {user.email}, sent count: {sent}")
-                except Exception as e:
-                    logger.error(f"❌ Email failed: {str(e)}", exc_info=True)
+                # Send in background thread to avoid timeout
+                import threading
+                def send_email_background():
+                    try:
+                        sent = send_mail(
+                            subject,
+                            message,
+                            settings.DEFAULT_FROM_EMAIL,
+                            [user.email],
+                            fail_silently=False,
+                        )
+                        logger.info(f"✅ Email sent to {user.email}")
+                    except Exception as e:
+                        logger.error(f"❌ Email error: {str(e)}", exc_info=True)
+                
+                thread = threading.Thread(target=send_email_background, daemon=True)
+                thread.start()
                 
                 # Return success immediately
                 return Response({
