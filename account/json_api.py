@@ -827,15 +827,16 @@ Medical System Team"""
                 import threading
                 def send_email_async():
                     try:
-                        send_mail(
+                        result = send_mail(
                             subject,
                             message,
                             settings.DEFAULT_FROM_EMAIL,
                             [user.email],
-                            fail_silently=True,
+                            fail_silently=False,
                         )
+                        logger.info(f"Email sent successfully to {user.email}: result={result}")
                     except Exception as e:
-                        logger.error(f"Error sending acceptance email: {e}")
+                        logger.error(f"Error sending acceptance email to {user.email}: {e}", exc_info=True)
                 
                 email_thread = threading.Thread(target=send_email_async, daemon=True)
                 email_thread.start()
