@@ -43,7 +43,7 @@ def classify_question(question_text):
     headers = {
         "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
-}
+    }
     
     payload = {
         "model": "mistralai/mistral-small-3.2-24b-instruct",
@@ -66,7 +66,8 @@ def classify_question(question_text):
     }
     
     try:
-        response = requests.post(url, json=payload, headers=headers)
+        # Add timeout to prevent hanging on slow external APIs
+        response = requests.post(url, json=payload, headers=headers, timeout=5)
         data = response.json()
         
         if "choices" in data:
@@ -78,6 +79,9 @@ def classify_question(question_text):
             logger.error(f"OpenRouter API error: {data}")
             return speciality_list[0] if speciality_list else 'generaliste'
             
+    except requests.exceptions.Timeout:
+        logger.warning(f"OpenRouter API timeout - using fallback speciality")
+        return speciality_list[0] if speciality_list else 'generaliste'
     except Exception as e:
         logger.error(f"Error calling OpenRouter API: {e}")
         return speciality_list[0] if speciality_list else 'generaliste'
