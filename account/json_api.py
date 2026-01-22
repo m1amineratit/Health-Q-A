@@ -788,68 +788,75 @@ def accept_user_api(request):
             }, status=status.HTTP_404_NOT_FOUND)
         
         if action == 'accept':
-            # Mark user as accepted
-            doctor.is_accepted = True
-            from django.utils import timezone
-            doctor.accepted_at = timezone.now()
-            doctor.save()
-            
-            # Generate password reset token for user to set password
-            token_generator = PasswordResetTokenGenerator()
-            token = token_generator.make_token(user)
-            uid = urlsafe_base64_encode(str(user.id).encode())
-            
-            # Create password setup link
-            frontend_url = getattr(settings, 'FRONTEND_URL', 'http://localhost:3000')
-            password_setup_link = f"{frontend_url}/set-password/{uid}/{token}/"
-            
-            # Send acceptance email asynchronously
-            subject = "Your Account Has Been Approved!"
-            message = f"""
-            Hello {user.get_full_name() or user.username},
-            
-            Great news! Your doctor account has been approved by our administration team.
-            
-            To complete your registration and set your password, please click the link below:
-            
-            {password_setup_link}
-            
-            This link expires in 24 hours.
-            
-            Once you've set your password, you'll be able to log in and access your account.
-            
-            If you have any questions, please contact our support team.
-            
-            Best regards,
-            Medical System Team
-            """
-            
-            # Send email with fail_silently=True to avoid blocking
             try:
-                send_mail(
-                    subject,
-                    message,
-                    settings.DEFAULT_FROM_EMAIL,
-                    [user.email],
-                    fail_silently=True,
-                )
-                email_sent = True
+                # Mark user as accepted
+                doctor.is_accepted = True
+                from django.utils import timezone
+                doctor.accepted_at = timezone.now()
+                doctor.save()
+                
+                # Generate password reset token for user to set password
+                token_generator = PasswordResetTokenGenerator()
+                token = token_generator.make_token(user)
+                uid = urlsafe_base64_encode(str(user.id).encode())
+                
+                # Create password setup link
+                frontend_url = getattr(settings, 'FRONTEND_URL', 'http://localhost:3000')
+                password_setup_link = f"{frontend_url}/set-password/{uid}/{token}/"
+                
+                # Send acceptance email in background
+                subject = "Your Account Has Been Approved!"
+                message = f"""Hello {user.get_full_name() or user.username},
+
+Great news! Your doctor account has been approved by our administration team.
+
+To complete your registration and set your password, please click the link below:
+
+{password_setup_link}
+
+This link expires in 24 hours.
+
+Once you've set your password, you'll be able to log in and access your account.
+
+If you have any questions, please contact our support team.
+
+Best regards,
+Medical System Team"""
+                
+                # Send email asynchronously without blocking
+                import threading
+                def send_email_async():
+                    try:
+                        send_mail(
+                            subject,
+                            message,
+                            settings.DEFAULT_FROM_EMAIL,
+                            [user.email],
+                            fail_silently=True,
+                        )
+                    except Exception as e:
+                        logger.error(f"Error sending acceptance email: {e}")
+                
+                email_thread = threading.Thread(target=send_email_async, daemon=True)
+                email_thread.start()
+                
+                # Return success immediately
+                return Response({
+                    "status": "success",
+                    "message": f"User {user.get_full_name()} has been accepted. Acceptance email sent.",
+                    "user": {
+                        "id": user.id,
+                        "email": user.email,
+                        "full_name": user.get_full_name(),
+                        "is_accepted": doctor.is_accepted,
+                        "is_active": user.is_active
+                    }
+                }, status=status.HTTP_200_OK)
             except Exception as e:
-                logger.error(f"Error sending acceptance email: {e}")
-                email_sent = False
-            
-            # Return success regardless of email status
-            return Response({
-                "status": "success",
-                "message": f"User {user.get_full_name()} has been accepted." + (" Acceptance email sent." if email_sent else " (Email delivery pending)"),
-                "user": {
-                    "id": user.id,
-                    "email": user.email,
-                    "full_name": user.get_full_name(),
-                    "is_accepted": doctor.is_accepted,
-                    "is_active": user.is_active
-                }
-            }, status=status.HTTP_200_OK)
+                logger.error(f"Error in accept_user_api: {e}")
+                return Response({
+                    "error": str(e)
+                }, status=status.HTTP_400_BAD_REQUEST)
         
         elif action == 'reject':
             # Delete the user and doctor profile
