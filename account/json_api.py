@@ -155,8 +155,7 @@ def register_api(request):
         
         # Create user without password (account inactive)
         user = User.objects.create_user(
-            username=validated_data["email"],  # Use email as username
-            email=validated_data["email"],
+            username=validated_data["username"],  # Use email as username
             first_name=first_name,
             last_name=last_name,
             password=None  # No password yet

@@ -18,10 +18,7 @@ class RegisterSerializer(serializers.Serializer):
     phone_number = serializers.CharField(
         required=True
     )
-    email = serializers.EmailField(
-        validators=[UniqueValidator(queryset=User.objects.all())]
-    )
-    
+
     def validate_phone_number(self, value):
         if Doctor.objects.filter(number_of_phone=value).exists():
             raise serializers.ValidationError("This phone number is already registered.")
