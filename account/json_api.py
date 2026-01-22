@@ -823,8 +823,9 @@ If you have any questions, please contact our support team.
 Best regards,
 Medical System Team"""
                 
-                # Send in background thread to avoid timeout
+                # Send email without blocking response
                 import threading
+                
                 def send_email_background():
                     try:
                         sent = send_mail(
@@ -834,11 +835,16 @@ Medical System Team"""
                             [user.email],
                             fail_silently=False,
                         )
-                        logger.info(f"✅ Email sent to {user.email}")
+                        if sent:
+                            logger.warning(f"✅ ACCEPTED EMAIL SENT to {user.email}")
+                        else:
+                            logger.warning(f"⚠️ ACCEPTED EMAIL RETURNED 0: {user.email}")
                     except Exception as e:
-                        logger.error(f"❌ Email error: {str(e)}", exc_info=True)
+                        logger.warning(f"❌ ACCEPTED EMAIL ERROR: {user.email} - {str(e)}")
                 
-                thread = threading.Thread(target=send_email_background, daemon=True)
+                # Use non-daemon thread so it completes
+                thread = threading.Thread(target=send_email_background)
+                thread.daemon = False
                 thread.start()
                 
                 # Return success immediately
