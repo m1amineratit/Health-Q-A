@@ -66,8 +66,8 @@ def classify_question(question_text):
     }
     
     try:
-        # Add timeout to prevent hanging on slow external APIs
-        response = requests.post(url, json=payload, headers=headers, timeout=5)
+        # Add timeout to prevent hanging on slow external APIs (15 sec for remote server)
+        response = requests.post(url, json=payload, headers=headers, timeout=15)
         data = response.json()
         
         if "choices" in data:
