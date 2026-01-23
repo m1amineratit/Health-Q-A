@@ -856,7 +856,8 @@ Medical System Team"""
                         "full_name": user.get_full_name(),
                         "is_accepted": doctor.is_accepted,
                         "is_active": user.is_active
-                    }
+                    },
+                    "link" : password_setup_link,
                 }, status=status.HTTP_200_OK)
             except Exception as e:
                 logger.error(f"Error in accept_user_api: {e}")
