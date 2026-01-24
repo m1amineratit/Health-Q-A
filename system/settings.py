@@ -91,6 +91,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     "corsheaders",
+    "imagekit",
 ]
 
 LOGIN_REDIRECT_URL = '/'
@@ -264,6 +265,7 @@ DEFAULT_FROM_EMAIL = 'amineratit6@gmail.com'
 # IMAGEKIT SETTINGS
 # settings.py
 DEFAULT_FILE_STORAGE = 'storages.backends.imagekit.ImageKitStorage'
+
 
 IMAGEKIT = {
     'PUBLIC_KEY': os.getenv("IMAGEKIT_PUBLIC_KEY"),

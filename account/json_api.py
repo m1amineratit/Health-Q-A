@@ -400,7 +400,7 @@ def get_doctor_profile_api(request):
             "user_id": doctor.user.id,
             "first_name": doctor.user.first_name,
             "last_name": doctor.user.last_name,
-            "img": doctor.img.url if doctor.img else None,
+            "img": doctor.img.url if doctor.img else "https://ik.imagekit.io/brwdo5vcs/OIP.jpg",
             "email": doctor.user.email,
             "speciality": doctor.speciality,
             "phone": doctor.number_of_phone,
