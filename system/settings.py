@@ -91,7 +91,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     "corsheaders",
-    "imagekit",
+    "imagekitio_storage",
 ]
 
 LOGIN_REDIRECT_URL = '/'
@@ -262,13 +262,11 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = 'amineratit6@gmail.com'
 
 
-# IMAGEKIT SETTINGS
-# settings.py
-DEFAULT_FILE_STORAGE = 'imagekitio_django.storage.ImageKitStorage'
+# IMAGEKIT.IO STORAGE SETTINGS
+# Using django-imagekitio-storage for production media files
+DEFAULT_FILE_STORAGE = 'imagekitio_storage.storage.ImageKitIOStorage'
 
-
-IMAGEKIT = {
-    'PUBLIC_KEY': os.getenv("IMAGEKIT_PUBLIC_KEY"),
-    'PRIVATE_KEY': os.getenv("IMAGEKIT_PRIVATE_KEY"),
-    'URL_ENDPOINT': os.getenv("IMAGEKIT_URL_ENDPOINT"),
-}
+# ImageKit.io credentials
+IMAGEKIT_PUBLIC_KEY = os.getenv("IMAGEKIT_PUBLIC_KEY")
+IMAGEKIT_PRIVATE_KEY = os.getenv("IMAGEKIT_PRIVATE_KEY")
+IMAGEKIT_URL_ENDPOINT = os.getenv("IMAGEKIT_URL_ENDPOINT")
