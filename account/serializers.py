@@ -37,6 +37,8 @@ class SetPasswordSerializer(serializers.Serializer):
         min_length=8,
         help_text="Password confirmation must match password"
     )
+    uid = serializers.CharField(write_only=True)
+    token = serializers.CharField(write_only=True)
     
     def validate(self, data):
         if data['password'] != data['password_confirm']:

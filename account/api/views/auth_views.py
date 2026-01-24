@@ -426,15 +426,8 @@ def set_password_api(request):
     Allows accepted users to set their password using the token sent in acceptance email.
     Requires: uid (base64 encoded user ID), token, password, and password_confirm
     """
-    uid = request.data.get("uid")
-    token = request.data.get("token")
-    
+
     serializer = SetPasswordSerializer(data=request.data)
-    
-    if not all([uid, token]):
-        return Response({
-            "error": "Missing required fields: uid, token"
-        }, status=status.HTTP_400_BAD_REQUEST)
     
     if not serializer.is_valid():
         return Response({
@@ -443,7 +436,7 @@ def set_password_api(request):
     
     try:
         # Decode user ID
-        user_id = urlsafe_base64_decode(uid).decode()
+        user_id = urlsafe_base64_decode(serializer.validated_data['uid']).decode()
         user = User.objects.get(id=user_id)
     except (User.DoesNotExist, ValueError, TypeError):
         return Response({
@@ -452,7 +445,7 @@ def set_password_api(request):
     
     # Verify token
     token_generator = PasswordResetTokenGenerator()
-    if not token_generator.check_token(user, token):
+    if not token_generator.check_token(user, serializer.validated_data['token']):
         return Response({
             "error": "Invalid or expired token"
         }, status=status.HTTP_400_BAD_REQUEST)
