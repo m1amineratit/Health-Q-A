@@ -48,36 +48,20 @@ def register_api(request):
     User is created without a password and account is inactive until admin approval.
     User will receive an email once their account is accepted with a link to set their password.
     """
-    # Extract full_name from request and split into first and last name
-    full_name = request.data.get("full_name", "").strip()
-    
-    if not full_name:
-        return Response({
-            "errors": {"full_name": "Full name is required"}
-        }, status=status.HTTP_400_BAD_REQUEST)
-    
-    # Split full_name into first and last name
-    name_parts = full_name.split(' ', 1)
-    first_name = name_parts[0]
-    last_name = name_parts[1] if len(name_parts) > 1 else ""
-    
-    # Prepare data for serializer (without full_name)
-    data = request.data.copy()
-    data['first_name'] = first_name
-    data['last_name'] = last_name
-    
-    # Remove full_name from data as it's not a User field
-    if 'full_name' in data:
-        data.pop('full_name')
-    
-    serializer = RegisterSerializer(data=data)
+    serializer = RegisterSerializer(data=request.data)
     
     if serializer.is_valid():
         validated_data = serializer.validated_data
         
+        # Split full_name into first and last name
+        full_name = validated_data["full_name"].strip()
+        name_parts = full_name.split(' ', 1)
+        first_name = name_parts[0]
+        last_name = name_parts[1] if len(name_parts) > 1 else ""
+        
         # Create user without password (account inactive)
         user = User.objects.create_user(
-            username=validated_data["full_name"],  # Use full name as username
+            username=full_name,  # Use full name as username
             first_name=first_name,
             last_name=last_name,
             password=None  # No password yet
