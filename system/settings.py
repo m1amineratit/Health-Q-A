@@ -91,7 +91,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     "corsheaders",
-    "imagekitio_storage",
+
 ]
 
 LOGIN_REDIRECT_URL = '/'
@@ -264,7 +264,8 @@ DEFAULT_FROM_EMAIL = 'amineratit6@gmail.com'
 
 # IMAGEKIT.IO STORAGE SETTINGS
 # Using django-imagekitio-storage for production media files
-DEFAULT_FILE_STORAGE = 'imagekitio_storage.storage.ImageKitIOStorage'
+# Using custom ImageKit storage
+DEFAULT_FILE_STORAGE = 'account.storage.ImageKitIOStorage'
 
 # ImageKit.io credentials
 IMAGEKIT_PUBLIC_KEY = os.getenv("IMAGEKIT_PUBLIC_KEY")
