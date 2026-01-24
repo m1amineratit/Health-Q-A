@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e*3xtdks+5vp_l)-)eod3cc(v6sgr$semfa772(z=s30#pzz(t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -100,6 +100,7 @@ LOGIN_URL = '/accounts/login/'
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
+    "white_noise.middleware.WhiteNoiseMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -193,6 +194,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIFILESDIRS_STORAGE = ["whitenoise.storage.CompressedManifestStaticFilesStorage"]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
@@ -241,6 +247,8 @@ LOGGING = {
     },
 }
 
+# STATIC FILES SETTINGS
+
 
 # EMAIL BACKEND SETTINGS
 # Email settings
@@ -251,3 +259,14 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'amineratit6@gmail.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = 'amineratit6@gmail.com'
+
+
+# IMAGEKIT SETTINGS
+# settings.py
+DEFAULT_FILE_STORAGE = 'storages.backends.imagekit.ImageKitStorage'
+
+IMAGEKIT = {
+    'PUBLIC_KEY': os.getenv("IMAGEKIT_PUBLIC_KEY"),
+    'PRIVATE_KEY': os.getenv("IMAGEKIT_PRIVATE_KEY"),
+    'URL_ENDPOINT': os.getenv("IMAGEKIT_URL_ENDPOINT"),
+}
