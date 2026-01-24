@@ -264,7 +264,7 @@ DEFAULT_FROM_EMAIL = 'amineratit6@gmail.com'
 
 # IMAGEKIT SETTINGS
 # settings.py
-DEFAULT_FILE_STORAGE = 'storages.backends.imagekit.ImageKitStorage'
+DEFAULT_FILE_STORAGE = 'imagekitio_django.storage.ImageKitStorage'
 
 
 IMAGEKIT = {
