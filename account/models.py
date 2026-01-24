@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class Doctor(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='doctor_profile')
-    img = models.ImageField(upload_to='doctors_images/', blank=True, null=True)
+    img = models.ImageField(upload_to='doctor_images/', blank=True, null=True)
     speciality = models.CharField(
         choices=[
             ('eyes', 'Ophthalmologist'),
