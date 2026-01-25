@@ -5,6 +5,8 @@ from django.contrib.auth import authenticate
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework.decorators import permission_classes
+from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
 
@@ -26,6 +28,7 @@ admin_login = openapi.Schema(
     }
 )
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def admin_login_view(request):
     username = request.data.get("username")
     password = request.data.get("password")
