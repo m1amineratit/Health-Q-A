@@ -29,7 +29,7 @@ class Doctor(models.Model):
         return f"Dr. {self.user.get_full_name()} - {self.get_speciality_display()}"
     
 
-class Establishment(models.Model):
+class Establishment(models.Model): 
     ESTABLISHMENT_TYPE_CHOICES = [
         ('cabinet', 'Cabinet'),
         ('clinic', 'Clinic'),
