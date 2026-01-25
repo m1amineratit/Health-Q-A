@@ -18,7 +18,10 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # Admin login's
+    path('django-admin/', admin.site.urls),
+    path('', include('admin.urls')),
+
     path('', include('api.urls')),
     path('', include('account.urls')),
     path('accounts/login/', auth_views.LoginView.as_view(), name='login'),
