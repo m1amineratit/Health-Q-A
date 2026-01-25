@@ -13,9 +13,17 @@ from rest_framework.permissions import AllowAny
 admin_login = openapi.Schema(
     type=openapi.TYPE_OBJECT,
     properties={
-        "email": openapi.Schema(type=openapi.TYPE_STRING, description="Admin Email"),
-        "password": openapi.Schema(type=openapi.TYPE_STRING, description="Admin Password", format="password")
-    }
+        "username": openapi.Schema(
+            type=openapi.TYPE_STRING,
+            description="Admin Username"
+        ),
+        "password": openapi.Schema(
+            type=openapi.TYPE_STRING,
+            description="Admin Password",
+            format="password"
+        )
+    },
+    required=["username", "password"]
 )
 
 @swagger_auto_schema(
@@ -23,43 +31,52 @@ admin_login = openapi.Schema(
     request_body=admin_login,
     responses={
         200: openapi.Response("Login Successful"),
+        400: "Missing credentials",
         401: "Invalid Credentials",
         403: "Unauthorized (Not Admin)"
     }
 )
+
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def admin_login_view(request):
     username = request.data.get("username")
     password = request.data.get("password")
 
+    if not username or not password:
+        return Response(
+            {"error": "Username and password are required"},
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
     user = authenticate(request, username=username, password=password)
 
     if user is None:
         return Response(
-            {"error" : "Invalid credentials"},
+            {"error": "Invalid credentials"},
             status=status.HTTP_401_UNAUTHORIZED
         )
 
     if not user.is_staff:
         return Response(
-            {"error": "Unauthorized. Admin access only."}, 
+            {"error": "Unauthorized. Admin access only."},
             status=status.HTTP_403_FORBIDDEN
         )
-    
+
     if not user.is_active:
-        return Response({
-            "error" : "Account disabled"
-        }, status=403)
-    
+        return Response(
+            {"error": "Account disabled"},
+            status=status.HTTP_403_FORBIDDEN
+        )
+
     refresh = RefreshToken.for_user(user)
-    
+
     return Response({
-            "access": str(refresh.access_token),
-            "refresh": str(refresh),
-            "user": {
-                "id" : user.id,
-                "email" : user.email,
-                "username" : user.username,
-            }
-        })
+        "access": str(refresh.access_token),
+        "refresh": str(refresh),
+        "user": {
+            "id": user.id,
+            "email": user.email,
+            "username": user.username,
+        }
+    }, status=status.HTTP_200_OK)
