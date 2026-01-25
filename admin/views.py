@@ -11,7 +11,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 admin_login = openapi.Schema(
     type=openapi.TYPE_OBJECT,
     properties={
-        "username": openapi.Schema(type=openapi.TYPE_STRING, description="Admin Username"),
+        "email": openapi.Schema(type=openapi.TYPE_STRING, description="Admin Email"),
         "password": openapi.Schema(type=openapi.TYPE_STRING, description="Admin Password")
     }
 )
@@ -26,20 +26,25 @@ admin_login = openapi.Schema(
 )
 @api_view(['POST'])
 def admin_login_view(request):
-    admin = request.user.is_staff
-
     email = request.data.get("email")
     password = request.data.get("password")
 
     user = authenticate(request, email=email, password=password)
-    if not user == admin:
+
+    if user is None:
+        return Response(
+            {"error" : "Invalid credentials"},
+            status=status.HTTP_401_UNAUTHORIZED
+        )
+
+    if not user.is_staff:
         return Response({
-            "error" : "Unaithorized",
-        }, status=status.HTTP_401_UNAUTHORIZED)
+            {"error": "Unauthorized. Admin access only."},
+        }, status=status.HTTP_403_FORBIDDEN)
     
-    if user is not None:
-        refresh = RefreshToken.for_user(user)
-        return Response({
+    refresh = RefreshToken.for_user(user)
+    
+    return Response({
             "access": str(refresh.access_token),
             "refresh": str(refresh),
             "user": {
@@ -48,5 +53,3 @@ def admin_login_view(request):
                 "username" : user.username,
             }
         })
-    else:
-        return Response({"error" : "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
