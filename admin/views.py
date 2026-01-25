@@ -12,7 +12,7 @@ admin_login = openapi.Schema(
     type=openapi.TYPE_OBJECT,
     properties={
         "email": openapi.Schema(type=openapi.TYPE_STRING, description="Admin Email"),
-        "password": openapi.Schema(type=openapi.TYPE_STRING, description="Admin Password")
+        "password": openapi.Schema(type=openapi.TYPE_STRING, description="Admin Password", format="password")
     }
 )
 
@@ -21,15 +21,16 @@ admin_login = openapi.Schema(
     request_body=admin_login,
     responses={
         200: openapi.Response("Login Successful"),
-        401: "Invalid Credentials"
+        401: "Invalid Credentials",
+        403: "Unauthorized (Not Admin)"
     }
 )
 @api_view(['POST'])
 def admin_login_view(request):
-    email = request.data.get("email")
+    username = request.data.get("username")
     password = request.data.get("password")
 
-    user = authenticate(request, email=email, password=password)
+    user = authenticate(request, username=username, password=password)
 
     if user is None:
         return Response(
@@ -38,9 +39,15 @@ def admin_login_view(request):
         )
 
     if not user.is_staff:
+        return Response(
+            {"error": "Unauthorized. Admin access only."}, 
+            status=status.HTTP_403_FORBIDDEN
+        )
+    
+    if not user.is_active:
         return Response({
-            {"error": "Unauthorized. Admin access only."},
-        }, status=status.HTTP_403_FORBIDDEN)
+            "error" : "Account disabled"
+        }, status=403)
     
     refresh = RefreshToken.for_user(user)
     
