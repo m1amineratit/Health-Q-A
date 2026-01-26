@@ -110,10 +110,10 @@ def login_api(request):
     Login User
     Authenticates the user and returns JWT tokens.
     """
-    username = request.data.get("username")
+    email = request.data.get("email")
     password = request.data.get("password")
     
-    user = authenticate(request, username=username, password=password)
+    user = authenticate(request, email=email, password=password)
     
     if user is not None:
         refresh = RefreshToken.for_user(user)

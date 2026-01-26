@@ -215,6 +215,9 @@ INSTAGRAM_PAGE_ID = os.getenv('PAGE_ID')
 OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
 
 # Logging Configuration
+
+AUTHENTICATION_BACKENDS = ['account.backends.EmailBackend']
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -271,3 +274,4 @@ DEFAULT_FILE_STORAGE = 'account.storage.ImageKitIOStorage'
 IMAGEKIT_PUBLIC_KEY = os.getenv("IMAGEKIT_PUBLIC_KEY")
 IMAGEKIT_PRIVATE_KEY = os.getenv("IMAGEKIT_PRIVATE_KEY")
 IMAGEKIT_URL_ENDPOINT = os.getenv("IMAGEKIT_URL_ENDPOINT")
+

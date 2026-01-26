@@ -5987,3 +5987,45 @@ INFO 2026-01-26 17:08:58,906 autoreload C:\Users\pc\Desktop\backend\system\admin
 INFO 2026-01-26 17:08:59,983 autoreload Watching for file changes with StatReloader
 INFO 2026-01-26 17:09:02,290 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
 INFO 2026-01-26 17:09:03,069 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 20:16:37,185 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-26 20:17:11,631 log Not Found: /admin-dashboard
+WARNING 2026-01-26 20:17:11,633 log "GET /admin-dashboard HTTP/1.1" 404 179
+WARNING 2026-01-26 20:18:02,925 log Not Found: /
+WARNING 2026-01-26 20:18:02,926 log "POST / HTTP/1.1" 404 179
+WARNING 2026-01-26 20:18:17,387 log Unauthorized: /api/auth/login
+WARNING 2026-01-26 20:18:17,388 log "POST /api/auth/login HTTP/1.1" 401 31
+WARNING 2026-01-26 20:18:24,041 log Unauthorized: /api/auth/login
+WARNING 2026-01-26 20:18:24,042 log "POST /api/auth/login HTTP/1.1" 401 31
+INFO 2026-01-26 20:18:33,155 log "POST /api/auth/login HTTP/1.1" 200 539
+INFO 2026-01-26 20:18:41,550 log "GET /admin HTTP/1.1" 301 0
+INFO 2026-01-26 20:18:41,615 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-01-26 20:18:42,383 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-01-26 20:18:42,574 log "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-01-26 20:18:42,580 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-01-26 20:18:42,588 log "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-01-26 20:18:42,589 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-01-26 20:18:42,606 log "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-01-26 20:18:42,606 log "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-01-26 20:18:42,953 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2026-01-26 20:18:43,120 log Not Found: /favicon.ico
+WARNING 2026-01-26 20:18:43,122 log "GET /favicon.ico HTTP/1.1" 404 179
+WARNING 2026-01-26 20:18:48,224 log Not Found: /django-admin
+WARNING 2026-01-26 20:18:48,225 log "GET /django-admin HTTP/1.1" 404 179
+WARNING 2026-01-26 20:18:52,699 log Not Found: /django-admin/login
+WARNING 2026-01-26 20:18:52,700 log "GET /django-admin/login HTTP/1.1" 404 179
+INFO 2026-01-26 20:19:09,741 autoreload C:\Users\pc\Desktop\backend\system\admin\urls.py changed, reloading.
+INFO 2026-01-26 20:19:12,038 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-26 20:19:21,360 log Method Not Allowed: /django-admin/login
+WARNING 2026-01-26 20:19:21,362 log "GET /django-admin/login HTTP/1.1" 405 5627
+INFO 2026-01-26 20:19:21,538 log "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2026-01-26 20:19:21,542 log "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2026-01-26 20:19:21,549 log "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2026-01-26 20:19:21,559 log "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2026-01-26 20:19:21,604 log "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-01-26 20:19:21,618 log "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-01-26 20:19:21,625 log "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2026-01-26 20:19:21,639 log "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-01-26 20:19:21,653 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-01-26 20:19:21,672 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-01-26 20:19:21,710 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2026-01-26 20:19:21,855 log "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
