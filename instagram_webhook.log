@@ -5079,3 +5079,911 @@ INFO 2026-01-21 23:59:21,054 autoreload Watching for file changes with StatReloa
 INFO 2026-01-22 15:03:00,968 autoreload Watching for file changes with StatReloader
 INFO 2026-01-22 15:06:19,159 autoreload C:\Users\pc\Desktop\backend\system\account\json_api.py changed, reloading.
 INFO 2026-01-22 15:06:20,469 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:06:02,170 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-26 11:06:31,449 log Not Found: /
+WARNING 2026-01-26 11:06:31,451 log "GET / HTTP/1.1" 404 179
+WARNING 2026-01-26 11:06:32,141 log Not Found: /favicon.ico
+WARNING 2026-01-26 11:06:32,142 log "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2026-01-26 11:10:57,205 log "POST //admin HTTP/1.1" 200 557
+WARNING 2026-01-26 11:11:19,131 log Not Found: /dashboard
+WARNING 2026-01-26 11:11:19,132 log "POST //dashboard HTTP/1.1" 404 179
+WARNING 2026-01-26 11:11:23,863 log Not Found: /dashboard
+WARNING 2026-01-26 11:11:23,864 log "GET //dashboard HTTP/1.1" 404 179
+ERROR 2026-01-26 11:11:45,709 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type Establishment is not JSON serializable
+ERROR 2026-01-26 11:11:46,137 log "GET //admin-dashboard HTTP/1.1" 500 145
+ERROR 2026-01-26 11:12:06,273 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type Establishment is not JSON serializable
+ERROR 2026-01-26 11:12:06,286 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:12:35,275 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:12:36,886 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:12:44,720 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:12:46,202 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:12:52,104 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:12:54,211 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:13:02,929 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:13:04,712 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 11:13:29,660 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 114, in users_crm
+    establishment = Establishment.objects.filter(doctor=doctors)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1440, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\lookups.py", line 35, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\fields\related_lookups.py", line 115, in get_prep_lookup
+    return super().get_prep_lookup()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\lookups.py", line 378, in get_prep_lookup
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+ERROR 2026-01-26 11:13:29,963 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:13:48,525 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:13:50,408 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:13:56,867 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:13:58,582 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:14:02,379 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:14:04,211 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:14:19,827 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:14:21,925 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 11:14:34,578 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 114, in users_crm
+    establishments = Establishment.objects.filter(doctor=doctors)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1440, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\lookups.py", line 35, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\fields\related_lookups.py", line 115, in get_prep_lookup
+    return super().get_prep_lookup()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\lookups.py", line 378, in get_prep_lookup
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+ERROR 2026-01-26 11:14:34,650 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:15:39,143 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:15:41,323 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:16:13,354 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:16:14,882 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:17:43,051 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:17:44,474 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:17:47,953 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:17:49,359 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:17:56,519 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:17:58,846 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:18:02,488 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:18:04,148 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:18:08,668 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:18:10,357 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:18:15,028 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:18:16,695 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:18:25,730 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:18:27,510 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:18:37,294 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:18:38,894 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:18:41,462 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:18:43,152 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:18:55,019 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:18:57,052 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:19:03,471 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:19:05,315 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:19:15,778 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:19:17,491 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:19:25,121 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:19:26,995 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:19:30,816 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:19:32,380 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:19:36,945 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:19:38,435 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:19:50,908 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:19:53,327 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 11:20:06,869 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 101, in users_crm
+    for doctor in doctors:
+                  ^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2002, in _fetch_all
+    self._prefetch_related_objects()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1369, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2426, in prefetch_related_objects
+    raise AttributeError(
+    ...<7 lines>...
+    )
+AttributeError: Cannot find 'establishment_set' on Doctor object, 'establishment_set' is an invalid parameter to prefetch_related()
+ERROR 2026-01-26 11:20:06,890 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:20:26,561 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:20:28,802 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:20:37,784 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:20:39,869 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 11:20:56,439 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 101, in users_crm
+    for doctor in doctors:
+                  ^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2002, in _fetch_all
+    self._prefetch_related_objects()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1369, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2426, in prefetch_related_objects
+    raise AttributeError(
+    ...<7 lines>...
+    )
+AttributeError: Cannot find 'establishment_set' on Doctor object, 'establishment_set' is an invalid parameter to prefetch_related()
+ERROR 2026-01-26 11:20:56,468 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:21:08,800 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:21:10,434 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 11:21:16,412 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 101, in users_crm
+    for doctor in doctors:
+                  ^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2002, in _fetch_all
+    self._prefetch_related_objects()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1369, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2426, in prefetch_related_objects
+    raise AttributeError(
+    ...<7 lines>...
+    )
+AttributeError: Cannot find 'establishments_set' on Doctor object, 'establishments_set' is an invalid parameter to prefetch_related()
+ERROR 2026-01-26 11:21:16,448 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:21:23,408 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:21:25,530 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 11:21:31,438 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 101, in users_crm
+    for doctor in doctors:
+                  ^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2002, in _fetch_all
+    self._prefetch_related_objects()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1369, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2426, in prefetch_related_objects
+    raise AttributeError(
+    ...<7 lines>...
+    )
+AttributeError: Cannot find 'establishment_set' on Doctor object, 'establishment_set' is an invalid parameter to prefetch_related()
+ERROR 2026-01-26 11:21:31,460 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:22:23,314 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:22:25,165 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 11:22:31,657 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 101, in users_crm
+    for doctor in doctors:
+                  ^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2002, in _fetch_all
+    self._prefetch_related_objects()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1369, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2426, in prefetch_related_objects
+    raise AttributeError(
+    ...<7 lines>...
+    )
+AttributeError: Cannot find 'doctor_establishment_set' on Doctor object, 'doctor_establishment_set' is an invalid parameter to prefetch_related()
+ERROR 2026-01-26 11:22:31,724 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:22:55,111 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:22:57,691 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 11:23:04,727 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 102, in users_crm
+    establishments = doctor.doctor_establishment.all()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 520, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+account.models.Doctor.doctor_establishment.RelatedObjectDoesNotExist: Doctor has no doctor_establishment.
+ERROR 2026-01-26 11:23:04,840 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:25:41,164 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:25:42,966 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:25:57,532 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:25:59,211 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:26:06,687 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:26:08,578 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 11:26:14,066 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 102, in users_crm
+    establishments = doctor.doctor_establishment.all()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 520, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+account.models.Doctor.doctor_establishment.RelatedObjectDoesNotExist: Doctor has no doctor_establishment.
+ERROR 2026-01-26 11:26:14,089 log "GET //admin-dashboard HTTP/1.1" 500 145
+ERROR 2026-01-26 11:26:18,049 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 102, in users_crm
+    establishments = doctor.doctor_establishment.all()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 520, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+account.models.Doctor.doctor_establishment.RelatedObjectDoesNotExist: Doctor has no doctor_establishment.
+ERROR 2026-01-26 11:26:18,057 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:30:11,784 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-26 11:30:13,848 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:30:40,907 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-26 11:30:42,465 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:37:16,273 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 11:37:35,026 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 109, in users_crm
+    "name": est.name
+            ^^^^^^^^
+AttributeError: 'Establishment' object has no attribute 'name'
+ERROR 2026-01-26 11:37:35,383 log "GET //admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 11:37:55,379 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:37:56,921 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:38:03,840 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:38:05,338 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:38:18,284 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 11:38:20,340 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 11:38:29,712 log "GET //admin-dashboard HTTP/1.1" 200 2560
+INFO 2026-01-26 16:45:31,315 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:45:33,051 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:45:37,671 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:45:38,452 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:45:44,616 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:45:46,864 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:46:05,604 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:46:06,642 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:46:19,458 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:46:20,448 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:46:24,644 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:46:26,588 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:46:30,643 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:46:31,491 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:46:35,331 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:46:36,764 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:46:50,376 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:46:51,120 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:46:53,412 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:46:54,125 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:46:56,335 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:46:57,110 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:47:01,974 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:47:02,818 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:47:19,832 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:47:20,721 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:47:23,047 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:47:23,810 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:47:25,727 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:47:26,546 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:47:29,453 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:47:30,317 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:47:33,108 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:47:33,989 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:49:33,466 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:49:34,285 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:49:37,982 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:49:39,223 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:49:41,886 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:49:42,764 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:49:44,504 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:49:45,286 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:49:55,438 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:49:56,575 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:49:58,864 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:49:59,770 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:50:02,500 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:50:03,604 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:50:09,827 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:50:11,969 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:50:15,872 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:50:16,639 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:50:22,740 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:50:23,641 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:50:28,722 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:50:30,866 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:50:35,270 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:50:37,748 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:50:49,220 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:50:50,020 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:50:54,988 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:50:55,767 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:50:58,111 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:50:58,954 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:51:10,706 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:51:11,922 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:51:16,940 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:51:17,790 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:51:21,638 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:51:22,751 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-26 16:52:42,046 log Unauthorized: /admin-dashboard
+WARNING 2026-01-26 16:52:42,047 log "GET //admin-dashboard HTTP/1.1" 401 172
+WARNING 2026-01-26 16:53:00,309 log Not Found: /api/auth/refresh
+WARNING 2026-01-26 16:53:00,310 log "GET /api/auth/refresh HTTP/1.1" 404 179
+WARNING 2026-01-26 16:53:01,221 log Not Found: /api/auth/refresh
+WARNING 2026-01-26 16:53:01,222 log "GET /api/auth/refresh HTTP/1.1" 404 179
+WARNING 2026-01-26 16:53:14,594 log Method Not Allowed: /api/auth/token/refresh
+WARNING 2026-01-26 16:53:14,596 log "GET /api/auth/token/refresh HTTP/1.1" 405 40
+WARNING 2026-01-26 16:53:22,821 log Bad Request: /api/auth/token/refresh
+WARNING 2026-01-26 16:53:22,822 log "POST /api/auth/token/refresh HTTP/1.1" 400 39
+INFO 2026-01-26 16:53:47,165 autoreload C:\Users\pc\Desktop\backend\system\account\urls.py changed, reloading.
+INFO 2026-01-26 16:53:48,030 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:53:50,895 autoreload C:\Users\pc\Desktop\backend\system\account\urls.py changed, reloading.
+INFO 2026-01-26 16:53:51,811 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-26 16:53:55,723 log Unauthorized: /api/auth/token/refresh
+WARNING 2026-01-26 16:53:55,725 log "POST /api/auth/token/refresh HTTP/1.1" 401 54
+WARNING 2026-01-26 16:53:58,347 log Unauthorized: /api/auth/token/refresh
+WARNING 2026-01-26 16:53:58,349 log "POST /api/auth/token/refresh HTTP/1.1" 401 54
+WARNING 2026-01-26 16:54:06,875 log Unauthorized: /api/auth/token/refresh
+WARNING 2026-01-26 16:54:06,876 log "POST /api/auth/token/refresh HTTP/1.1" 401 54
+WARNING 2026-01-26 16:54:07,660 log Unauthorized: /api/auth/token/refresh
+WARNING 2026-01-26 16:54:07,661 log "POST /api/auth/token/refresh HTTP/1.1" 401 54
+WARNING 2026-01-26 16:54:07,911 log Unauthorized: /api/auth/token/refresh
+WARNING 2026-01-26 16:54:07,912 log "POST /api/auth/token/refresh HTTP/1.1" 401 54
+WARNING 2026-01-26 16:54:08,060 log Unauthorized: /api/auth/token/refresh
+WARNING 2026-01-26 16:54:08,061 log "POST /api/auth/token/refresh HTTP/1.1" 401 54
+WARNING 2026-01-26 16:54:08,296 log Unauthorized: /api/auth/token/refresh
+WARNING 2026-01-26 16:54:08,297 log "POST /api/auth/token/refresh HTTP/1.1" 401 54
+INFO 2026-01-26 16:54:57,387 log "POST /api/auth/login HTTP/1.1" 200 539
+ERROR 2026-01-26 16:55:42,562 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 110, in users_crm
+    "id" : establishment.id,
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'RelatedManager' object has no attribute 'id'
+ERROR 2026-01-26 16:55:42,574 log "GET /admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 16:56:14,029 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:56:15,822 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:56:17,568 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:56:18,303 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-26 16:56:24,812 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 110, in users_crm
+    "id" : establishment.id,
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2026-01-26 16:56:24,819 log "GET /admin-dashboard HTTP/1.1" 500 145
+ERROR 2026-01-26 16:56:25,600 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 110, in users_crm
+    "id" : establishment.id,
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2026-01-26 16:56:25,603 log "GET /admin-dashboard HTTP/1.1" 500 145
+ERROR 2026-01-26 16:56:26,492 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 110, in users_crm
+    "id" : establishment.id,
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2026-01-26 16:56:26,495 log "GET /admin-dashboard HTTP/1.1" 500 145
+ERROR 2026-01-26 16:56:26,842 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 110, in users_crm
+    "id" : establishment.id,
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2026-01-26 16:56:26,845 log "GET /admin-dashboard HTTP/1.1" 500 145
+ERROR 2026-01-26 16:56:28,180 log Internal Server Error: /admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views.py", line 110, in users_crm
+    "id" : establishment.id,
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2026-01-26 16:56:28,183 log "GET /admin-dashboard HTTP/1.1" 500 145
+INFO 2026-01-26 16:56:32,528 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:56:33,440 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 16:56:38,212 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 16:56:39,269 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 17:02:28,396 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 17:02:29,417 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 17:02:31,892 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 17:02:32,815 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 17:02:39,081 log "GET /admin-dashboard HTTP/1.1" 200 2199
+WARNING 2026-01-26 17:02:52,544 log Unauthorized: /admin-dashboard
+WARNING 2026-01-26 17:02:52,545 log "GET /admin-dashboard?page=2 HTTP/1.1" 401 5100
+INFO 2026-01-26 17:02:52,657 log "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2026-01-26 17:02:52,660 log "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2026-01-26 17:02:52,666 log "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2026-01-26 17:02:52,667 log "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2026-01-26 17:02:52,700 log "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-01-26 17:02:52,700 log "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-01-26 17:02:52,701 log "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2026-01-26 17:02:52,723 log "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-01-26 17:02:52,727 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-01-26 17:02:52,731 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-01-26 17:02:52,762 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2026-01-26 17:02:52,856 log "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2026-01-26 17:03:43,552 log Unauthorized: /admin-dashboard
+WARNING 2026-01-26 17:03:43,553 log "GET /admin-dashboard?page=222 HTTP/1.1" 401 5108
+INFO 2026-01-26 17:08:53,697 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 17:08:54,800 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 17:08:58,906 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 17:08:59,983 autoreload Watching for file changes with StatReloader
+INFO 2026-01-26 17:09:02,290 autoreload C:\Users\pc\Desktop\backend\system\admin\views.py changed, reloading.
+INFO 2026-01-26 17:09:03,069 autoreload Watching for file changes with StatReloader

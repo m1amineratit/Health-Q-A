@@ -6,7 +6,9 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.decorators import permission_classes
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAdminUser
+from account.models import Doctor, Establishment
+from account.pagination import AdminPagination
 
 # Create your views here.
 
@@ -80,3 +82,45 @@ def admin_login_view(request):
             "username": user.username,
         }
     }, status=status.HTTP_200_OK)
+
+
+@swagger_auto_schema(
+    method='get',
+    responses={200: openapi.Response("Users Profile")}
+)
+@api_view(['GET'])
+@permission_classes([IsAdminUser])
+def users_crm(request):
+
+    
+
+    doctors = Doctor.objects.select_related('user') \
+        .prefetch_related('doctor_establishment') \
+        .order_by('-id')
+
+    paginator = AdminPagination()
+    paginated_doctors = paginator.paginate_queryset(doctors, request)
+
+    data = []
+
+    for doctor in paginated_doctors:
+        establishments = doctor.doctor_establishment.all()
+
+        data.append({
+            "full_name": f"{doctor.user.first_name} {doctor.user.last_name}",
+            "speciality": doctor.speciality,
+            "establishments": [
+                {
+                    "id": est.id,
+                    "name": est.establishment_name
+                } for est in establishments
+            ],
+            "email": doctor.user.email,
+            "number_of_phone": doctor.number_of_phone,
+            "inpe": doctor.inpe,
+            "instagram_account": doctor.instagram_account,
+            "ville": doctor.ville,
+            "img": doctor.img.url if doctor.img else None,
+        })
+
+    return paginator.get_paginated_response(data)

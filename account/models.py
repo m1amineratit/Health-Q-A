@@ -37,7 +37,7 @@ class Establishment(models.Model):
         ('laboratory', 'Laboratory'),
     ]
     
-    doctor = models.OneToOneField(Doctor, on_delete=models.CASCADE, related_name='doctor_establishment')
+    doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE, related_name='doctor_establishment')
     establishment_type = models.CharField(
         max_length=50,
         choices=ESTABLISHMENT_TYPE_CHOICES,
