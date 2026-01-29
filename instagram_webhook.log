@@ -6029,3 +6029,94 @@ INFO 2026-01-26 20:19:21,653 log "GET /static/rest_framework/js/prettify-min.js 
 INFO 2026-01-26 20:19:21,672 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
 INFO 2026-01-26 20:19:21,710 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
 INFO 2026-01-26 20:19:21,855 log "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2026-01-28 14:56:17,162 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 14:56:28,096 log "GET /swagger HTTP/1.1" 301 0
+INFO 2026-01-28 14:56:28,310 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-01-28 14:56:28,490 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-01-28 14:56:28,528 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-01-28 14:56:28,567 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-01-28 14:56:28,570 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-01-28 14:56:28,600 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-01-28 14:56:28,638 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-01-28 14:56:28,800 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-01-28 14:56:29,015 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2026-01-28 14:56:29,151 log "GET /swagger/?format=openapi HTTP/1.1" 200 13033
+INFO 2026-01-28 14:57:31,853 autoreload C:\Users\pc\Desktop\backend\system\system\urls.py changed, reloading.
+INFO 2026-01-28 14:57:33,686 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:04:47,360 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:04:48,244 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:04:55,086 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:04:55,864 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:05:03,545 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:05:05,254 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:05:13,095 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:05:15,607 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:05:39,051 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:05:40,002 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:05:50,149 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:05:51,010 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:05:54,852 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:05:56,373 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:05:58,271 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:00,139 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:06:04,986 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:06,374 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:06:12,767 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:13,718 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:06:15,995 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:17,391 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:06:21,141 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:22,733 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:06:25,273 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:26,119 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:06:30,158 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:31,911 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:06:41,357 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:42,194 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:06:43,633 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:44,306 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:06:45,692 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:46,368 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:06:52,869 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-28 15:06:53,652 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:09:46,368 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\doctor_views.py changed, reloading.
+INFO 2026-01-28 15:09:48,023 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:09:59,346 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\doctor_views.py changed, reloading.
+INFO 2026-01-28 15:10:00,773 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:10:08,060 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\doctor_views.py changed, reloading.
+INFO 2026-01-28 15:10:09,627 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:10:22,423 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\doctor_views.py changed, reloading.
+INFO 2026-01-28 15:10:23,802 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:10:30,260 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\doctor_views.py changed, reloading.
+INFO 2026-01-28 15:10:31,592 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:10:45,134 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\doctor_views.py changed, reloading.
+INFO 2026-01-28 15:10:46,549 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:10:56,072 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-01-28 15:10:57,600 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:11:01,464 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-01-28 15:11:03,058 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:11:05,286 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-01-28 15:11:06,880 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:11:18,845 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-01-28 15:11:20,227 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:32:31,122 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:36:46,054 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-01-28 15:36:46,152 log "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2026-01-28 15:36:46,161 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2026-01-28 15:36:46,161 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2026-01-28 15:36:46,166 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2026-01-28 15:36:46,167 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2026-01-28 15:36:46,168 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2026-01-28 15:36:46,169 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2026-01-28 15:36:46,409 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2026-01-28 15:36:46,470 log "GET /swagger/?format=openapi HTTP/1.1" 200 13033
+INFO 2026-01-28 15:36:52,549 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-01-28 15:36:52,867 log "GET /swagger/?format=openapi HTTP/1.1" 200 13033
+INFO 2026-01-28 15:37:56,733 autoreload C:\Users\pc\Desktop\backend\system\account\backends.py changed, reloading.
+INFO 2026-01-28 15:37:57,431 autoreload Watching for file changes with StatReloader
+INFO 2026-01-28 15:57:57,582 autoreload C:\Users\pc\Desktop\backend\system\account\serializers.py changed, reloading.
+INFO 2026-01-28 21:04:33,712 autoreload Watching for file changes with StatReloader
+INFO 2026-01-29 15:56:35,594 autoreload Watching for file changes with StatReloader
+INFO 2026-01-29 15:58:44,972 autoreload Watching for file changes with StatReloader
+INFO 2026-01-29 15:59:29,092 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\doctor_views.py changed, reloading.
+INFO 2026-01-29 15:59:30,915 autoreload Watching for file changes with StatReloader

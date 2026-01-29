@@ -1,7 +1,15 @@
 from django.contrib.auth.models import User
 from rest_framework.validators import UniqueValidator
 from rest_framework import serializers
-from .models import Doctor
+from .models import Doctor, Subscription
+
+# Subscription 
+
+class SubscriptionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Subscription
+        fields = ['plan', 'is_active', 'end_date']
+        read_only = ['is_active', 'end_date']
 
 # Registration Serializer - Used when creating a new account (without password)
 class RegisterSerializer(serializers.Serializer):
@@ -55,3 +63,4 @@ class AcceptUserSerializer(serializers.Serializer):
         choices=['accept', 'reject'],
         help_text="Choose 'accept' to approve the user or 'reject' to decline"
     )
+

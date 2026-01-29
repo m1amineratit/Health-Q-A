@@ -24,7 +24,6 @@ urlpatterns = [
 
     path('', include('api.urls')),
     path('', include('account.urls')),
-    path('accounts/login/', auth_views.LoginView.as_view(), name='login'),
     
     # Swagger Documentation
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),

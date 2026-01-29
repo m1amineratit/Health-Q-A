@@ -4,6 +4,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
 from drf_yasg.utils import swagger_auto_schema
+from account.backends import IsPremiumUser
 
 from account.models import Doctor, Establishment
 from ..schemas import establishment_create_schema, establishment_update_schema
@@ -17,7 +18,7 @@ from ..schemas import establishment_create_schema, establishment_update_schema
     responses={200: "Establishment Profile"}
 )
 @api_view(['GET'])
-@permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated, IsPremiumUser])
 def get_establishment_profile_api(request):
     """
     Get Establishment Profile
@@ -67,7 +68,7 @@ def get_establishment_profile_api(request):
     }
 )
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated, IsPremiumUser])
 def create_establishment_api(request):
     """
     Create Establishment Profile
@@ -148,7 +149,7 @@ def create_establishment_api(request):
     }
 )
 @api_view(['PATCH'])
-@permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated, IsPremiumUser])
 def update_establishment_api(request):
     """
     Update Establishment Information

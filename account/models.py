@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+
 class Doctor(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='doctor_profile')
     img = models.ImageField(upload_to='doctor_images/', blank=True, null=True)
@@ -29,6 +30,19 @@ class Doctor(models.Model):
         return f"Dr. {self.user.get_full_name()} - {self.get_speciality_display()}"
     
 
+class Subscription(models.Model):
+    PLAN_CHOICES = (
+        ("free", "Free"),
+        ("pro", "Pro")
+    )
+
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    plan = models.CharField(max_length=20, choices=PLAN_CHOICES, default="free")
+    start_date = models.DateTimeField(auto_now_add=True)
+    end_date = models.DateTimeField(null=True, blank=True)
+    is_active = models.BooleanField(default=True)
+
+    
 class Establishment(models.Model): 
     ESTABLISHMENT_TYPE_CHOICES = [
         ('cabinet', 'Cabinet'),

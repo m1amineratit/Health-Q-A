@@ -75,7 +75,7 @@ def get_doctor_statistics_api(request):
     
     # Get questions answered by this doctor
     answered_questions = Question.objects.filter(
-        answered_by=request.user,
+        doctor=request.user,
         status="answered"
     )
     
