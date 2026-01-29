@@ -136,7 +136,7 @@ def get_questions_api(request):
     data = []
     for q in paginated_questions:
         answer_data = None
-        if q.answer:
+        if hasattr(q, 'answer') and q.answer:
             answer_data = {
                 "answer_text": q.answer.answer_text,
                 "answered_by": q.answer.answered_by.username if q.answer.answered_by else None,
