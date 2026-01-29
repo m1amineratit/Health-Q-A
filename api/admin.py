@@ -10,7 +10,7 @@ class QuestionAdmin(admin.ModelAdmin):
     fieldsets = (
         ('Question Info', {'fields': ('id', 'question_text', 'instagram_username', 'instagram_user_id')}),
         ('Assignment', {'fields': ('doctor', 'category')}),
-        ('Status', {'fields': ('status', 'answer_sent')}),
+        ('Status', {'fields': ('status',)}),
         ('Metadata', {'fields': ('created_at', 'views_count')}),
     )
 
