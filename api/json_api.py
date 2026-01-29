@@ -1,6 +1,6 @@
 from django.conf import settings
 from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
 from django.shortcuts import get_object_or_404
@@ -8,6 +8,8 @@ from django.utils import timezone
 from django.urls import reverse
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
+from account.pagination import PagePagination
+from api.serializers import AnswerSerializer
 from .models import Question, Answer
 from account.models import Doctor
 from .views import send_instagram_message
@@ -108,7 +110,7 @@ def get_questions_api(request):
     try:
         doctor = request.user.doctor_profile
         doctor_speciality = doctor.speciality
-    except:
+    except Doctor.DoesNotExist:
         return Response({
             'error' : "User is not a doctor"
         },
@@ -116,18 +118,25 @@ def get_questions_api(request):
     
     # Generaliste doctors see all categories except dentist
     if doctor_speciality == 'generaliste':
-        questions = Question.objects.exclude(category='dentist').order_by("-created_at")
+        questions = Question.objects.exclude(category='dentist')
     else:
         # Other specialists see only their own category
-        questions = Question.objects.filter(category=doctor_speciality).order_by("-created_at")
+        questions = Question.objects.filter(category=doctor_speciality)
     
     if status_filter in ["pending", "answered"]:
         questions = questions.filter(status=status_filter)
-        
+    
+    questions = questions.select_related(
+        'answer',
+        'answer__answered_by'
+    ).order_by('-created_at')
+    paginator = PagePagination()
+    paginated_questions = paginator.paginate_queryset(questions, request)
+
     data = []
-    for q in questions:
+    for q in paginated_questions:
         answer_data = None
-        if hasattr(q, 'answer') and q.answer:
+        if q.answer:
             answer_data = {
                 "answer_text": q.answer.answer_text,
                 "answered_by": q.answer.answered_by.username if q.answer.answered_by else None,
@@ -146,8 +155,9 @@ def get_questions_api(request):
             "views_count": q.views_count,
         })
         
-    return Response({"count": len(data), "questions": data})
-
+    return paginator.get_paginated_response({
+        "questions": data
+    })
 
 @swagger_auto_schema(
     method='get',
@@ -264,7 +274,7 @@ def submit_answer_api(request, question_id):
     responses={200: "List of Answered Questions"}
 )
 @api_view(['GET'])
-@permission_classes([AllowAny])
+@permission_classes([IsAuthenticated])
 def answered_questions_feed_api(request):
     """
     Get Answered Questions Feed
@@ -340,3 +350,56 @@ def answered_questions_feed_api(request):
         "has_previous": page > 1,
         "questions": data
     }, status=status.HTTP_200_OK)
+
+
+answer_response_schema = openapi.Schema(
+    type=openapi.TYPE_OBJECT,
+    properties={
+        "status": openapi.Schema(type=openapi.TYPE_STRING),
+        "count": openapi.Schema(type=openapi.TYPE_INTEGER),
+        "answers": openapi.Schema(
+            type=openapi.TYPE_ARRAY,
+            items=openapi.Schema(
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "id": openapi.Schema(type=openapi.TYPE_INTEGER),
+                    "question": openapi.Schema(type=openapi.TYPE_STRING),
+                    "answer_text": openapi.Schema(type=openapi.TYPE_STRING),
+                    "answered_by": openapi.Schema(type=openapi.TYPE_INTEGER),
+                    "answered_by_name": openapi.Schema(type=openapi.TYPE_STRING),
+                    "created_at": openapi.Schema(type=openapi.TYPE_STRING, format="date-time"),
+                    "updated_at": openapi.Schema(type=openapi.TYPE_STRING, format="date-time"),
+                    "answer_sent": openapi.Schema(type=openapi.TYPE_BOOLEAN),
+                    "views_count": openapi.Schema(type=openapi.TYPE_INTEGER),
+                }
+            )
+        )
+    }
+)
+@swagger_auto_schema(
+    method='get',
+    operation_summary="Doctor answers list",
+    operation_description="Returns answers created by the authenticated doctor.",
+    responses={200: answer_response_schema}
+)
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def ansewres_view(request):
+    """
+    Public Answers List
+    Returns all answered questions (only sent answers).
+    """
+    answers = Answer.objects.filter(answer_sent=True, answered_by=request.user).select_related(
+        'question',
+        'answered_by'
+    ).order_by('-created_at')
+
+    paginator = PagePagination()
+    paginated_answers = paginator.paginate_queryset(answers, request)
+
+    serializer = AnswerSerializer(paginated_answers, many=True)
+
+    return paginator.get_paginated_response({
+        "status": "success",
+        "answers": serializer.data
+    })

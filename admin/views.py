@@ -8,7 +8,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import AllowAny, IsAdminUser
 from account.models import Doctor, Establishment
-from account.pagination import AdminPagination
+from account.pagination import PagePagination
 
 # Create your views here.
 
@@ -98,7 +98,7 @@ def users_crm(request):
         .prefetch_related('doctor_establishment') \
         .order_by('-id')
 
-    paginator = AdminPagination()
+    paginator = PagePagination()
     paginated_doctors = paginator.paginate_queryset(doctors, request)
 
     data = []
