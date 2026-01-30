@@ -164,7 +164,7 @@ def password_reset_request_api(request):
     uid = urlsafe_base64_encode(str(user.id).encode())
     
     # Create reset link (you can customize this URL based on your frontend)
-    reset_link = f"{settings.FRONTEND_URL}/reset-password/{uid}/{token}/" if hasattr(settings, 'FRONTEND_URL') else f"http://localhost:3000/reset-password/{uid}/{token}/"
+    reset_link = f"https://health-q-a-production.up.railway.app/api/auth/reset-password/{uid}/{token}/" if hasattr(settings, 'FRONTEND_URL') else f"https://health-q-a-production.up.railway.app/api/auth/reset-password/{uid}/{token}/"
     
     # Send email
     subject = "Password Reset Request"
@@ -195,6 +195,7 @@ def password_reset_request_api(request):
         return Response({
             "status": "success",
             "message": "Password reset email sent successfully",
+            "link" : reset_link,
             "email": email
         }, status=status.HTTP_200_OK)
     
@@ -351,8 +352,8 @@ def accept_user_api(request):
                 uid = urlsafe_base64_encode(str(user.id).encode())
                 
                 # Create password setup link (for manual sharing)
-                frontend_url = getattr(settings, 'FRONTEND_URL', 'http://localhost:3000')
-                password_setup_link = f"{frontend_url}/set-password/{uid}/{token}/"
+                frontend_url = getattr(settings, 'FRONTEND_URL', 'https://health-q-a-production.up.railway.app/')
+                password_setup_link = f"{frontend_url}/api/auth/set-password/{uid}/{token}/"
                 
                 # Return success with password setup link for manual handling
                 return Response({
