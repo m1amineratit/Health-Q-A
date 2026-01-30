@@ -7,13 +7,12 @@ from rest_framework import status
 from django.contrib.auth import authenticate
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
-from django.contrib.auth.models import User
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.core.mail import send_mail
 from rest_framework_simplejwt.tokens import RefreshToken
 import logging
-
+from django.utils.encoding import force_bytes, force_str
 from account.models import Doctor
 from account.serializers import RegisterSerializer, SetPasswordSerializer, AcceptUserSerializer
 from ..schemas import (
@@ -28,6 +27,9 @@ from ..utils import get_tokens_for_user
 
 logger = logging.getLogger(__name__)
 
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 # -------------------------
 # REGISTER API
@@ -113,7 +115,7 @@ def login_api(request):
     email = request.data.get("email")
     password = request.data.get("password")
     
-    user = authenticate(request, email=email, password=password)
+    user = authenticate(request, username=email, password=password)
     
     if user is not None:
         refresh = RefreshToken.for_user(user)
@@ -161,11 +163,12 @@ def password_reset_request_api(request):
     # Generate token
     token_generator = PasswordResetTokenGenerator()
     token = token_generator.make_token(user)
-    uid = urlsafe_base64_encode(str(user.id).encode())
+    uid = urlsafe_base64_encode(force_bytes(user.id))
     
     # Create reset link (you can customize this URL based on your frontend)
-    reset_link = f"https://health-q-a-production.up.railway.app/api/auth/reset-password/{uid}/{token}/" if hasattr(settings, 'FRONTEND_URL') else f"https://health-q-a-production.up.railway.app/api/auth/reset-password/{uid}/{token}/"
-    
+    frontend_url = getattr(settings, 'FRONTEND_URL', 'https://frontend.com')
+    reset_link = f"{frontend_url}/reset-password/{uid}/{token}/"
+
     # Send email
     subject = "Password Reset Request"
     message = f"""
@@ -196,7 +199,9 @@ def password_reset_request_api(request):
             "status": "success",
             "message": "Password reset email sent successfully",
             "link" : reset_link,
-            "email": email
+            "email": email,
+            "uid" : uid,
+            "token" : token,
         }, status=status.HTTP_200_OK)
     
     except Exception as e:
@@ -349,11 +354,11 @@ def accept_user_api(request):
                 # Generate password reset token for user to set password
                 token_generator = PasswordResetTokenGenerator()
                 token = token_generator.make_token(user)
-                uid = urlsafe_base64_encode(str(user.id).encode())
+                uid = urlsafe_base64_encode(force_bytes(user.id))
                 
                 # Create password setup link (for manual sharing)
                 frontend_url = getattr(settings, 'FRONTEND_URL', 'https://health-q-a-production.up.railway.app/')
-                password_setup_link = f"{frontend_url}/api/auth/set-password/{uid}/{token}/"
+                password_setup_link = f"{frontend_url}/set-password/{uid}/{token}/"
                 
                 # Return success with password setup link for manual handling
                 return Response({
@@ -421,7 +426,7 @@ def set_password_api(request):
     
     try:
         # Decode user ID
-        user_id = urlsafe_base64_decode(serializer.validated_data['uid']).decode()
+        user_id = force_str(urlsafe_base64_decode(serializer.validated_data['uid']))
         user = User.objects.get(id=user_id)
     except (User.DoesNotExist, ValueError, TypeError):
         return Response({
@@ -448,9 +453,12 @@ def set_password_api(request):
         }, status=status.HTTP_404_NOT_FOUND)
     
     # Set password
-    data = serializer.validated_data
-    user.set_password(data['password'])
-    user.is_active = True  # Activate user after password is set
+    password = serializer.validated_data['password']
+    if len(password) < 8:
+        return Response({"error": "Password must be at least 8 characters"}, status=status.HTTP_400_BAD_REQUEST)
+
+    user.set_password(password)
+    user.is_active = True
     user.save()
     
     # Send confirmation email

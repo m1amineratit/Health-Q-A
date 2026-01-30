@@ -14,9 +14,11 @@ from .models import Question, Answer
 from account.models import Doctor
 from .views import send_instagram_message
 import logging
-from django.contrib.auth.models import User
 from django.db import models
 import requests
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 logger = logging.getLogger(__name__)
 

@@ -80,13 +80,13 @@ SWAGGER_SETTINGS = {
 # Application definition
 
 INSTALLED_APPS = [
+    'account',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'account',
     'api',
     'rest_framework',
     'drf_yasg',
@@ -216,7 +216,12 @@ OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
 
 # Logging Configuration
 
-AUTHENTICATION_BACKENDS = ['account.backends.EmailBackend']
+AUTHENTICATION_BACKENDS = [
+        'account.backends.EmailBackend',     
+        "django.contrib.auth.backends.ModelBackend",
+    ]
+
+AUTH_USER_MODEL = "account.User"
 
 LOGGING = {
     'version': 1,

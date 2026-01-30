@@ -1,11 +1,19 @@
 import uuid
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractBaseUser
+from django.conf import settings
 
+class User(AbstractBaseUser):
+    email = models.EmailField(unique=True)
 
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = ["username"]
 
+    def __str__(self):
+        return self.email
+    
 class Doctor(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='doctor_profile')
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='doctor_profile')
     img = models.ImageField(upload_to='doctor_images/', blank=True, null=True)
     speciality = models.CharField(
         choices=[
@@ -36,7 +44,7 @@ class Subscription(models.Model):
         ("pro", "Pro")
     )
 
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     plan = models.CharField(max_length=20, choices=PLAN_CHOICES, default="free")
     start_date = models.DateTimeField(auto_now_add=True)
     end_date = models.DateTimeField(null=True, blank=True)

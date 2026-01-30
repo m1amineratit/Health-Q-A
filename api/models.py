@@ -1,6 +1,6 @@
 import uuid
 from django.db import models
-from django.contrib.auth.models import User
+from django.conf import settings
 
 # Create your models here.
 
@@ -10,7 +10,7 @@ class Question(models.Model):
         ('answered', 'Answered'),
         ('archived', 'Archived'),
     ]
-    doctor = models.ForeignKey(User, on_delete=models.CASCADE, related_name='questions', null=True, blank=True)
+    doctor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='questions', null=True, blank=True)
     category = models.CharField(max_length=150, blank=True, null=True)
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     instagram_username = models.CharField(max_length=100)
@@ -29,7 +29,7 @@ class Question(models.Model):
 
 class Answer(models.Model):
     question = models.OneToOneField(Question, on_delete=models.CASCADE, related_name='answer', help_text="One answer per question")
-    answered_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='answers')
+    answered_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, blank=True, related_name='answers')
     answer_text = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
