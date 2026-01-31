@@ -45,9 +45,6 @@ CSRF_TRUSTED_ORIGINS = [
     'https://health-q-a-production.up.railway.app',
 ]
 
-
-APPEND_SLASH = False
-
 # DRF SIMPLE JWT
 
 

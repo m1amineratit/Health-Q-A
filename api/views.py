@@ -98,7 +98,7 @@ def process_instagram_message(event):
     Handle a single Instagram DM event
     """
     from .json_api import classify_question
-    from .models import Doctor
+    from account.models import Doctor
     
     try:
         print(f"DEBUG: Processing event: {event}")

@@ -7018,3 +7018,78 @@ INFO 2026-01-31 16:38:09,452 autoreload C:\Users\pc\Desktop\backend\system\syste
 INFO 2026-01-31 16:38:11,281 autoreload Watching for file changes with StatReloader
 INFO 2026-01-31 16:38:14,787 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
 INFO 2026-01-31 16:38:16,282 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 16:44:48,422 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-31 16:44:50,014 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 16:45:53,704 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-31 16:45:55,649 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 16:46:25,475 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-31 16:46:27,477 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 16:48:38,322 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-31 16:48:40,412 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 16:48:44,014 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-31 16:48:45,596 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 16:48:49,683 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-31 16:48:51,386 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 16:54:23,166 log "GET /admin/auth/user/ HTTP/1.1" 200 14734
+INFO 2026-01-31 16:54:23,259 log "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,265 log "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,265 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,274 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,274 log "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,277 log "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,279 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,285 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,285 log "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,286 log "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,288 log "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,289 log "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,291 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,291 log "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,315 log "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,317 log "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-01-31 16:54:23,443 log "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 645
+INFO 2026-01-31 16:54:23,455 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:23,468 log "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:25,409 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-31 16:54:25,462 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:25,462 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:25,465 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:25,477 log "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+INFO 2026-01-31 16:54:29,354 log "GET /admin/account/doctor/ HTTP/1.1" 200 15344
+INFO 2026-01-31 16:54:31,667 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-31 16:54:46,204 basehttp - Broken pipe from ('127.0.0.1', 58440)
+INFO 2026-01-31 16:54:48,162 log "GET /admin/account/doctor/add/ HTTP/1.1" 200 19739
+INFO 2026-01-31 16:54:48,265 log "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:48,271 log "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:48,313 log "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:48,323 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:48,331 log "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:54:50,290 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-31 16:55:06,582 log "POST /admin/account/doctor/add/ HTTP/1.1" 302 0
+INFO 2026-01-31 16:55:10,099 log "GET /admin/account/doctor/ HTTP/1.1" 200 16170
+INFO 2026-01-31 16:55:12,719 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-31 16:55:12,789 log "GET /static/admin/img/icon-yes-dark.svg HTTP/1.1" 200 558
+INFO 2026-01-31 16:56:15,627 log "GET /admin/api/question/ HTTP/1.1" 200 12360
+INFO 2026-01-31 16:56:15,809 log "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,810 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,814 log "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,823 log "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,828 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,829 log "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,829 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,833 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,842 log "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,843 log "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,843 log "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,844 log "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,846 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,848 log "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,942 log "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:15,994 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:16,016 log "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:18,261 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-31 16:56:18,312 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:18,316 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:56:18,323 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:57:20,686 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-01-31 16:57:22,702 autoreload Watching for file changes with StatReloader
