@@ -6835,3 +6835,26 @@ LINE 1: SELECT 1 AS "a" FROM "auth_user" WHERE "auth_user"."username...
 
 ERROR 2026-01-31 15:14:24,536 log "POST /api/auth/register HTTP/1.1" 500 145
 INFO 2026-01-31 15:32:59,807 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 15:33:53,421 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 15:34:04,168 log "POST /api/auth/register HTTP/1.1" 201 189
+INFO 2026-01-31 15:43:23,727 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-31 15:43:38,314 log Bad Request: /api/auth/register
+WARNING 2026-01-31 15:43:38,315 log "POST /api/auth/register HTTP/1.1" 400 136
+INFO 2026-01-31 15:43:48,992 log "POST /api/auth/login HTTP/1.1" 200 537
+WARNING 2026-01-31 15:44:24,673 log Bad Request: /api/auth/accept-user
+WARNING 2026-01-31 15:44:24,674 log "POST /api/auth/accept-user HTTP/1.1" 400 87
+INFO 2026-01-31 15:44:42,106 log "POST /api/auth/accept-user HTTP/1.1" 200 294
+WARNING 2026-01-31 15:46:48,609 log Not Found: /api/auth/set-7bedUkgrWMlT2nq
+WARNING 2026-01-31 15:46:48,609 log "POST /api/auth/set-7bedUkgrWMlT2nq HTTP/1.1" 404 179
+INFO 2026-01-31 15:46:56,706 log "POST /api/auth/set-password HTTP/1.1" 200 638
+WARNING 2026-01-31 15:47:35,656 log Bad Request: /api/auth/password-reset
+WARNING 2026-01-31 15:47:35,657 log "POST /api/auth/password-reset HTTP/1.1" 400 29
+WARNING 2026-01-31 15:47:51,382 log Bad Request: /api/auth/password-reset
+WARNING 2026-01-31 15:47:51,384 log "POST /api/auth/password-reset HTTP/1.1" 400 103
+INFO 2026-01-31 15:48:02,031 log "POST /api/auth/password-reset HTTP/1.1" 200 253
+WARNING 2026-01-31 15:48:52,564 log Bad Request: /api/auth/password-reset
+WARNING 2026-01-31 15:48:52,566 log "POST /api/auth/password-reset HTTP/1.1" 400 29
+WARNING 2026-01-31 15:49:15,024 log Not Found: /api/auth/password-reset
+WARNING 2026-01-31 15:49:15,025 log "POST /api/auth/password-reset HTTP/1.1" 404 26
+INFO 2026-01-31 15:49:24,832 log "POST /api/auth/password-reset HTTP/1.1" 200 253
+INFO 2026-01-31 15:49:46,406 log "POST /api/auth/password-reset-confirm HTTP/1.1" 200 103
