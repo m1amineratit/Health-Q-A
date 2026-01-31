@@ -33,6 +33,11 @@ class RegisterSerializer(serializers.Serializer):
             raise serializers.ValidationError("This phone number is already registered.")
         return value
 
+    def validate_full_name(self, value):
+        if User.objects.filter(username=value).exists():
+            raise serializers.ValidationError("This full name is already registered.")
+        return value
+
 
 
 # Set Password Serializer - Used when accepted user sets their password
