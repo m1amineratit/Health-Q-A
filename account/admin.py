@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import Doctor, Establishment
+from .models import Doctor, Subscription, Establishment
+from django.contrib.auth.models import User
+
 
 # Register your models here.
 

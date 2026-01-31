@@ -6256,3 +6256,582 @@ INFO 2026-01-29 16:56:16,830 log "GET /admin/ HTTP/1.1" 302 0
 INFO 2026-01-29 16:56:23,259 log "GET /admin/ HTTP/1.1" 302 0
 INFO 2026-01-29 16:57:04,676 log "GET /admin/ HTTP/1.1" 302 0
 INFO 2026-01-29 17:07:06,447 autoreload C:\Users\pc\Desktop\backend\system\api\admin.py changed, reloading.
+INFO 2026-01-30 18:53:43,288 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-30 18:53:59,459 log Unauthorized: /api/auth/password-reset
+WARNING 2026-01-30 18:53:59,462 log "POST /api/auth/password-reset HTTP/1.1" 401 51
+WARNING 2026-01-30 18:54:05,147 log Not Found: /api/auth/registe
+WARNING 2026-01-30 18:54:05,148 log "POST /api/auth/registe HTTP/1.1" 404 179
+WARNING 2026-01-30 18:54:08,234 log Not Found: /api/auth/register/
+WARNING 2026-01-30 18:54:08,235 log "POST /api/auth/register/ HTTP/1.1" 404 179
+WARNING 2026-01-30 18:54:15,632 log Unauthorized: /api/auth/register
+WARNING 2026-01-30 18:54:15,635 log "POST /api/auth/register HTTP/1.1" 401 51
+WARNING 2026-01-30 18:55:04,995 log Unauthorized: /api/auth/login
+WARNING 2026-01-30 18:55:04,998 log "POST /api/auth/login HTTP/1.1" 401 51
+WARNING 2026-01-30 18:55:24,529 log Unauthorized: /api/auth/login
+WARNING 2026-01-30 18:55:24,531 log "POST /api/auth/login HTTP/1.1" 401 51
+WARNING 2026-01-30 18:55:31,111 log Unauthorized: /api/auth/login
+WARNING 2026-01-30 18:55:31,113 log "POST /api/auth/login HTTP/1.1" 401 51
+WARNING 2026-01-30 18:55:35,784 log Unauthorized: /api/auth/login
+WARNING 2026-01-30 18:55:35,785 log "POST /api/auth/login HTTP/1.1" 401 51
+WARNING 2026-01-30 18:55:43,901 log Unauthorized: /api/auth/login
+WARNING 2026-01-30 18:55:43,903 log "POST /api/auth/login HTTP/1.1" 401 51
+ERROR 2026-01-30 18:55:59,652 log Internal Server Error: /api/auth/login
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py", line 118, in login_api
+    user = authenticate(request, username=email, password=password)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Manager' object has no attribute 'get_by_natural_key'
+ERROR 2026-01-30 18:55:59,940 log "POST /api/auth/login HTTP/1.1" 500 145
+INFO 2026-01-30 18:57:13,608 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-30 18:57:15,162 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 18:57:18,560 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-30 18:57:20,158 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:11:05,285 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-30 19:11:07,084 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:13:06,819 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-30 19:13:08,516 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:13:15,394 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-30 19:13:17,086 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:13:31,143 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-30 19:13:32,460 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:13:36,412 autoreload C:\Users\pc\Desktop\backend\system\account\serializers.py changed, reloading.
+INFO 2026-01-30 19:13:37,946 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:14:03,186 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-30 19:14:04,802 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:25:32,098 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-30 19:25:33,941 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:25:36,885 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-30 19:25:38,879 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:25:56,478 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-01-30 19:25:57,971 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:36:53,064 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-30 19:36:55,123 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:36:59,372 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-01-30 19:37:01,022 autoreload Watching for file changes with StatReloader
+INFO 2026-01-30 19:40:26,657 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-30 20:16:35,796 log Internal Server Error: /api/auth/login
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "auth_user" does not exist
+LINE 1: ...user"."is_active", "auth_user"."date_joined" FROM "auth_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py", line 114, in login_api
+    user = authenticate(request, username=email, password=password)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\pc\Desktop\backend\system\account\backends.py", line 19, in authenticate
+    user = User.objects.get(email=email)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    num = len(clone)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "auth_user" does not exist
+LINE 1: ...user"."is_active", "auth_user"."date_joined" FROM "auth_user...
+                                                             ^
+
+ERROR 2026-01-30 20:16:35,979 log "POST /api/auth/login HTTP/1.1" 500 145
+WARNING 2026-01-30 20:16:42,094 log Unauthorized: /api/auth/login
+WARNING 2026-01-30 20:16:42,096 log "POST /api/auth/login HTTP/1.1" 401 31
+WARNING 2026-01-30 20:16:44,604 log Unauthorized: /api/auth/login
+WARNING 2026-01-30 20:16:44,605 log "POST /api/auth/login HTTP/1.1" 401 31
+INFO 2026-01-31 14:48:58,832 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-31 14:49:20,456 log Unauthorized: /api/auth/login
+WARNING 2026-01-31 14:49:20,457 log "POST /api/auth/login HTTP/1.1" 401 31
+INFO 2026-01-31 14:49:36,615 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-01-31 14:49:36,708 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-01-31 14:49:36,723 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-01-31 14:49:36,750 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-01-31 14:49:36,764 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-01-31 14:49:36,779 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-01-31 14:49:36,810 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-01-31 14:49:36,926 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-01-31 14:49:37,064 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2026-01-31 14:49:37,153 log "GET /swagger/?format=openapi HTTP/1.1" 200 13748
+INFO 2026-01-31 14:50:17,294 autoreload C:\Users\pc\Desktop\backend\system\account\serializers.py changed, reloading.
+INFO 2026-01-31 14:50:18,006 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:50:27,834 autoreload C:\Users\pc\Desktop\backend\system\account\serializers.py changed, reloading.
+INFO 2026-01-31 14:50:28,562 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:50:43,870 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:50:44,695 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:50:49,396 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:50:50,136 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:50:51,871 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:50:52,591 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:50:57,258 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:50:58,003 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:51:01,703 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:51:02,456 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:51:04,588 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:51:05,365 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:51:15,281 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:51:15,991 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:51:19,940 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:51:20,825 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:51:39,575 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:51:40,300 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:51:49,269 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:51:50,008 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:51:52,319 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:51:53,135 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:52:01,775 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-01-31 14:52:01,820 log "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2026-01-31 14:52:01,823 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2026-01-31 14:52:01,828 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2026-01-31 14:52:01,829 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2026-01-31 14:52:01,830 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2026-01-31 14:52:01,832 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2026-01-31 14:52:01,834 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2026-01-31 14:52:02,057 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2026-01-31 14:52:02,111 log "GET /swagger/?format=openapi HTTP/1.1" 200 13741
+ERROR 2026-01-31 14:52:26,129 log Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py", line 52, in register_api
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\pc\Desktop\backend\system\account\serializers.py", line 37, in validate_full_name
+    if Doctor.objects.filter(full_name=value).exists():
+       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1551, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1358, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1832, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'full_name' into field. Choices are: accepted_at, created_at, doctor_establishment, id, img, inpe, instagram_account, is_accepted, number_of_phone, speciality, user, user_id, ville
+ERROR 2026-01-31 14:52:26,309 log "POST /api/auth/register HTTP/1.1" 500 145
+INFO 2026-01-31 14:52:59,192 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 14:53:31,196 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 14:53:35,753 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-31 14:53:43,040 log Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py", line 52, in register_api
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\pc\Desktop\backend\system\account\serializers.py", line 37, in validate_full_name
+    if Doctor.objects.filter(full_name=value).exists():
+       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1551, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1358, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1832, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'full_name' into field. Choices are: accepted_at, created_at, doctor_establishment, id, img, inpe, instagram_account, is_accepted, number_of_phone, speciality, user, user_id, ville
+ERROR 2026-01-31 14:53:43,050 log "POST /api/auth/register HTTP/1.1" 500 145
+INFO 2026-01-31 14:54:13,232 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-01-31 15:09:19,216 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-31 15:09:34,728 log Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py", line 52, in register_api
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\pc\Desktop\backend\system\account\serializers.py", line 37, in validate_full_name
+    if Doctor.objects.filter(full_name=value).exists():
+       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1551, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1358, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1832, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'full_name' into field. Choices are: accepted_at, created_at, doctor_establishment, id, img, inpe, instagram_account, is_accepted, number_of_phone, speciality, user, user_id, ville
+ERROR 2026-01-31 15:09:34,847 log "POST /api/auth/register HTTP/1.1" 500 145
+ERROR 2026-01-31 15:13:16,503 log Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py", line 52, in register_api
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\pc\Desktop\backend\system\account\serializers.py", line 37, in validate_full_name
+    if Doctor.objects.filter(full_name=value).exists():
+       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1551, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1358, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 1832, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'full_name' into field. Choices are: accepted_at, created_at, doctor_establishment, id, img, inpe, instagram_account, is_accepted, number_of_phone, speciality, user, user_id, ville
+ERROR 2026-01-31 15:13:16,508 log "POST /api/auth/register HTTP/1.1" 500 145
+INFO 2026-01-31 15:13:34,279 autoreload C:\Users\pc\Desktop\backend\system\account\serializers.py changed, reloading.
+INFO 2026-01-31 15:14:18,307 autoreload Watching for file changes with StatReloader
+ERROR 2026-01-31 15:14:24,479 log Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "auth_user" does not exist
+LINE 1: SELECT 1 AS "a" FROM "auth_user" WHERE "auth_user"."username...
+                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py", line 57, in register_api
+    if User.objects.filter(username=full_name).exists():
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\query.py", line 1337, in exists
+    return self.query.has_results(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 681, in has_results
+    return compiler.has_results()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1592, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "auth_user" does not exist
+LINE 1: SELECT 1 AS "a" FROM "auth_user" WHERE "auth_user"."username...
+                             ^
+
+ERROR 2026-01-31 15:14:24,536 log "POST /api/auth/register HTTP/1.1" 500 145
+INFO 2026-01-31 15:32:59,807 autoreload Watching for file changes with StatReloader

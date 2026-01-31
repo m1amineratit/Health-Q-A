@@ -1,8 +1,6 @@
 from django.contrib.auth.models import User
-from rest_framework.validators import UniqueValidator
-from rest_framework import serializers
 from .models import Doctor, Subscription
-
+from rest_framework import serializers
 # Subscription 
 
 class SubscriptionSerializer(serializers.ModelSerializer):
@@ -29,10 +27,12 @@ class RegisterSerializer(serializers.Serializer):
     full_name = serializers.CharField(
         required=True
     )
+
     def validate_phone_number(self, value):
         if Doctor.objects.filter(number_of_phone=value).exists():
             raise serializers.ValidationError("This phone number is already registered.")
         return value
+
 
 
 # Set Password Serializer - Used when accepted user sets their password

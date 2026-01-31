@@ -1,9 +1,13 @@
 # accounts/backends.py
 from django.contrib.auth.backends import ModelBackend
-from django.contrib.auth import get_user_model
+from django.contrib.auth.models import User
 from rest_framework.permissions import BasePermission
 
-User = get_user_model()
+# EmailBackend is not strictly necessary if we enforce username=email, 
+# but we can keep it if we want to allow login by email even if username is different.
+# Since we use default User, get_user_model() returns auth.User.
+# The previous logic used 'email' field. auth.User has 'email' field.
+# It should work.
 
 class EmailBackend(ModelBackend):
     def authenticate(self, request, username=None, password=None, **kwargs):
