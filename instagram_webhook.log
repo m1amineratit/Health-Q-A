@@ -7093,3 +7093,33 @@ INFO 2026-01-31 16:56:18,316 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1
 INFO 2026-01-31 16:56:18,323 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
 INFO 2026-01-31 16:57:20,686 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
 INFO 2026-01-31 16:57:22,702 autoreload Watching for file changes with StatReloader
+INFO 2026-01-31 16:58:40,257 log "GET /admin/api/question/ HTTP/1.1" 200 12360
+INFO 2026-01-31 16:58:40,371 log "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,375 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,375 log "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,441 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,444 log "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,444 log "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,462 log "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,464 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,489 log "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,490 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,511 log "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,511 log "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,530 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,530 log "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,541 log "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,551 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:40,563 log "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:42,933 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-31 16:58:43,024 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:43,029 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:58:43,033 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-01-31 16:59:00,163 log "GET /admin/api/question/ HTTP/1.1" 200 12360
+INFO 2026-01-31 16:59:02,211 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-31 16:59:34,157 log "GET /admin/api/question/ HTTP/1.1" 200 17276
+INFO 2026-01-31 16:59:36,366 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-31 16:59:36,438 log "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2026-02-01 23:37:19,299 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-01 23:37:28,324 log Not Found: /
+WARNING 2026-02-01 23:37:28,326 log "GET / HTTP/1.1" 404 179

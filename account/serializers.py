@@ -7,7 +7,7 @@ class SubscriptionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subscription
         fields = ['plan', 'is_active', 'end_date']
-        read_only = ['is_active', 'end_date']
+        read_only_fields = ['is_active', 'end_date']
 
 # Registration Serializer - Used when creating a new account (without password)
 class RegisterSerializer(serializers.Serializer):
