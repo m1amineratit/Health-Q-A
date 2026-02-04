@@ -1,13 +1,38 @@
 # Establishment Endpoints
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, parser_classes
+from rest_framework.parsers import FormParser, MultiPartParser, JSONParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
 from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 from account.backends import IsPremiumUser
 
 from account.models import Doctor, Establishment
-from ..schemas import establishment_create_schema, establishment_update_schema
+
+establishment_create_parameters = [
+    openapi.Parameter('establishment_type', openapi.IN_FORM, description='Type of establishment (cabinet, clinic, hospital, laboratory)', type=openapi.TYPE_STRING, required=True),
+    openapi.Parameter('establishment_name', openapi.IN_FORM, description='Name of establishment', type=openapi.TYPE_STRING, required=True),
+    openapi.Parameter('localization', openapi.IN_FORM, description='Google Maps URL', type=openapi.TYPE_STRING),
+    openapi.Parameter('ville', openapi.IN_FORM, description='City', type=openapi.TYPE_STRING, required=True),
+    openapi.Parameter('commune', openapi.IN_FORM, description='Commune', type=openapi.TYPE_STRING),
+    openapi.Parameter('quartier', openapi.IN_FORM, description='Quarter/District', type=openapi.TYPE_STRING),
+    openapi.Parameter('adresse_electronique', openapi.IN_FORM, description='Email address', type=openapi.TYPE_STRING, required=True),
+    openapi.Parameter('telephone_fixe', openapi.IN_FORM, description='Fixed phone number', type=openapi.TYPE_STRING, required=True),
+    openapi.Parameter('photo', openapi.IN_FORM, description='Establishment photo', type=openapi.TYPE_FILE),
+]
+
+establishment_update_parameters = [
+    openapi.Parameter('establishment_type', openapi.IN_FORM, description='Type of establishment', type=openapi.TYPE_STRING),
+    openapi.Parameter('establishment_name', openapi.IN_FORM, description='Name of establishment', type=openapi.TYPE_STRING),
+    openapi.Parameter('localization', openapi.IN_FORM, description='Google Maps URL', type=openapi.TYPE_STRING),
+    openapi.Parameter('ville', openapi.IN_FORM, description='City', type=openapi.TYPE_STRING),
+    openapi.Parameter('commune', openapi.IN_FORM, description='Commune', type=openapi.TYPE_STRING),
+    openapi.Parameter('quartier', openapi.IN_FORM, description='Quarter/District', type=openapi.TYPE_STRING),
+    openapi.Parameter('adresse_electronique', openapi.IN_FORM, description='Email address', type=openapi.TYPE_STRING),
+    openapi.Parameter('telephone_fixe', openapi.IN_FORM, description='Fixed phone number', type=openapi.TYPE_STRING),
+    openapi.Parameter('photo', openapi.IN_FORM, description='Establishment photo', type=openapi.TYPE_FILE),
+]
 
 
 # -------------------------
@@ -59,7 +84,7 @@ def get_establishment_profile_api(request):
 # -------------------------
 @swagger_auto_schema(
     method='post',
-    request_body=establishment_create_schema,
+    manual_parameters=establishment_create_parameters,
     responses={
         201: "Establishment Created",
         400: "Invalid Data",
@@ -69,6 +94,7 @@ def get_establishment_profile_api(request):
 )
 @api_view(['POST'])
 @permission_classes([IsAuthenticated, IsPremiumUser])
+@parser_classes([MultiPartParser, FormParser, JSONParser])
 def create_establishment_api(request):
     """
     Create Establishment Profile
@@ -140,7 +166,7 @@ def create_establishment_api(request):
 # -------------------------
 @swagger_auto_schema(
     method='patch',
-    request_body=establishment_update_schema,
+    manual_parameters=establishment_update_parameters,
     responses={
         200: "Establishment Updated",
         400: "Invalid Data",
@@ -150,6 +176,7 @@ def create_establishment_api(request):
 )
 @api_view(['PATCH'])
 @permission_classes([IsAuthenticated, IsPremiumUser])
+@parser_classes([MultiPartParser, FormParser, JSONParser])
 def update_establishment_api(request):
     """
     Update Establishment Information

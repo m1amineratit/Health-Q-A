@@ -1,5 +1,6 @@
 from django.conf import settings
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, parser_classes
+from rest_framework.parsers import JSONParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
@@ -209,6 +210,7 @@ def get_question_detail_api(request, question_id):
 )
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
+@parser_classes([JSONParser])
 def submit_answer_api(request, question_id):
     """
     Submit Answer

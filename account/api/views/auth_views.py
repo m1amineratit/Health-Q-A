@@ -1,6 +1,7 @@
 # Authentication Endpoints
 from django.conf import settings
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, parser_classes
+from rest_framework.parsers import JSONParser
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework import status
@@ -42,6 +43,7 @@ from django.contrib.auth.models import User
 )
 @api_view(["POST"])
 @permission_classes([AllowAny])
+@parser_classes([JSONParser])
 def register_api(request):
     """
     Register a new doctor account.
@@ -110,6 +112,7 @@ def register_api(request):
 )
 @api_view(['POST'])
 @permission_classes([AllowAny])
+@parser_classes([JSONParser])
 def login_api(request):
     """
     Login User
@@ -147,6 +150,7 @@ def login_api(request):
 )
 @api_view(['POST'])
 @permission_classes([AllowAny])
+@parser_classes([JSONParser])
 def password_reset_request_api(request):
     """
     Request Password Reset
@@ -227,6 +231,7 @@ def password_reset_request_api(request):
 )
 @api_view(['POST'])
 @permission_classes([AllowAny])
+@parser_classes([JSONParser])
 def password_reset_confirm_api(request):
     """
     Confirm Password Reset
@@ -312,6 +317,7 @@ def get_current_user_api(request):
 )
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
+@parser_classes([JSONParser])
 def accept_user_api(request):
     """
     Accept or Reject User Registration (Admin Only)
@@ -420,6 +426,7 @@ def accept_user_api(request):
 )
 @api_view(['POST'])
 @permission_classes([AllowAny])
+@parser_classes([JSONParser])
 def set_password_api(request):
     """
     Set Password for Accepted User

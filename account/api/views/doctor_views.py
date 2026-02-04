@@ -1,13 +1,27 @@
 # Doctor Profile Endpoints
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, parser_classes
+from rest_framework.parsers import FormParser, MultiPartParser, JSONParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
 from django.db import models
 from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 
 from account.models import Doctor
-from ..schemas import doctor_update_schema
+
+doctor_update_parameters = [
+    openapi.Parameter('first_name', openapi.IN_FORM, description='First name', type=openapi.TYPE_STRING),
+    openapi.Parameter('last_name', openapi.IN_FORM, description='Last name', type=openapi.TYPE_STRING),
+    openapi.Parameter('email', openapi.IN_FORM, description='Email address', type=openapi.TYPE_STRING),
+    openapi.Parameter('password', openapi.IN_FORM, description='Password (optional)', type=openapi.TYPE_STRING),
+    openapi.Parameter('speciality', openapi.IN_FORM, description='Medical speciality', type=openapi.TYPE_STRING),
+    openapi.Parameter('number_of_phone', openapi.IN_FORM, description='Phone number', type=openapi.TYPE_STRING),
+    openapi.Parameter('instagram_account', openapi.IN_FORM, description='Instagram account handle', type=openapi.TYPE_STRING),
+    openapi.Parameter('inpe', openapi.IN_FORM, description='INPE number', type=openapi.TYPE_STRING),
+    openapi.Parameter('ville', openapi.IN_FORM, description='City', type=openapi.TYPE_STRING),
+    openapi.Parameter('img', openapi.IN_FORM, description='Profile image', type=openapi.TYPE_FILE),
+]
 
 
 # -------------------------
@@ -121,7 +135,7 @@ def get_doctor_statistics_api(request):
 # -------------------------
 @swagger_auto_schema(
     method='patch',
-    request_body=doctor_update_schema,
+    manual_parameters=doctor_update_parameters,
     responses={
         200: "Doctor Profile Updated",
         400: "Invalid Data",
@@ -130,6 +144,7 @@ def get_doctor_statistics_api(request):
 )
 @api_view(['PATCH'])
 @permission_classes([IsAuthenticated])
+@parser_classes([MultiPartParser, FormParser, JSONParser])
 def update_doctor_api(request):
     """
     Update Doctor Profile (Professional Information)
