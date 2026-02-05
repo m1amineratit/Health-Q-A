@@ -27,9 +27,12 @@ class EmailBackend(ModelBackend):
 class IsPremiumUser(BasePermission):
     def has_permission(self, request, view):
         user = request.user
+        if not user.is_authenticated:
+            return False
+        
+        subscription = getattr(user, "subscription", None)
         return (
-            user.is_authenticated and
-            hasattr(user, "subscription") and
-            user.subscription.plan != "free" and
-            user.subscription.is_active
+            subscription is not None and
+            subscription.plan != "free" and
+            subscription.is_active
         )

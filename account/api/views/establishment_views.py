@@ -10,28 +10,28 @@ from account.backends import IsPremiumUser
 
 from account.models import Doctor, Establishment
 
-establishment_create_parameters = [
-    openapi.Parameter('establishment_type', openapi.IN_FORM, description='Type of establishment (cabinet, clinic, hospital, laboratory)', type=openapi.TYPE_STRING, required=True),
-    openapi.Parameter('establishment_name', openapi.IN_FORM, description='Name of establishment', type=openapi.TYPE_STRING, required=True),
-    openapi.Parameter('localization', openapi.IN_FORM, description='Google Maps URL', type=openapi.TYPE_STRING),
-    openapi.Parameter('ville', openapi.IN_FORM, description='City', type=openapi.TYPE_STRING, required=True),
-    openapi.Parameter('commune', openapi.IN_FORM, description='Commune', type=openapi.TYPE_STRING),
-    openapi.Parameter('quartier', openapi.IN_FORM, description='Quarter/District', type=openapi.TYPE_STRING),
-    openapi.Parameter('adresse_electronique', openapi.IN_FORM, description='Email address', type=openapi.TYPE_STRING, required=True),
-    openapi.Parameter('telephone_fixe', openapi.IN_FORM, description='Fixed phone number', type=openapi.TYPE_STRING, required=True),
-    openapi.Parameter('photo', openapi.IN_FORM, description='Establishment photo', type=openapi.TYPE_FILE),
+establishment_create_params = [
+    openapi.Parameter('establishment_type', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Type of establishment (cabinet, clinic, hospital, laboratory)', required=True),
+    openapi.Parameter('establishment_name', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Name of establishment', required=True),
+    openapi.Parameter('localization', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Google Maps URL'),
+    openapi.Parameter('ville', openapi.IN_FORM, type=openapi.TYPE_STRING, description='City', required=True),
+    openapi.Parameter('commune', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Commune'),
+    openapi.Parameter('quartier', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Quarter/District'),
+    openapi.Parameter('adresse_electronique', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Email address', required=True),
+    openapi.Parameter('telephone_fixe', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Fixed phone number', required=True),
+    openapi.Parameter('photo', openapi.IN_FORM, type=openapi.TYPE_FILE, description='Establishment photo'),
 ]
 
-establishment_update_parameters = [
-    openapi.Parameter('establishment_type', openapi.IN_FORM, description='Type of establishment', type=openapi.TYPE_STRING),
-    openapi.Parameter('establishment_name', openapi.IN_FORM, description='Name of establishment', type=openapi.TYPE_STRING),
-    openapi.Parameter('localization', openapi.IN_FORM, description='Google Maps URL', type=openapi.TYPE_STRING),
-    openapi.Parameter('ville', openapi.IN_FORM, description='City', type=openapi.TYPE_STRING),
-    openapi.Parameter('commune', openapi.IN_FORM, description='Commune', type=openapi.TYPE_STRING),
-    openapi.Parameter('quartier', openapi.IN_FORM, description='Quarter/District', type=openapi.TYPE_STRING),
-    openapi.Parameter('adresse_electronique', openapi.IN_FORM, description='Email address', type=openapi.TYPE_STRING),
-    openapi.Parameter('telephone_fixe', openapi.IN_FORM, description='Fixed phone number', type=openapi.TYPE_STRING),
-    openapi.Parameter('photo', openapi.IN_FORM, description='Establishment photo', type=openapi.TYPE_FILE),
+establishment_update_params = [
+    openapi.Parameter('establishment_type', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Type of establishment'),
+    openapi.Parameter('establishment_name', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Name of establishment'),
+    openapi.Parameter('localization', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Google Maps URL'),
+    openapi.Parameter('ville', openapi.IN_FORM, type=openapi.TYPE_STRING, description='City'),
+    openapi.Parameter('commune', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Commune'),
+    openapi.Parameter('quartier', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Quarter/District'),
+    openapi.Parameter('adresse_electronique', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Email address'),
+    openapi.Parameter('telephone_fixe', openapi.IN_FORM, type=openapi.TYPE_STRING, description='Fixed phone number'),
+    openapi.Parameter('photo', openapi.IN_FORM, type=openapi.TYPE_FILE, description='Establishment photo'),
 ]
 
 
@@ -84,7 +84,8 @@ def get_establishment_profile_api(request):
 # -------------------------
 @swagger_auto_schema(
     method='post',
-    manual_parameters=establishment_create_parameters,
+    manual_parameters=establishment_create_params,
+    consumes=['multipart/form-data'],
     responses={
         201: "Establishment Created",
         400: "Invalid Data",
@@ -94,7 +95,7 @@ def get_establishment_profile_api(request):
 )
 @api_view(['POST'])
 @permission_classes([IsAuthenticated, IsPremiumUser])
-@parser_classes([MultiPartParser, FormParser, JSONParser])
+@parser_classes([MultiPartParser, FormParser])
 def create_establishment_api(request):
     """
     Create Establishment Profile
@@ -166,7 +167,8 @@ def create_establishment_api(request):
 # -------------------------
 @swagger_auto_schema(
     method='patch',
-    manual_parameters=establishment_update_parameters,
+    manual_parameters=establishment_update_params,
+    consumes=['multipart/form-data'],
     responses={
         200: "Establishment Updated",
         400: "Invalid Data",
@@ -176,7 +178,7 @@ def create_establishment_api(request):
 )
 @api_view(['PATCH'])
 @permission_classes([IsAuthenticated, IsPremiumUser])
-@parser_classes([MultiPartParser, FormParser, JSONParser])
+@parser_classes([MultiPartParser, FormParser])
 def update_establishment_api(request):
     """
     Update Establishment Information

@@ -101,10 +101,10 @@ def process_instagram_message(event):
     from account.models import Doctor
     
     try:
-        print(f"DEBUG: Processing event: {event}")
+        logger.debug(f"Processing event: {event}")
         
         if "message" not in event:
-            print("DEBUG: 'message' key missing")
+            logger.debug("'message' key missing")
             logger.info("Non-message event ignored")
             return
 
@@ -186,7 +186,7 @@ def send_instagram_message(recipient_id, message_text):
     params = {
         "access_token": settings.INSTAGRAM_ACCESS_TOKEN
     }
-    print(settings.INSTAGRAM_ACCESS_TOKEN)
+
     try:
         response = requests.post(url, params=params, json=payload)
         data = response.json()

@@ -7572,3 +7572,519 @@ drf_yasg.errors.SwaggerGenerationError: cannot add form parameters when the requ
 INFO 2026-02-04 00:19:05,548 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
 ERROR 2026-02-04 00:19:05,551 log "GET /swagger/?format=openapi HTTP/1.1" 500 145
 INFO 2026-02-04 17:28:16,156 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:19:16,066 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:19:50,757 autoreload C:\Users\pc\Desktop\backend\system\account\backends.py changed, reloading.
+INFO 2026-02-05 17:19:52,166 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:20:01,114 autoreload C:\Users\pc\Desktop\backend\system\account\backends.py changed, reloading.
+INFO 2026-02-05 17:20:02,442 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:20:41,043 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-02-05 17:20:41,182 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-02-05 17:20:41,201 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-02-05 17:20:41,204 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-02-05 17:20:41,209 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-02-05 17:20:41,213 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-02-05 17:20:41,222 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-02-05 17:20:41,275 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-02-05 17:20:41,742 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+ERROR 2026-02-05 17:20:41,847 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 43, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 97, in get_request_body_parameters
+    raise SwaggerGenerationError("form request body cannot be a Schema")
+drf_yasg.errors.SwaggerGenerationError: form request body cannot be a Schema
+ERROR 2026-02-05 17:20:41,899 log "GET /swagger/?format=openapi HTTP/1.1" 500 145
+INFO 2026-02-05 17:20:46,644 log "GET /swagger/ HTTP/1.1" 200 1646
+ERROR 2026-02-05 17:20:47,068 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 43, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 97, in get_request_body_parameters
+    raise SwaggerGenerationError("form request body cannot be a Schema")
+drf_yasg.errors.SwaggerGenerationError: form request body cannot be a Schema
+ERROR 2026-02-05 17:20:47,082 log "GET /swagger/?format=openapi HTTP/1.1" 500 145
+INFO 2026-02-05 17:21:17,361 autoreload C:\Users\pc\Desktop\backend\system\account\backends.py changed, reloading.
+INFO 2026-02-05 17:21:19,244 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:22:01,305 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-02-05 17:22:01,447 log "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2026-02-05 17:22:01,456 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2026-02-05 17:22:01,463 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:22:01,471 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:22:01,481 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:22:01,486 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:22:01,488 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:22:01,634 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+ERROR 2026-02-05 17:22:01,689 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 43, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 97, in get_request_body_parameters
+    raise SwaggerGenerationError("form request body cannot be a Schema")
+drf_yasg.errors.SwaggerGenerationError: form request body cannot be a Schema
+ERROR 2026-02-05 17:22:01,701 log "GET /swagger/?format=openapi HTTP/1.1" 500 145
+INFO 2026-02-05 17:22:04,707 log "GET /swagger/ HTTP/1.1" 200 1646
+ERROR 2026-02-05 17:22:04,893 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 43, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 97, in get_request_body_parameters
+    raise SwaggerGenerationError("form request body cannot be a Schema")
+drf_yasg.errors.SwaggerGenerationError: form request body cannot be a Schema
+ERROR 2026-02-05 17:22:04,900 log "GET /swagger/?format=openapi HTTP/1.1" 500 145
+INFO 2026-02-05 17:22:23,010 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:22:58,392 log "GET /swagger/ HTTP/1.1" 200 1646
+ERROR 2026-02-05 17:22:58,800 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 43, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 97, in get_request_body_parameters
+    raise SwaggerGenerationError("form request body cannot be a Schema")
+drf_yasg.errors.SwaggerGenerationError: form request body cannot be a Schema
+ERROR 2026-02-05 17:22:58,824 log "GET /swagger/?format=openapi HTTP/1.1" 500 145
+INFO 2026-02-05 17:24:15,185 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\doctor_views.py changed, reloading.
+INFO 2026-02-05 17:24:16,737 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:24:52,026 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-02-05 17:24:54,469 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:25:21,603 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-02-05 17:25:23,663 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:25:42,786 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-02-05 17:25:44,130 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:25:48,221 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-02-05 17:25:50,833 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:25:56,906 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-02-05 17:25:58,948 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:26:42,862 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-02-05 17:26:44,574 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:26:50,323 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-02-05 17:26:51,848 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:26:57,539 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-02-05 17:26:58,664 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:28:43,980 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\establishment_views.py changed, reloading.
+INFO 2026-02-05 17:28:45,601 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:29:02,379 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-02-05 17:29:02,549 log "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2026-02-05 17:29:02,572 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2026-02-05 17:29:02,575 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:29:02,580 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:29:02,580 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:29:02,585 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:29:02,586 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:29:02,925 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+ERROR 2026-02-05 17:29:03,039 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 47, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 205, in add_manual_parameters
+    raise SwaggerGenerationError(
+    ...<2 lines>...
+    )
+drf_yasg.errors.SwaggerGenerationError: cannot add form parameters when the request has a request body; did you forget to set an appropriate parser class on the view?
+ERROR 2026-02-05 17:29:03,056 log "GET /swagger/?format=openapi HTTP/1.1" 500 145
+INFO 2026-02-05 17:29:05,190 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-02-05 17:29:05,304 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-02-05 17:29:05,319 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-02-05 17:29:05,325 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-02-05 17:29:05,327 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-02-05 17:29:05,329 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-02-05 17:29:05,343 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-02-05 17:29:05,360 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-02-05 17:29:05,469 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+ERROR 2026-02-05 17:29:05,561 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 47, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 205, in add_manual_parameters
+    raise SwaggerGenerationError(
+    ...<2 lines>...
+    )
+drf_yasg.errors.SwaggerGenerationError: cannot add form parameters when the request has a request body; did you forget to set an appropriate parser class on the view?
+INFO 2026-02-05 17:29:05,563 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+ERROR 2026-02-05 17:29:05,568 log "GET /swagger/?format=openapi HTTP/1.1" 500 145
+INFO 2026-02-05 17:29:45,177 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\doctor_views.py changed, reloading.
+INFO 2026-02-05 17:29:47,250 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:30:57,406 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-02-05 17:30:57,561 log "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2026-02-05 17:30:57,564 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2026-02-05 17:30:57,573 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:30:57,581 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:30:57,594 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:30:57,595 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:30:57,597 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:30:57,739 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+ERROR 2026-02-05 17:30:57,805 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 47, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 205, in add_manual_parameters
+    raise SwaggerGenerationError(
+    ...<2 lines>...
+    )
+drf_yasg.errors.SwaggerGenerationError: cannot add form parameters when the request has a request body; did you forget to set an appropriate parser class on the view?
+ERROR 2026-02-05 17:30:57,817 log "GET /swagger/?format=openapi HTTP/1.1" 500 145
+ERROR 2026-02-05 17:31:23,916 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 47, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 205, in add_manual_parameters
+    raise SwaggerGenerationError(
+    ...<2 lines>...
+    )
+drf_yasg.errors.SwaggerGenerationError: cannot add form parameters when the request has a request body; did you forget to set an appropriate parser class on the view?
+ERROR 2026-02-05 17:31:23,922 log "GET /swagger/ HTTP/1.1" 500 145
+INFO 2026-02-05 17:31:26,101 log "GET /swagger HTTP/1.1" 301 0
+ERROR 2026-02-05 17:31:26,138 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 47, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 205, in add_manual_parameters
+    raise SwaggerGenerationError(
+    ...<2 lines>...
+    )
+drf_yasg.errors.SwaggerGenerationError: cannot add form parameters when the request has a request body; did you forget to set an appropriate parser class on the view?
+ERROR 2026-02-05 17:31:26,148 log "GET /swagger/ HTTP/1.1" 500 145
+WARNING 2026-02-05 17:31:28,934 log Not Found: /
+WARNING 2026-02-05 17:31:28,935 log "GET / HTTP/1.1" 404 179
+INFO 2026-02-05 17:31:30,595 log "GET /swagger/ HTTP/1.1" 200 1646
+ERROR 2026-02-05 17:31:30,794 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 47, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 205, in add_manual_parameters
+    raise SwaggerGenerationError(
+    ...<2 lines>...
+    )
+drf_yasg.errors.SwaggerGenerationError: cannot add form parameters when the request has a request body; did you forget to set an appropriate parser class on the view?
+ERROR 2026-02-05 17:31:30,799 log "GET /swagger/?format=openapi HTTP/1.1" 500 145
+INFO 2026-02-05 17:32:31,467 autoreload C:\Users\pc\Desktop\backend\system\admin\views\offer_views.py changed, reloading.
+INFO 2026-02-05 17:32:33,189 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:33:07,242 autoreload C:\Users\pc\Desktop\backend\system\admin\views\offer_views.py changed, reloading.
+INFO 2026-02-05 17:33:08,305 autoreload Watching for file changes with StatReloader
+INFO 2026-02-05 17:36:36,232 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-02-05 17:36:36,315 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2026-02-05 17:36:36,316 log "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2026-02-05 17:36:36,319 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:36:36,323 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:36:36,323 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:36:36,326 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:36:36,328 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2026-02-05 17:36:36,700 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2026-02-05 17:36:36,828 log "GET /swagger/?format=openapi HTTP/1.1" 200 24437

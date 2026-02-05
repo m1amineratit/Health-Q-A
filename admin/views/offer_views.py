@@ -3,7 +3,7 @@ Offers management views for admin panel
 """
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, parser_classes
 from rest_framework.permissions import IsAdminUser
 from rest_framework.response import Response
 from rest_framework import status
@@ -138,6 +138,7 @@ def create_category(request):
 )
 @api_view(['POST'])
 @permission_classes([IsAdminUser])
+@parser_classes([MultiPartParser, FormParser])
 def create_offer(request):
     """Add new offer"""
     # Note: For file uploads, typically we use parsers, but @api_view handles it if request.data is used correctly with form-data
