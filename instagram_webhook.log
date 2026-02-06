@@ -8088,3 +8088,110 @@ INFO 2026-02-05 17:36:36,326 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304
 INFO 2026-02-05 17:36:36,328 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
 INFO 2026-02-05 17:36:36,700 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
 INFO 2026-02-05 17:36:36,828 log "GET /swagger/?format=openapi HTTP/1.1" 200 24437
+INFO 2026-02-06 17:02:58,791 autoreload Watching for file changes with StatReloader
+ERROR 2026-02-06 17:04:46,974 log Internal Server Error: /django-admin/admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views\user_views.py", line 268, in users_crm
+    return users_list(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 498, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 397, in initialize_request
+    return Request(
+        request,
+    ...<3 lines>...
+        parser_context=parser_context
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\request.py", line 154, in __init__
+    assert isinstance(request, HttpRequest), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: The `request` argument must be an instance of `django.http.HttpRequest`, not `rest_framework.request.Request`.
+ERROR 2026-02-06 17:04:47,249 log "GET /django-admin/admin-dashboard HTTP/1.1" 500 145
+ERROR 2026-02-06 17:04:54,737 log Internal Server Error: /django-admin/admin-dashboard
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\system\admin\views\user_views.py", line 268, in users_crm
+    return users_list(request)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 498, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\views.py", line 397, in initialize_request
+    return Request(
+        request,
+    ...<3 lines>...
+        parser_context=parser_context
+    )
+  File "C:\Users\pc\Desktop\backend\venv\Lib\site-packages\rest_framework\request.py", line 154, in __init__
+    assert isinstance(request, HttpRequest), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: The `request` argument must be an instance of `django.http.HttpRequest`, not `rest_framework.request.Request`.
+ERROR 2026-02-06 17:04:54,751 log "GET /django-admin/admin-dashboard HTTP/1.1" 500 145
+INFO 2026-02-06 17:12:08,474 autoreload C:\Users\pc\Desktop\backend\system\admin\views\user_views.py changed, reloading.
+INFO 2026-02-06 17:12:10,351 autoreload Watching for file changes with StatReloader
+INFO 2026-02-06 17:16:20,332 log "GET /django-admin/admin-dashboard HTTP/1.1" 200 340
+INFO 2026-02-06 17:17:13,994 autoreload C:\Users\pc\Desktop\backend\system\admin\views\user_views.py changed, reloading.
+INFO 2026-02-06 17:17:16,307 autoreload Watching for file changes with StatReloader
+INFO 2026-02-06 17:17:36,842 log "GET /django-admin/establishments HTTP/1.1" 200 52
+INFO 2026-02-06 17:17:51,445 log "GET /django-admin/establishments/statistics HTTP/1.1" 200 127
+INFO 2026-02-06 17:19:27,930 log "GET /django-admin/offers HTTP/1.1" 200 52
+WARNING 2026-02-06 17:19:36,509 log Method Not Allowed: /django-admin/offers/add
+WARNING 2026-02-06 17:19:36,512 log "GET /django-admin/offers/add HTTP/1.1" 405 40
+INFO 2026-02-06 17:19:47,013 log "GET /django-admin/offers/categories HTTP/1.1" 200 2
+INFO 2026-02-06 17:19:57,593 log "GET /django-admin/questions HTTP/1.1" 200 52
+WARNING 2026-02-06 17:20:01,808 log Not Found: /django-admin/request
+WARNING 2026-02-06 17:20:01,809 log "GET /django-admin/request HTTP/1.1" 404 179
+INFO 2026-02-06 17:20:06,414 log "GET /django-admin/requests HTTP/1.1" 200 52
+WARNING 2026-02-06 17:20:13,798 log Not Found: /django-admin/question
+WARNING 2026-02-06 17:20:13,799 log "GET /django-admin/question HTTP/1.1" 404 179
+INFO 2026-02-06 17:20:18,186 log "GET /django-admin/questions HTTP/1.1" 200 52
+INFO 2026-02-06 17:20:27,505 log "GET /django-admin/questions HTTP/1.1" 200 52
+INFO 2026-02-06 17:23:03,969 log "GET /django-admin/questions HTTP/1.1" 200 466
+INFO 2026-02-06 17:32:36,583 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
+INFO 2026-02-06 17:32:38,438 autoreload Watching for file changes with StatReloader

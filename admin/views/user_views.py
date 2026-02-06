@@ -265,4 +265,5 @@ def confirm_user(request, user_id):
 @permission_classes([IsAdminUser])
 def users_crm(request):
     """Legacy users endpoint - redirects to users_list"""
-    return users_list(request)
+    base_request = getattr(request, "_request", request)
+    return users_list(base_request)
