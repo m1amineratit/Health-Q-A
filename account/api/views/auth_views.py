@@ -5,6 +5,7 @@ from rest_framework.parsers import JSONParser
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework import status
+from django.db.models import F
 from django.contrib.auth import authenticate
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
@@ -82,6 +83,21 @@ def register_api(request):
             number_of_phone=validated_data["phone_number"]
         )
 
+        # Track affiliate referral signup (optional)
+        referral_code = (validated_data.get("referral_code") or "").strip()
+        if referral_code:
+            from admin.models import AdminRole, ReferralSignup
+            affiliate_role = AdminRole.objects.filter(role='affiliate', referral_link=referral_code).first()
+            if affiliate_role:
+                signup, created = ReferralSignup.objects.get_or_create(
+                    admin_role=affiliate_role,
+                    doctor=doctor
+                )
+                if created:
+                    AdminRole.objects.filter(id=affiliate_role.id).update(
+                        invites_count=F('invites_count') + 1
+                    )
+
         logger.info(f"New user registered: {full_name}")
 
         return Response({
@@ -97,6 +113,63 @@ def register_api(request):
         }, status=status.HTTP_201_CREATED)
 
     return Response({"errors": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
+
+
+# -------------------------
+# REFERRAL CLICK TRACKING API
+# -------------------------
+@swagger_auto_schema(
+    method='get',
+    manual_parameters=[
+        openapi.Parameter('code', openapi.IN_PATH, description="Referral code", type=openapi.TYPE_STRING),
+    ],
+    responses={
+        200: "Referral tracked",
+        404: "Invalid referral code"
+    }
+)
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def track_referral_click_api(request, code):
+    """
+    Track affiliate referral link clicks.
+    """
+    from admin.models import AdminRole, ReferralClick
+
+    role = AdminRole.objects.select_related('user').filter(
+        role='affiliate',
+        referral_link=code
+    ).first()
+
+    if not role:
+        return Response({"error": "Invalid referral code"}, status=status.HTTP_404_NOT_FOUND)
+
+    forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if forwarded_for:
+        ip_address = forwarded_for.split(',')[0].strip()
+    else:
+        ip_address = request.META.get('REMOTE_ADDR')
+
+    user_agent = request.META.get('HTTP_USER_AGENT', '')[:1000]
+
+    ReferralClick.objects.create(
+        admin_role=role,
+        ip_address=ip_address,
+        user_agent=user_agent
+    )
+
+    AdminRole.objects.filter(id=role.id).update(views_count=F('views_count') + 1)
+    role.refresh_from_db(fields=['views_count'])
+
+    return Response({
+        "status": "success",
+        "referral_code": code,
+        "views_count": role.views_count,
+        "affiliate": {
+            "id": role.id,
+            "full_name": role.user.get_full_name(),
+        }
+    }, status=status.HTTP_200_OK)
 
 
 # -------------------------

@@ -9,6 +9,7 @@ from .api import (
     password_reset_confirm_api,
     accept_user_api,
     set_password_api,
+    track_referral_click_api,
     # Doctor views
     get_doctor_profile_api,
     get_doctor_statistics_api,
@@ -25,6 +26,9 @@ urlpatterns = [
     path('api/auth/login', login_api, name='api_login'),
     path('api/auth/token/refresh', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/auth/me', get_current_user_api, name='api_me'),
+
+    # Referral Tracking
+    path('api/referral/<str:code>', track_referral_click_api, name='api_referral_click'),
     
     # Password Reset
     path('api/auth/password-reset', password_reset_request_api, name='api_password_reset_request'),

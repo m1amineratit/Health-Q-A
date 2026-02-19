@@ -8195,3 +8195,4 @@ INFO 2026-02-06 17:20:27,505 log "GET /django-admin/questions HTTP/1.1" 200 52
 INFO 2026-02-06 17:23:03,969 log "GET /django-admin/questions HTTP/1.1" 200 466
 INFO 2026-02-06 17:32:36,583 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
 INFO 2026-02-06 17:32:38,438 autoreload Watching for file changes with StatReloader
+INFO 2026-02-09 18:28:27,891 autoreload Watching for file changes with StatReloader

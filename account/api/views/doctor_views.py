@@ -44,6 +44,8 @@ def get_doctor_profile_api(request):
         return Response({
             'error': "User is not a doctor"
         }, status=status.HTTP_403_FORBIDDEN)
+
+    has_establishment = doctor.doctor_establishment.exists()
     
     return Response({
         "status": "success",
@@ -59,6 +61,7 @@ def get_doctor_profile_api(request):
             "instagram": doctor.instagram_account,
             "inpe": doctor.inpe,
             "ville": doctor.ville,
+            "has_establishment": has_establishment,
             "created_at": doctor.created_at.isoformat(),
         }
     }, status=status.HTTP_200_OK)

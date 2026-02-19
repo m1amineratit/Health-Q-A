@@ -27,6 +27,11 @@ class RegisterSerializer(serializers.Serializer):
     full_name = serializers.CharField(
         required=True
     )
+    referral_code = serializers.CharField(
+        required=False,
+        allow_blank=True,
+        write_only=True
+    )
 
     def validate_phone_number(self, value):
         if Doctor.objects.filter(number_of_phone=value).exists():
@@ -36,6 +41,15 @@ class RegisterSerializer(serializers.Serializer):
     def validate_full_name(self, value):
         if User.objects.filter(username=value).exists():
             raise serializers.ValidationError("This full name is already registered.")
+        return value
+
+    def validate_referral_code(self, value):
+        code = value.strip()
+        if not code:
+            return value
+        from admin.models import AdminRole
+        if not AdminRole.objects.filter(role='affiliate', referral_link=code).exists():
+            raise serializers.ValidationError("Invalid referral code.")
         return value
 
 

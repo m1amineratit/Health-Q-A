@@ -26,6 +26,28 @@ class AdminRole(models.Model):
         return f"{self.user.get_full_name()} - {self.get_role_display()}"
 
 
+class ReferralClick(models.Model):
+    """Track affiliate referral link clicks"""
+    admin_role = models.ForeignKey(AdminRole, on_delete=models.CASCADE, related_name='referral_clicks')
+    ip_address = models.GenericIPAddressField(null=True, blank=True)
+    user_agent = models.TextField(blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.admin_role.referral_link} - {self.created_at:%Y-%m-%d %H:%M:%S}"
+
+
+class ReferralSignup(models.Model):
+    """Track signups attributed to an affiliate referral link"""
+    admin_role = models.ForeignKey(AdminRole, on_delete=models.CASCADE, related_name='referral_signups')
+    doctor = models.OneToOneField('account.Doctor', on_delete=models.SET_NULL, null=True, blank=True, related_name='referral_signup')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        doctor_name = self.doctor.user.get_full_name() if self.doctor else "Unknown doctor"
+        return f"{doctor_name} -> {self.admin_role.referral_link}"
+
+
 class OfferCategory(models.Model):
     """Category for offers (e.g., Hotelerie, Homme, etc.)"""
     name = models.CharField(max_length=100)

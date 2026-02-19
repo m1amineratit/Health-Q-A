@@ -8,6 +8,7 @@ from .views import (
     get_current_user_api,
     accept_user_api,
     set_password_api,
+    track_referral_click_api,
     # Doctor views
     get_doctor_profile_api,
     get_doctor_statistics_api,
@@ -27,6 +28,7 @@ __all__ = [
     'get_current_user_api',
     'accept_user_api',
     'set_password_api',
+    'track_referral_click_api',
     # Doctor views
     'get_doctor_profile_api',
     'get_doctor_statistics_api',

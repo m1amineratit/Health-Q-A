@@ -24,7 +24,7 @@ class Doctor(models.Model):
     is_accepted = models.BooleanField(default=False, help_text="Whether the doctor has been accepted by admin")
     accepted_at = models.DateTimeField(null=True, blank=True, help_text="Timestamp when doctor was accepted")
     created_at = models.DateTimeField(auto_now_add=True)
-
+    
     def __str__(self):
         return f"Dr. {self.user.email} - {self.get_speciality_display()}"
     
