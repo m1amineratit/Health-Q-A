@@ -94,7 +94,7 @@ def get_establishment_profile_api(request):
     }
 )
 @api_view(['POST'])
-@permission_classes([IsAuthenticated, IsPremiumUser])
+@permission_classes([IsAuthenticated])
 @parser_classes([MultiPartParser, FormParser])
 def create_establishment_api(request):
     """
