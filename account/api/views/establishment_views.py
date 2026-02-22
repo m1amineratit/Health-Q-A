@@ -43,7 +43,7 @@ establishment_update_params = [
     responses={200: "Establishment Profile"}
 )
 @api_view(['GET'])
-@permission_classes([IsAuthenticated, IsPremiumUser])
+@permission_classes([IsAuthenticated])
 def get_establishment_profile_api(request):
     """
     Get Establishment Profile
@@ -177,7 +177,7 @@ def create_establishment_api(request):
     }
 )
 @api_view(['PATCH'])
-@permission_classes([IsAuthenticated, IsPremiumUser])
+@permission_classes([IsAuthenticated])
 @parser_classes([MultiPartParser, FormParser])
 def update_establishment_api(request):
     """
