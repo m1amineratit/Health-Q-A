@@ -51,16 +51,17 @@ def get_establishment_profile_api(request):
     """
     try:
         doctor = request.user.doctor_profile
-        establishment = doctor.doctor_establishment
     except Doctor.DoesNotExist:
         return Response({
             'error': "User is not a doctor"
         }, status=status.HTTP_403_FORBIDDEN)
-    except:
+
+    establishment = doctor.doctor_establishment.first()
+    if not establishment:
         return Response({
             'error': "Establishment not found. Please create one first."
         }, status=status.HTTP_404_NOT_FOUND)
-    
+
     return Response({
         "status": "success",
         "establishment": {
@@ -109,7 +110,7 @@ def create_establishment_api(request):
         }, status=status.HTTP_403_FORBIDDEN)
     
     # Check if establishment already exists
-    if hasattr(doctor, 'doctor_establishment'):
+    if doctor.doctor_establishment.exists():
         return Response({
             'error': "Establishment already exists for this doctor. Use update endpoint to modify."
         }, status=status.HTTP_409_CONFLICT)
@@ -186,12 +187,13 @@ def update_establishment_api(request):
     """
     try:
         doctor = request.user.doctor_profile
-        establishment = doctor.doctor_establishment
     except Doctor.DoesNotExist:
         return Response({
             'error': "User is not a doctor"
         }, status=status.HTTP_403_FORBIDDEN)
-    except:
+
+    establishment = doctor.doctor_establishment.first()
+    if not establishment:
         return Response({
             'error': "Establishment not found"
         }, status=status.HTTP_404_NOT_FOUND)
