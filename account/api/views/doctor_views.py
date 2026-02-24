@@ -9,6 +9,19 @@ from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 
 from account.models import Doctor
+from django.conf import settings
+
+
+def _absolute_file_url(request, file_field, fallback=None):
+    if not file_field:
+        return fallback
+    try:
+        url = file_field.url
+    except Exception:
+        return fallback
+    if url.startswith('http'):
+        return url
+    return request.build_absolute_uri(url)
 
 doctor_update_params = [
     openapi.Parameter('first_name', openapi.IN_FORM, type=openapi.TYPE_STRING, description='First name'),
@@ -54,7 +67,7 @@ def get_doctor_profile_api(request):
             "user_id": doctor.user.id,
             "first_name": doctor.user.first_name,
             "last_name": doctor.user.last_name,
-            "img": doctor.img.url if doctor.img else "https://ik.imagekit.io/brwdo5vcs/OIP.jpg",
+            "img": _absolute_file_url(request, doctor.img, fallback="https://ik.imagekit.io/brwdo5vcs/OIP.jpg"),
             "email": doctor.user.email,
             "speciality": doctor.speciality,
             "phone": doctor.number_of_phone,

@@ -12,6 +12,19 @@ from django.db.models import Q
 
 from account.models import Doctor
 from account.pagination import PagePagination
+from django.conf import settings
+
+
+def _absolute_file_url(request, file_field):
+    if not file_field:
+        return None
+    try:
+        url = file_field.url
+    except Exception:
+        return None
+    if url.startswith('http'):
+        return url
+    return request.build_absolute_uri(url)
 
 
 @swagger_auto_schema(
@@ -93,7 +106,7 @@ def users_list(request):
             "inpe": doctor.inpe,
             "instagram_account": doctor.instagram_account,
             "ville": doctor.ville,
-            "photo": doctor.img.url if doctor.img else None,
+                "photo": _absolute_file_url(request, doctor.img),
             "paiement": "Paid" if doctor.is_accepted else "Pending",
             "is_accepted": doctor.is_accepted,
             "is_active": doctor.user.is_active,
@@ -204,7 +217,7 @@ def user_details(request, user_id):
             "instagram": doctor.instagram_account,
             "ville": doctor.ville,
             "inpe": doctor.inpe,
-            "photo": doctor.img.url if doctor.img else None,
+                "photo": _absolute_file_url(request, doctor.img),
             "is_accepted": doctor.is_accepted,
             "is_active": doctor.user.is_active,
         },
@@ -218,7 +231,7 @@ def user_details(request, user_id):
                 "quartier": est.quartier,
                 "telephone": est.telephone_fixe,
                 "email": est.adresse_electronique,
-                "photo": est.photo.url if est.photo else None,
+                    "photo": _absolute_file_url(request, est.photo) if hasattr(request, 'build_absolute_uri') else (est.photo.url if est.photo else None),
             } for est in establishments
         ]
     }, status=status.HTTP_200_OK)

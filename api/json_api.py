@@ -18,6 +18,19 @@ import logging
 from django.db import models
 import requests
 from django.contrib.auth import get_user_model
+from django.conf import settings
+
+
+def _absolute_file_url(request, file_field):
+    if not file_field:
+        return None
+    try:
+        url = file_field.url
+    except Exception:
+        return None
+    if url.startswith('http'):
+        return url
+    return request.build_absolute_uri(url)
 
 User = get_user_model()
 
@@ -324,7 +337,7 @@ def answered_questions_feed_api(request):
                 "speciality": doctor.speciality,
                 "speciality_display": doctor.get_speciality_display(),
                 "phone": doctor.number_of_phone,
-                "img": doctor.img.url if doctor.img else None,
+                "img": _absolute_file_url(request, doctor.img),
             }
         
         data.append({

@@ -8226,3 +8226,30 @@ WARNING 2026-02-23 21:39:21,708 log "GET /serviceworker.js HTTP/1.1" 404 179
 INFO 2026-02-24 20:21:24,196 autoreload Watching for file changes with StatReloader
 INFO 2026-02-24 20:21:48,710 log "POST /api/auth/login HTTP/1.1" 200 537
 INFO 2026-02-24 20:22:07,893 log "GET /api/feed/answered-questions/ HTTP/1.1" 200 709
+INFO 2026-02-24 20:44:26,620 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:44:36,296 log "POST /api/auth/login HTTP/1.1" 200 537
+INFO 2026-02-24 20:50:23,973 autoreload C:\Users\pc\Desktop\backend\system\admin\views\user_views.py changed, reloading.
+INFO 2026-02-24 20:50:26,247 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:50:41,185 autoreload C:\Users\pc\Desktop\backend\system\admin\views\user_views.py changed, reloading.
+INFO 2026-02-24 20:50:42,802 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:50:45,457 autoreload C:\Users\pc\Desktop\backend\system\admin\views\user_views.py changed, reloading.
+INFO 2026-02-24 20:50:47,340 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:50:53,591 autoreload C:\Users\pc\Desktop\backend\system\admin\views\user_views.py changed, reloading.
+INFO 2026-02-24 20:50:55,567 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:51:00,429 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-02-24 20:51:01,854 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:52:09,404 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:52:37,786 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-02-24 20:52:39,718 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:52:46,077 autoreload C:\Users\pc\Desktop\backend\system\api\json_api.py changed, reloading.
+INFO 2026-02-24 20:52:47,631 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:54:07,317 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:54:22,957 log "GET /api/doctor/profile HTTP/1.1" 200 408
+WARNING 2026-02-24 20:54:26,724 log Not Found: /media/doctor_images/Gemini_Generated_Image_fp9ns1fp9ns1fp9n_1_vMfZWGX.png
+WARNING 2026-02-24 20:54:26,727 log "GET /media/doctor_images/Gemini_Generated_Image_fp9ns1fp9ns1fp9n_1_vMfZWGX.png HTTP/1.1" 404 179
+WARNING 2026-02-24 20:54:27,462 log Not Found: /favicon.ico
+WARNING 2026-02-24 20:54:27,463 log "GET /favicon.ico HTTP/1.1" 404 179
+WARNING 2026-02-24 20:54:29,266 log Not Found: /serviceworker.js
+WARNING 2026-02-24 20:54:29,267 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-02-24 20:54:29,828 log Not Found: /serviceworker.js
+WARNING 2026-02-24 20:54:29,829 log "GET /serviceworker.js HTTP/1.1" 404 179
