@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 from datetime import timedelta
 from dotenv import load_dotenv
+from logging.handlers import RotatingFileHandler
 
 # Load environment variables from .env file
 load_dotenv()
@@ -26,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-e*3xtdks+5vp_l)-)eod3cc(v6sgr$semfa772(z=s30#pzz(t'
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-change-me-in-production')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -127,9 +128,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
-
 CORS_ALLOW_CREDENTIALS = True
-
 
 ROOT_URLCONF = 'system.urls'
 
@@ -154,9 +153,6 @@ WSGI_APPLICATION = 'system.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-import os
-from dotenv import load_dotenv
-load_dotenv()
 
 DATABASES = {
     'default': {
@@ -247,9 +243,12 @@ LOGGING = {
             'formatter': 'verbose',
         },
         'file': {
-            'class': 'logging.FileHandler',
+                'class': 'logging.handlers.RotatingFileHandler',
             'filename': BASE_DIR / 'instagram_webhook.log',
+                'maxBytes': 1024 * 1024 * 10,  # 10MB
+                'backupCount': 5,  # Keep 5 backup files
             'formatter': 'verbose',
+                'level': 'INFO',
         },
     },
     'loggers': {
@@ -274,9 +273,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'amineratit6@gmail.com'
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-DEFAULT_FROM_EMAIL = 'amineratit6@gmail.com'
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'noreply@example.com')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = os.getenv('EMAIL_HOST_USER', 'noreply@example.com')
 
 
 # IMAGEKIT.IO STORAGE SETTINGS
