@@ -278,12 +278,12 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = os.getenv('EMAIL_HOST_USER', 'noreply@example.com')
 
 
-# IMAGEKIT.IO STORAGE SETTINGS
-# Using django-imagekitio-storage for production media files
-# Using custom ImageKit storage
-DEFAULT_FILE_STORAGE = 'account.storage.ImageKitIOStorage'
+# Use Cloudinary for media files in production (persistent external storage)
+# Requires: pip install cloudinary django-cloudinary-storage
+# Set CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET in environment
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-# ImageKit.io credentials
+# Optional ImageKit settings left for reference (not used when DEFAULT_FILE_STORAGE is Cloudinary)
 IMAGEKIT_PUBLIC_KEY = os.getenv("IMAGEKIT_PUBLIC_KEY")
 IMAGEKIT_PRIVATE_KEY = os.getenv("IMAGEKIT_PRIVATE_KEY")
 IMAGEKIT_URL_ENDPOINT = os.getenv("IMAGEKIT_URL_ENDPOINT")
