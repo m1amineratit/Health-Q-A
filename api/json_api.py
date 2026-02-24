@@ -303,8 +303,7 @@ def answered_questions_feed_api(request):
     
     # Get all answered questions that have answers sent
     answered_questions = Question.objects.filter(
-        status="answered",
-        answer__answer_sent=True
+        doctor=request.user,
     ).select_related('answer', 'answer__answered_by', 'answer__answered_by__doctor_profile').order_by("-answer__created_at")
     
     # Calculate pagination

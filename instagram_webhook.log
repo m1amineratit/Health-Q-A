@@ -8196,3 +8196,33 @@ INFO 2026-02-06 17:23:03,969 log "GET /django-admin/questions HTTP/1.1" 200 466
 INFO 2026-02-06 17:32:36,583 autoreload C:\Users\pc\Desktop\backend\system\api\views.py changed, reloading.
 INFO 2026-02-06 17:32:38,438 autoreload Watching for file changes with StatReloader
 INFO 2026-02-09 18:28:27,891 autoreload Watching for file changes with StatReloader
+INFO 2026-02-23 21:24:06,416 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-23 21:24:13,303 log Not Found: /
+WARNING 2026-02-23 21:24:13,304 log "GET / HTTP/1.1" 404 179
+WARNING 2026-02-23 21:24:14,033 log Not Found: /favicon.ico
+WARNING 2026-02-23 21:24:14,035 log "GET /favicon.ico HTTP/1.1" 404 179
+WARNING 2026-02-23 21:24:15,741 log Not Found: /serviceworker.js
+WARNING 2026-02-23 21:24:15,741 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-02-23 21:24:19,945 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-02-23 21:24:20,032 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-02-23 21:24:20,048 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-02-23 21:24:20,056 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-02-23 21:24:20,057 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-02-23 21:24:20,059 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-02-23 21:24:20,072 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-02-23 21:24:20,112 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-02-23 21:24:20,338 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2026-02-23 21:24:20,466 log "GET /swagger/?format=openapi HTTP/1.1" 200 24952
+WARNING 2026-02-23 21:24:22,424 log Not Found: /serviceworker.js
+WARNING 2026-02-23 21:24:22,424 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-02-23 21:24:22,934 log Not Found: /serviceworker.js
+WARNING 2026-02-23 21:24:22,935 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-02-23 21:24:59,306 log Not Found: /serviceworker.js
+WARNING 2026-02-23 21:24:59,308 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-02-23 21:37:31,159 autoreload C:\Users\pc\Desktop\backend\system\api\urls.py changed, reloading.
+INFO 2026-02-23 21:37:32,541 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-23 21:39:21,707 log Not Found: /serviceworker.js
+WARNING 2026-02-23 21:39:21,708 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-02-24 20:21:24,196 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 20:21:48,710 log "POST /api/auth/login HTTP/1.1" 200 537
+INFO 2026-02-24 20:22:07,893 log "GET /api/feed/answered-questions/ HTTP/1.1" 200 709

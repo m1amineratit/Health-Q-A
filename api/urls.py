@@ -13,4 +13,3 @@ urlpatterns = [
     path('api/feed/answered-questions/', json_api.answered_questions_feed_api, name='api_answered_questions_feed'),
     path('api/ansewres', json_api.ansewres_view, name='ansewres'),
 ]
-
