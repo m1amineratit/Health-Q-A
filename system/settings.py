@@ -15,6 +15,7 @@ from pathlib import Path
 from datetime import timedelta
 from dotenv import load_dotenv
 from logging.handlers import RotatingFileHandler
+import cloudinary_storage
 
 # Load environment variables from .env file
 load_dotenv()
