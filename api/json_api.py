@@ -288,16 +288,25 @@ def submit_answer_api(request, question_id):
         openapi.Parameter('page', openapi.IN_QUERY, description="Page number for pagination", type=openapi.TYPE_INTEGER),
         openapi.Parameter('limit', openapi.IN_QUERY, description="Number of items per page", type=openapi.TYPE_INTEGER),
     ],
-    responses={200: "List of Answered Questions"}
+    responses={200: "List of Questions Feed"}
 )
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def answered_questions_feed_api(request):
     """
-    Get Answered Questions Feed
-    Returns a paginated feed of all answered questions with doctor information.
-    Only returns questions that have been answered and sent.
+    Get Questions Feed by Doctor Category
+    Returns a paginated feed of questions filtered by the doctor's speciality/category.
+    Generaliste doctors see all categories except dentist.
     """
+    try:
+        doctor = request.user.doctor_profile
+        doctor_speciality = doctor.speciality
+    except Doctor.DoesNotExist:
+        return Response({
+            'error': "User is not a doctor"
+        },
+        status=status.HTTP_403_FORBIDDEN)
+    
     page = request.query_params.get("page", 1)
     limit = request.query_params.get("limit", 10)
     
@@ -314,17 +323,24 @@ def answered_questions_feed_api(request):
     if page < 1:
         page = 1
     
-    # Get all answered questions that have answers sent
-    answered_questions = Question.objects.filter(
-        doctor=request.user,
-    ).select_related('answer', 'answer__answered_by', 'answer__answered_by__doctor_profile').order_by("-answer__created_at")
+    # Filter questions by doctor's speciality
+    if doctor_speciality == 'generaliste':
+        questions = Question.objects.exclude(category='dentist')
+    else:
+        questions = Question.objects.filter(category=doctor_speciality)
+    
+    questions = questions.select_related(
+        'answer',
+        'answer__answered_by',
+        'answer__answered_by__doctor_profile'
+    ).order_by('-created_at')
     
     # Calculate pagination
-    total_count = answered_questions.count()
+    total_count = questions.count()
     start = (page - 1) * limit
     end = start + limit
     
-    questions_page = answered_questions[start:end]
+    questions_page = questions[start:end]
     
     data = []
     for q in questions_page:
@@ -345,6 +361,7 @@ def answered_questions_feed_api(request):
             "question_text": q.question_text,
             "instagram_username": q.instagram_username,
             "category": q.category,
+            "status": q.status,
             "answer_text": q.answer.answer_text if (hasattr(q, 'answer') and q.answer) else None,
             "answered_at": q.answer.created_at.isoformat() if (hasattr(q, 'answer') and q.answer) else None,
             "created_at": q.created_at.isoformat(),
