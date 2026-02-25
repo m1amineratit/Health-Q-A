@@ -323,7 +323,7 @@ def answered_questions_feed_api(request):
     if page < 1:
         page = 1
     
-    # Filter questions by doctor's speciality
+    # Filter questions by doctor's speciality - show ALL questions in this category, not just their own
     if doctor_speciality == 'generaliste':
         questions = Question.objects.exclude(category='dentist')
     else:
