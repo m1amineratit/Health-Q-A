@@ -6,7 +6,7 @@ from cloudinary.models import CloudinaryField
 
 class Doctor(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='doctor_profile')
-    img = models.ImageField(upload_to='doctor_images/', blank=True, null=True)
+    img = CloudinaryField('doctor_images', blank=True, null=True)
     speciality = models.CharField(
         choices=[
             ('eyes', 'Ophthalmologist'),
