@@ -5,7 +5,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('admin', '0001_initial'),
+        ('admin_panel', '0001_initial'),
         ('account', '0001_initial'),
     ]
 
@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
                 ('ip_address', models.GenericIPAddressField(blank=True, null=True)),
                 ('user_agent', models.TextField(blank=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('admin_role', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='referral_clicks', to='admin.adminrole')),
+                ('admin_role', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='referral_clicks', to='admin_panel.adminrole')),
             ],
         ),
         migrations.CreateModel(
@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('admin_role', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='referral_signups', to='admin.adminrole')),
+                ('admin_role', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='referral_signups', to='admin_panel.adminrole')),
                 ('doctor', models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='referral_signup', to='account.doctor')),
             ],
         ),

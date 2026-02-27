@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 
 class Doctor(models.Model):
@@ -63,7 +64,7 @@ class Establishment(models.Model):
     quartier = models.CharField(max_length=100, blank=True, null=True)
     adresse_electronique = models.EmailField()
     telephone_fixe = models.CharField(max_length=20)
-    photo = models.ImageField(upload_to='establishment_images/', blank=True, null=True)
+    photo = CloudinaryField('establishment_photos', blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):

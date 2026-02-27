@@ -8257,3 +8257,27 @@ INFO 2026-02-25 20:02:51,052 autoreload Watching for file changes with StatReloa
 INFO 2026-02-25 20:03:14,111 log "GET /api/feed/answered-questions/ HTTP/1.1" 200 135
 INFO 2026-02-25 20:03:22,592 log "GET /api/feed/answered-questions/ HTTP/1.1" 200 135
 INFO 2026-02-25 20:03:44,710 log "GET /api/feed/answered-questions/ HTTP/1.1" 200 1067
+INFO 2026-02-25 20:17:46,617 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 20:18:00,044 log "GET /api/feed/answered-questions/ HTTP/1.1" 200 1067
+INFO 2026-02-25 20:22:47,906 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 20:22:58,409 log "GET /api/feed/answered-questions/ HTTP/1.1" 200 1067
+INFO 2026-02-25 20:24:51,900 autoreload C:\Users\pc\Desktop\backend\system\admin\migrations\0002_referral_tracking.py changed, reloading.
+INFO 2026-02-25 20:24:53,805 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 20:25:15,731 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-02-25 20:25:17,511 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 20:25:47,335 autoreload C:\Users\pc\Desktop\backend\system\system\settings.py changed, reloading.
+INFO 2026-02-25 20:25:48,740 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 20:28:54,435 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 20:31:36,295 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-02-25 20:31:38,049 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 20:34:45,516 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 20:36:45,526 log "GET /api/doctor/profile HTTP/1.1" 200 430
+INFO 2026-02-25 20:37:14,910 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-02-25 20:37:17,361 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 20:37:23,358 autoreload C:\Users\pc\Desktop\backend\system\account\models.py changed, reloading.
+INFO 2026-02-25 20:37:25,254 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 20:42:01,233 log "GET /api/doctor/profile HTTP/1.1" 200 424
+WARNING 2026-02-25 21:19:59,393 log Not Found: /serviceworker.js
+WARNING 2026-02-25 21:19:59,395 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-02-25 21:26:08,671 log Not Found: /serviceworker.js
+WARNING 2026-02-25 21:26:08,672 log "GET /serviceworker.js HTTP/1.1" 404 179

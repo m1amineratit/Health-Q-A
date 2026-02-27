@@ -16,6 +16,9 @@ from datetime import timedelta
 from dotenv import load_dotenv
 from logging.handlers import RotatingFileHandler
 import cloudinary_storage
+import cloudinary.uploader
+import cloudinary.api
+import cloudinary
 
 # Load environment variables from .env file
 load_dotenv()
@@ -98,7 +101,6 @@ INSTALLED_APPS = [
     "cloudinary",
 ]
 
-DEFAULT_CLOUDINARY_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 import os
 
@@ -107,6 +109,21 @@ CLOUDINARY_STORAGE = {
     "API_KEY": os.getenv("CLOUDINARY_API_KEY"),
     "API_SECRET": os.getenv("CLOUDINARY_API_SECRET"),
 }
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+# Ensure the cloudinary client library is configured at runtime
+try:
+    import cloudinary
+
+    cloudinary.config(
+        cloud_name=CLOUDINARY_STORAGE.get("CLOUD_NAME"),
+        api_key=CLOUDINARY_STORAGE.get("API_KEY"),
+        api_secret=CLOUDINARY_STORAGE.get("API_SECRET"),
+    )
+except Exception:
+    # If cloudinary isn't installed or config fails, defer errors to runtime
+    pass
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/accounts/login/'
@@ -282,7 +299,6 @@ DEFAULT_FROM_EMAIL = os.getenv('EMAIL_HOST_USER', 'noreply@example.com')
 # Use Cloudinary for media files in production (persistent external storage)
 # Requires: pip install cloudinary django-cloudinary-storage
 # Set CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET in environment
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Optional ImageKit settings left for reference (not used when DEFAULT_FILE_STORAGE is Cloudinary)
 IMAGEKIT_PUBLIC_KEY = os.getenv("IMAGEKIT_PUBLIC_KEY")
