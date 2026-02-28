@@ -10,7 +10,7 @@ from rest_framework import status
 from django.contrib.auth.models import User
 from django.db.models import Q
 
-from account.models import Doctor
+from account.models import Doctor, Subscription
 from account.pagination import PagePagination
 from django.conf import settings
 
@@ -88,6 +88,9 @@ def users_list(request):
     for doctor in paginated_doctors:
         establishments = doctor.doctor_establishment.all()
         
+        subscription = getattr(doctor.user, 'subscription', None)
+        is_premium = bool(subscription and subscription.plan != 'free' and subscription.is_active)
+
         data.append({
             "id": doctor.id,
             "user_id": doctor.user.id,
@@ -110,6 +113,8 @@ def users_list(request):
             "paiement": "Paid" if doctor.is_accepted else "Pending",
             "is_accepted": doctor.is_accepted,
             "is_active": doctor.user.is_active,
+            "subscription_plan": subscription.plan if subscription else "free",
+            "is_premium": is_premium,
         })
     
     return paginator.get_paginated_response(data)
@@ -206,6 +211,9 @@ def user_details(request, user_id):
     
     establishments = doctor.doctor_establishment.all()
     
+    subscription = getattr(doctor.user, 'subscription', None)
+    is_premium = bool(subscription and subscription.plan != 'free' and subscription.is_active)
+
     return Response({
         "user": {
             "id": doctor.id,
@@ -220,6 +228,8 @@ def user_details(request, user_id):
                 "photo": _absolute_file_url(request, doctor.img),
             "is_accepted": doctor.is_accepted,
             "is_active": doctor.user.is_active,
+            "subscription_plan": subscription.plan if subscription else "free",
+            "is_premium": is_premium,
         },
         "establishments": [
             {
@@ -280,3 +290,70 @@ def users_crm(request):
     """Legacy users endpoint - redirects to users_list"""
     base_request = getattr(request, "_request", request)
     return users_list(base_request)
+
+
+# -----------------------------------------------
+# SUBSCRIPTION MANAGEMENT (Admin)
+# -----------------------------------------------
+
+@swagger_auto_schema(
+    method='post',
+    responses={
+        200: openapi.Response("Doctor Upgraded to Premium"),
+        404: "User not found",
+    }
+)
+@api_view(['POST'])
+@permission_classes([IsAdminUser])
+def upgrade_subscription(request, user_id):
+    """Upgrade a doctor to premium (pro) plan."""
+    try:
+        doctor = Doctor.objects.select_related('user').get(id=user_id)
+    except Doctor.DoesNotExist:
+        return Response({"error": "Doctor not found"}, status=status.HTTP_404_NOT_FOUND)
+
+    subscription, _ = Subscription.objects.get_or_create(
+        user=doctor.user,
+        defaults={'plan': 'free', 'is_active': True}
+    )
+    subscription.plan = 'pro'
+    subscription.is_active = True
+    subscription.save()
+
+    return Response({
+        "status": "success",
+        "message": f"Doctor {doctor.user.email} upgraded to premium.",
+        "subscription_plan": subscription.plan,
+        "is_premium": True,
+    }, status=status.HTTP_200_OK)
+
+
+@swagger_auto_schema(
+    method='post',
+    responses={
+        200: openapi.Response("Doctor Downgraded to Free"),
+        404: "User not found",
+    }
+)
+@api_view(['POST'])
+@permission_classes([IsAdminUser])
+def downgrade_subscription(request, user_id):
+    """Downgrade a doctor from premium back to free."""
+    try:
+        doctor = Doctor.objects.select_related('user').get(id=user_id)
+    except Doctor.DoesNotExist:
+        return Response({"error": "Doctor not found"}, status=status.HTTP_404_NOT_FOUND)
+
+    subscription, _ = Subscription.objects.get_or_create(
+        user=doctor.user,
+        defaults={'plan': 'free', 'is_active': True}
+    )
+    subscription.plan = 'free'
+    subscription.save()
+
+    return Response({
+        "status": "success",
+        "message": f"Doctor {doctor.user.email} downgraded to free plan.",
+        "subscription_plan": subscription.plan,
+        "is_premium": False,
+    }, status=status.HTTP_200_OK)

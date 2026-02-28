@@ -40,10 +40,13 @@ establishment_update_params = [
 # -------------------------
 @swagger_auto_schema(
     method='get',
-    responses={200: "Establishment Profile"}
+    responses={
+        200: "Establishment Profile",
+        403: "Premium subscription required"
+    }
 )
 @api_view(['GET'])
-@permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated, IsPremiumUser])
 def get_establishment_profile_api(request):
     """
     Get Establishment Profile
@@ -90,12 +93,12 @@ def get_establishment_profile_api(request):
     responses={
         201: "Establishment Created",
         400: "Invalid Data",
-        403: "User is not a doctor",
+        403: "Premium subscription required or user is not a doctor",
         409: "Establishment already exists for this doctor"
     }
 )
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated, IsPremiumUser])
 @parser_classes([MultiPartParser, FormParser])
 def create_establishment_api(request):
     """
@@ -173,12 +176,12 @@ def create_establishment_api(request):
     responses={
         200: "Establishment Updated",
         400: "Invalid Data",
-        403: "User is not a doctor",
+        403: "Premium subscription required or user is not a doctor",
         404: "Establishment not found"
     }
 )
 @api_view(['PATCH'])
-@permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated, IsPremiumUser])
 @parser_classes([MultiPartParser, FormParser])
 def update_establishment_api(request):
     """
@@ -233,5 +236,7 @@ def update_establishment_api(request):
             "quartier": establishment.quartier,
             "adresse_electronique": establishment.adresse_electronique,
             "telephone_fixe": establishment.telephone_fixe,
+            "photo": establishment.photo.url if establishment.photo else None,
+            "created_at": establishment.created_at.isoformat(),
         }
     }, status=status.HTTP_200_OK)

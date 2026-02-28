@@ -19,6 +19,7 @@ from .establishment_views import (
     create_establishment_api,
     update_establishment_api,
 )
+from .subscription_view import get_subscription_status_api
 
 __all__ = [
     # Auth views
@@ -38,4 +39,6 @@ __all__ = [
     'get_establishment_profile_api',
     'create_establishment_api',
     'update_establishment_api',
+    # Subscription views
+    'get_subscription_status_api',
 ]

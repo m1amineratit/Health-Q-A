@@ -59,7 +59,9 @@ def get_doctor_profile_api(request):
         }, status=status.HTTP_403_FORBIDDEN)
 
     has_establishment = doctor.doctor_establishment.exists()
-    
+    subscription = getattr(request.user, 'subscription', None)
+    is_premium = bool(subscription and subscription.plan != 'free' and subscription.is_active)
+
     return Response({
         "status": "success",
         "doctor": {
@@ -75,6 +77,8 @@ def get_doctor_profile_api(request):
             "inpe": doctor.inpe,
             "ville": doctor.ville,
             "has_establishment": has_establishment,
+            "subscription_plan": subscription.plan if subscription else "free",
+            "is_premium": is_premium,
             "created_at": doctor.created_at.isoformat(),
         }
     }, status=status.HTTP_200_OK)
@@ -217,5 +221,6 @@ def update_doctor_api(request):
             "instagram": doctor.instagram_account,
             "inpe": doctor.inpe,
             "ville": doctor.ville,
+            "img" : doctor.img.url if doctor.img else None,
         }
     }, status=status.HTTP_200_OK)

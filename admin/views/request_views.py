@@ -25,9 +25,9 @@ def requests_list(request):
     requests = UserRequest.objects.all().order_by('-created_at')
 
     # Filter by status
-    status_param = request.query_params.get('status', 'pending')  # Default to pending as per UI usually
-    if status_param and status_param != 'all':
-        requests = requests.filter(status=status_param)
+    status_filter = request.query_params.get('status', 'pending')  # Default to pending as per UI usually
+    if status_filter and status_filter != 'all':
+        requests = requests.filter(status=status_filter)
 
     paginator = PagePagination()
     paginated_requests = paginator.paginate_queryset(requests, request)

@@ -10,6 +10,8 @@ from .user_views import (
     user_details,
     confirm_user,
     users_crm,
+    upgrade_subscription,
+    downgrade_subscription,
 )
 from .establishment_views import (
     establishments_statistics,
@@ -50,6 +52,8 @@ __all__ = [
     'user_details',
     'confirm_user',
     'users_crm',
+    'upgrade_subscription',
+    'downgrade_subscription',
     
     # Establishments
     'establishments_statistics',

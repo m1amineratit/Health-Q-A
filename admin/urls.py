@@ -11,6 +11,8 @@ urlpatterns = [
     path('users/add', views.create_user, name='create_user'),
     path('users/<int:user_id>', views.user_details, name='user_details'),
     path('users/<int:user_id>/confirm', views.confirm_user, name='confirm_user'),
+    path('users/<int:user_id>/upgrade', views.upgrade_subscription, name='upgrade_subscription'),
+    path('users/<int:user_id>/downgrade', views.downgrade_subscription, name='downgrade_subscription'),
     
     # Establishments Management
     path('establishments/statistics', views.establishments_statistics, name='establishments_statistics'),

@@ -1,6 +1,8 @@
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 from cloudinary.models import CloudinaryField
 
 
@@ -41,6 +43,19 @@ class Subscription(models.Model):
     start_date = models.DateTimeField(auto_now_add=True)
     end_date = models.DateTimeField(null=True, blank=True)
     is_active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f"{self.user.email} – {self.plan} ({'active' if self.is_active else 'inactive'})"
+
+
+@receiver(post_save, sender='account.Doctor')
+def auto_create_subscription(sender, instance, created, **kwargs):
+    """Auto-create a free Subscription when a doctor is confirmed."""
+    if instance.is_accepted:
+        Subscription.objects.get_or_create(
+            user=instance.user,
+            defaults={'plan': 'free', 'is_active': True}
+        )
 
     
 class Establishment(models.Model): 

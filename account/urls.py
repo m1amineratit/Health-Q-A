@@ -18,6 +18,8 @@ from .api import (
     create_establishment_api,
     get_establishment_profile_api,
     update_establishment_api,
+    # Subscription views
+    get_subscription_status_api,
 )
 
 urlpatterns = [
@@ -47,4 +49,7 @@ urlpatterns = [
     path('api/establishment/create', create_establishment_api, name='api_create_establishment'),
     path('api/establishment/profile', get_establishment_profile_api, name='api_get_establishment_profile'),
     path('api/establishment/update', update_establishment_api, name='api_update_establishment'),
+
+    # Subscription
+    path('api/subscription/status', get_subscription_status_api, name='api_subscription_status'),
 ]
