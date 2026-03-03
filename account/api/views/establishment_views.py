@@ -1,6 +1,6 @@
 # Establishment Endpoints
 from rest_framework.decorators import api_view, permission_classes, parser_classes
-from rest_framework.parsers import FormParser, MultiPartParser, JSONParser
+from rest_framework.parsers import FormParser, MultiPartParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
@@ -107,7 +107,7 @@ def create_establishment_api(request):
     """
     try:
         doctor = request.user.doctor_profile
-    except:
+    except Doctor.DoesNotExist:
         return Response({
             'error': "User is not a doctor"
         }, status=status.HTTP_403_FORBIDDEN)

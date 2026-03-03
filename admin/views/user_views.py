@@ -62,7 +62,7 @@ def users_statistics(request):
 @permission_classes([IsAdminUser])
 def users_list(request):
     """Get paginated users list with search and filters"""
-    doctors = Doctor.objects.select_related('user').prefetch_related('doctor_establishment')
+    doctors = Doctor.objects.select_related('user', 'user__subscription').prefetch_related('doctor_establishment')
     
     # Search functionality
     search = request.query_params.get('search', None)
@@ -267,15 +267,21 @@ def confirm_user(request, user_id):
     doctor.is_accepted = True
     from django.utils import timezone
     doctor.accepted_at = timezone.now()
-    doctor.save()
+    doctor.save()  # signal auto_create_subscription fires here
     
     # Activate user account
     doctor.user.is_active = True
     doctor.user.save()
-    
+
+    # Subscription row is created by signal; fetch it for the response
+    from account.models import Subscription
+    subscription = Subscription.objects.filter(user=doctor.user).first()
+
     return Response({
         "status": "success",
-        "message": "User confirmed successfully"
+        "message": "User confirmed successfully",
+        "subscription_plan": subscription.plan if subscription else "free",
+        "is_premium": False,  # newly confirmed doctors always start on free
     }, status=status.HTTP_200_OK)
 
 

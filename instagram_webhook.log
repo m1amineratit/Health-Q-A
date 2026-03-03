@@ -8586,3 +8586,26 @@ WARNING 2026-02-28 13:09:00,965 log Not Found: /serviceworker.js
 WARNING 2026-02-28 13:09:00,966 log "GET /serviceworker.js HTTP/1.1" 404 179
 INFO 2026-02-28 13:09:11,029 log "GET /api/establishment/profile HTTP/1.1" 200 410
 INFO 2026-02-28 13:09:21,832 log "GET /api/doctor/profile HTTP/1.1" 200 442
+INFO 2026-03-03 16:32:35,931 autoreload Watching for file changes with StatReloader
+WARNING 2026-03-03 22:19:42,811 log Not Found: /
+WARNING 2026-03-03 22:19:42,813 log "GET / HTTP/1.1" 404 179
+WARNING 2026-03-03 22:19:43,515 log Not Found: /favicon.ico
+WARNING 2026-03-03 22:19:43,517 log "GET /favicon.ico HTTP/1.1" 404 179
+WARNING 2026-03-03 22:19:45,123 log Not Found: /serviceworker.js
+WARNING 2026-03-03 22:19:45,124 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-03 22:19:45,245 log Not Found: /serviceworker.js
+WARNING 2026-03-03 22:19:45,246 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-03-03 22:19:47,299 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-03-03 22:19:47,412 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-03-03 22:19:47,444 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-03-03 22:19:47,447 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-03-03 22:19:47,452 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-03-03 22:19:47,453 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-03-03 22:19:47,469 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-03-03 22:19:47,496 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-03-03 22:19:47,834 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2026-03-03 22:19:47,835 log "GET /swagger/?format=openapi HTTP/1.1" 200 26271
+WARNING 2026-03-03 22:19:49,789 log Not Found: /serviceworker.js
+WARNING 2026-03-03 22:19:49,790 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-03 22:20:26,275 log Not Found: /serviceworker.js
+WARNING 2026-03-03 22:20:26,277 log "GET /serviceworker.js HTTP/1.1" 404 179

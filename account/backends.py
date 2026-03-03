@@ -25,12 +25,18 @@ class EmailBackend(ModelBackend):
 
 
 class IsPremiumUser(BasePermission):
+    message = "This feature requires a premium (pro) subscription. Please upgrade your plan."
+
     def has_permission(self, request, view):
         user = request.user
         if not user.is_authenticated:
             return False
         
-        subscription = getattr(user, "subscription", None)
+        try:
+            subscription = user.subscription
+        except Exception:
+            return False
+
         return (
             subscription is not None and
             subscription.plan != "free" and
