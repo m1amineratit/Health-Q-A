@@ -15,7 +15,7 @@ class QuestionModelTest(TestCase):
             instagram_username="test_user",
             question_text="Hello Doc?"
         )
-        self.assertEqual(q.status, "pending")
+        self.assertEqual(q.status, "pending") 
         self.assertFalse(q.answer_sent)
         self.assertIsNotNone(q.created_at)
 
