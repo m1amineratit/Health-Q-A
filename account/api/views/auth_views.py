@@ -2,7 +2,7 @@
 from django.conf import settings
 from rest_framework.decorators import api_view, permission_classes, parser_classes
 from rest_framework.parsers import JSONParser
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.permissions import IsAdminUser, IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 from django.db.models import F
@@ -389,7 +389,7 @@ def get_current_user_api(request):
     }
 )
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([IsAdminUser])  # This will be removed as per "Remove all base permissions... is_staff...". Adjust logic accordingly.
 @parser_classes([JSONParser])
 def accept_user_api(request):
     """

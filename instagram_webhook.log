@@ -8611,3 +8611,201 @@ WARNING 2026-03-03 22:20:26,275 log Not Found: /serviceworker.js
 WARNING 2026-03-03 22:20:26,277 log "GET /serviceworker.js HTTP/1.1" 404 179
 WARNING 2026-03-03 23:53:47,138 log Not Found: /serviceworker.js
 WARNING 2026-03-03 23:53:47,139 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-03-16 10:43:02,744 autoreload Watching for file changes with StatReloader
+INFO 2026-03-16 10:43:15,214 log "GET /admin/api/question/ HTTP/1.1" 302 0
+INFO 2026-03-16 10:43:15,264 log "GET /admin/login/?next=/admin/api/question/ HTTP/1.1" 200 4112
+INFO 2026-03-16 10:43:15,325 log "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-03-16 10:43:15,327 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-03-16 10:43:15,328 log "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-03-16 10:43:15,332 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-03-16 10:43:15,333 log "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-03-16 10:43:15,334 log "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-03-16 10:43:15,527 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2026-03-16 10:43:15,649 log Not Found: /favicon.ico
+WARNING 2026-03-16 10:43:15,650 log "GET /favicon.ico HTTP/1.1" 404 179
+WARNING 2026-03-16 10:43:17,301 log Not Found: /serviceworker.js
+WARNING 2026-03-16 10:43:17,302 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 10:43:17,310 log Not Found: /serviceworker.js
+WARNING 2026-03-16 10:43:17,310 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 10:43:53,191 log Not Found: /serviceworker.js
+WARNING 2026-03-16 10:43:53,192 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-03-16 10:46:59,660 log "POST /admin/login/?next=/admin/api/question/ HTTP/1.1" 302 0
+INFO 2026-03-16 10:47:02,696 log "GET /admin/api/question/ HTTP/1.1" 200 16112
+INFO 2026-03-16 10:47:02,764 log "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-03-16 10:47:02,771 log "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:47:02,777 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-16 10:47:02,783 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-03-16 10:47:02,784 log "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-16 10:47:02,784 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-03-16 10:47:02,786 log "GET /static/admin/css/changelists.css HTTP/1.1" 200 7501
+INFO 2026-03-16 10:47:02,789 log "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-03-16 10:47:02,789 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-03-16 10:47:02,790 log "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 200 87533
+INFO 2026-03-16 10:47:02,799 log "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-03-16 10:47:02,802 log "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-03-16 10:47:02,803 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-03-16 10:47:02,806 log "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 200 163184
+INFO 2026-03-16 10:47:02,814 log "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-03-16 10:47:02,838 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:47:02,842 log "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-03-16 10:47:05,617 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-16 10:47:05,652 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-03-16 10:47:05,653 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-03-16 10:47:05,654 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+WARNING 2026-03-16 10:47:07,663 log Not Found: /serviceworker.js
+WARNING 2026-03-16 10:47:07,663 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 10:47:43,280 log Not Found: /serviceworker.js
+WARNING 2026-03-16 10:47:43,280 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-03-16 10:50:22,153 log "GET /admin/auth/user/ HTTP/1.1" 200 18023
+INFO 2026-03-16 10:50:22,219 log "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,226 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,226 log "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,226 log "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,227 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,229 log "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,231 log "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,231 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,233 log "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,235 log "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,236 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,237 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,238 log "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,238 log "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,258 log "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,259 log "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-03-16 10:50:22,340 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:22,350 log "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:25,071 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-16 10:50:25,095 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:25,098 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:25,098 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-03-16 10:50:25,100 log "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+WARNING 2026-03-16 10:50:26,652 log Not Found: /serviceworker.js
+WARNING 2026-03-16 10:50:26,652 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 10:51:02,902 log Not Found: /serviceworker.js
+WARNING 2026-03-16 10:51:02,904 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 10:56:47,609 log Not Found: /serviceworker.js
+WARNING 2026-03-16 10:56:47,610 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 11:59:07,121 log Not Found: /serviceworker.js
+WARNING 2026-03-16 11:59:07,126 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 12:13:09,424 log Not Found: /serviceworker.js
+WARNING 2026-03-16 12:13:09,426 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 12:34:14,727 log Not Found: /serviceworker.js
+WARNING 2026-03-16 12:34:14,730 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 12:47:38,261 log Not Found: /serviceworker.js
+WARNING 2026-03-16 12:47:38,264 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-03-16 22:51:42,005 autoreload Watching for file changes with StatReloader
+INFO 2026-03-16 22:51:49,430 log "GET /swagger/ HTTP/1.1" 200 1646
+INFO 2026-03-16 22:51:49,659 log "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2026-03-16 22:51:49,665 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2026-03-16 22:51:49,670 log "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2026-03-16 22:51:49,703 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2026-03-16 22:51:49,705 log "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2026-03-16 22:51:49,709 log "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2026-03-16 22:51:49,734 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2026-03-16 22:51:50,040 log "GET /swagger/?format=openapi HTTP/1.1" 200 26271
+INFO 2026-03-16 22:51:50,040 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+WARNING 2026-03-16 22:51:52,789 log Not Found: /serviceworker.js
+WARNING 2026-03-16 22:51:52,791 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 22:52:28,334 log Not Found: /serviceworker.js
+WARNING 2026-03-16 22:52:28,336 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 22:54:52,483 log Bad Request: /api/auth/register
+WARNING 2026-03-16 22:54:52,484 log "POST /api/auth/register HTTP/1.1" 400 103
+INFO 2026-03-16 22:55:02,257 log "POST /api/auth/register HTTP/1.1" 201 189
+INFO 2026-03-16 22:55:30,911 log "POST /api/auth/login HTTP/1.1" 200 537
+INFO 2026-03-16 22:56:28,789 log "POST /api/auth/accept-user HTTP/1.1" 200 294
+WARNING 2026-03-16 22:57:47,867 log Not Found: /serviceworker.js
+WARNING 2026-03-16 22:57:47,870 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-03-16 22:58:24,764 log "POST /api/auth/set-password HTTP/1.1" 200 638
+WARNING 2026-03-16 23:02:03,619 log Method Not Allowed: /api/doctor/profile
+WARNING 2026-03-16 23:02:03,622 log "POST /api/doctor/profile HTTP/1.1" 405 41
+INFO 2026-03-16 23:02:12,833 log "GET /api/doctor/profile HTTP/1.1" 200 350
+WARNING 2026-03-16 23:02:44,065 log Method Not Allowed: /api/doctor/profile
+WARNING 2026-03-16 23:02:44,068 log "PUT /api/doctor/profile HTTP/1.1" 405 40
+WARNING 2026-03-16 23:02:52,535 log Method Not Allowed: /api/doctor/profile
+WARNING 2026-03-16 23:02:52,537 log "PATCH /api/doctor/profile HTTP/1.1" 405 42
+WARNING 2026-03-16 23:03:09,459 log Not Found: /api/doctor/updat
+WARNING 2026-03-16 23:03:09,460 log "PUT /api/doctor/updat HTTP/1.1" 404 179
+WARNING 2026-03-16 23:03:13,967 log Method Not Allowed: /api/doctor/update
+WARNING 2026-03-16 23:03:13,969 log "PUT /api/doctor/update HTTP/1.1" 405 40
+WARNING 2026-03-16 23:03:21,481 log Unsupported Media Type: /api/doctor/update
+WARNING 2026-03-16 23:03:21,483 log "PATCH /api/doctor/update HTTP/1.1" 415 68
+INFO 2026-03-16 23:04:10,979 log "PATCH /api/doctor/update HTTP/1.1" 200 258
+WARNING 2026-03-16 23:05:31,727 log Not Found: /api/auth.login
+WARNING 2026-03-16 23:05:31,728 log "PATCH /api/auth.login HTTP/1.1" 404 179
+WARNING 2026-03-16 23:06:08,319 log Not Found: /api/auth.login
+WARNING 2026-03-16 23:06:08,320 log "POST /api/auth.login HTTP/1.1" 404 179
+WARNING 2026-03-16 23:06:11,249 log Not Found: /api/auth.login
+WARNING 2026-03-16 23:06:11,250 log "POST /api/auth.login HTTP/1.1" 404 179
+INFO 2026-03-16 23:06:20,485 log "POST /api/auth/login HTTP/1.1" 200 537
+WARNING 2026-03-16 23:07:36,827 log Not Found: /django-admin/users/2/upgrade
+WARNING 2026-03-16 23:07:36,830 log "POST /django-admin/users/2/upgrade HTTP/1.1" 404 28
+WARNING 2026-03-16 23:07:48,501 log Not Found: /django-admin/users/2/upgrade
+WARNING 2026-03-16 23:07:48,502 log "POST /django-admin/users/2/upgrade HTTP/1.1" 404 28
+WARNING 2026-03-16 23:08:00,689 log Unauthorized: /django-admin/users/2/upgrade
+WARNING 2026-03-16 23:08:00,690 log "POST /django-admin/users/2/upgrade HTTP/1.1" 401 58
+WARNING 2026-03-16 23:08:31,737 log Not Found: /serviceworker.js
+WARNING 2026-03-16 23:08:31,739 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 23:12:28,056 log Not Found: /django-admin/users/2/upgrade
+WARNING 2026-03-16 23:12:28,058 log "POST /django-admin/users/2/upgrade HTTP/1.1" 404 28
+INFO 2026-03-16 23:12:37,999 log "POST /django-admin/users/1/upgrade HTTP/1.1" 200 127
+INFO 2026-03-16 23:15:50,663 log "POST /django-admin/users/1/upgrade HTTP/1.1" 200 127
+INFO 2026-03-16 23:16:09,239 log "POST /django-admin/roles/add HTTP/1.1" 201 172
+WARNING 2026-03-16 23:18:48,574 log Method Not Allowed: /django-admin/roles
+WARNING 2026-03-16 23:18:48,575 log "POST /django-admin/roles HTTP/1.1" 405 41
+INFO 2026-03-16 23:18:55,536 log "GET /django-admin/roles HTTP/1.1" 200 275
+INFO 2026-03-16 23:19:19,715 log "GET /django-admin/requests HTTP/1.1" 200 52
+INFO 2026-03-16 23:19:32,300 log "GET /django-admin/offers HTTP/1.1" 200 52
+INFO 2026-03-16 23:31:15,361 log "GET /django-admin/admin-dashboard HTTP/1.1" 200 394
+INFO 2026-03-16 23:31:39,738 log "GET /django-admin/establishments HTTP/1.1" 200 52
+INFO 2026-03-16 23:31:51,860 log "GET /django-admin/questions HTTP/1.1" 200 52
+INFO 2026-03-16 23:33:07,301 log "GET /django-admin/questions HTTP/1.1" 200 538
+INFO 2026-03-16 23:43:45,353 autoreload C:\Users\pc\Desktop\backend\system\admin\urls.py changed, reloading.
+INFO 2026-03-16 23:43:46,271 autoreload Watching for file changes with StatReloader
+INFO 2026-03-16 23:46:54,426 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-03-16 23:46:55,257 autoreload Watching for file changes with StatReloader
+INFO 2026-03-16 23:48:34,433 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-03-16 23:48:35,502 autoreload Watching for file changes with StatReloader
+INFO 2026-03-16 23:48:41,433 autoreload C:\Users\pc\Desktop\backend\system\account\api\views\auth_views.py changed, reloading.
+INFO 2026-03-16 23:48:42,200 autoreload Watching for file changes with StatReloader
+INFO 2026-03-16 23:50:49,304 log "GET /admin/api/question/ HTTP/1.1" 200 18639
+INFO 2026-03-16 23:50:49,414 log "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,421 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,432 log "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,433 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,442 log "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,443 log "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,443 log "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,448 log "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,449 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,449 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,453 log "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,455 log "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,456 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,458 log "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,479 log "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,620 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:49,633 log "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:52,253 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-16 23:50:52,302 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:52,303 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:52,303 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-03-16 23:50:52,305 log "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+WARNING 2026-03-16 23:50:52,404 log Not Found: /favicon.ico
+WARNING 2026-03-16 23:50:52,404 log "GET /favicon.ico HTTP/1.1" 404 179
+WARNING 2026-03-16 23:50:53,914 log Not Found: /serviceworker.js
+WARNING 2026-03-16 23:50:53,914 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-03-16 23:50:59,171 log "GET /admin/auth/user/ HTTP/1.1" 200 18991
+INFO 2026-03-16 23:50:59,238 log "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-03-16 23:50:59,238 log "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 645
+INFO 2026-03-16 23:51:01,337 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-03-16 23:51:03,215 log Not Found: /serviceworker.js
+WARNING 2026-03-16 23:51:03,215 log "GET /serviceworker.js HTTP/1.1" 404 179
+INFO 2026-03-16 23:51:09,343 log "GET /admin/account/doctor/ HTTP/1.1" 200 19120
+INFO 2026-03-16 23:51:12,225 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-03-16 23:51:14,250 log Not Found: /serviceworker.js
+WARNING 2026-03-16 23:51:14,251 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 23:51:49,760 log Not Found: /serviceworker.js
+WARNING 2026-03-16 23:51:49,761 log "GET /serviceworker.js HTTP/1.1" 404 179
+WARNING 2026-03-16 23:57:47,657 log Not Found: /serviceworker.js
+WARNING 2026-03-16 23:57:47,657 log "GET /serviceworker.js HTTP/1.1" 404 179
